@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}수업 리스트{% endblock %}>
+{% block css %}
+.studentInfo{ margin : 0 20px 0 0;}
+{% endblock %}
+{% block javascript %}
+        function studentRequest(studentID)
+        {
+	     var csrftoken = getCookie('csrftoken');
+             var csrfInput = $('<input>').attr("type", "hidden").attr("name", "csrfmiddlewaretoken").val(csrftoken);
+             var teacherIDInput = $('<input>').attr("type", "hidden").attr("name", "studentID").val(studentID);
+             $form = $('<form method="POST" action="/studentRequest/"></form>');         
+	     $form.append(csrfInput)			    
+             $form.append(teacherIDInput)
+             $form.submit();					    
+        }
+
+
+{% endblock %}        
+{% block mainnav %}
+{% endblock %}
+{% block content %}   
+<div class="row-fluid">
+  {% for student in students %}
+  <ul class="thumbnails">
+    <li class="span4 {% if forloop.counter|divisibleby:"3" %} {% else %}studentInfo{% endif %}">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>{{student.name}} 학생</h3>
+          <p>
+	    학년 : {% if student.grade == 0 %}
+	           중학생 1학년
+	           {% elif student.grade == 1 %}
+	           중학생 2학년 
+	           {% elif student.grade == 2 %}
+	           중학생 3학년 
+	           {% elif student.grade == 3 %}
+	           고등학생 1학년 
+	           {% elif student.grade == 4 %}
+	           고등학생 2학년 
+	           {% endif %}
+	    </br>
+	    성 : {% if student.sex == 0 %} 남성 {% else %} 여성 {% endif %}</br>
+	    과외비용 : {{student.money}}만원</br>
+            </br>
+          </p>
+          <p>
+	    <a href="#myModal" class="btn" data-toggle="modal">상세 프로필</a>
+	    <a href="javascript:studentRequest({{student.id}})" class="btn btn-info">수업 신청</a>
+	  </p>
+        </div>
+      </div>
+    </li>
+    {% endfor %} 
+</div>
+<div class="footer">
+  <p>&copy; KnowledgeShare 2013</p>
+</div>
+{% endblock %}    

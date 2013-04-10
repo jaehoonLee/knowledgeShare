@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}수업 강의실{% endblock %}>
+{% block css %}
+.lecture button { float:right; }
+.lectureTable {margin:10px 0 0 0; padding:10px 0 0 0;}
+th {font-size:20px;}
+td:first-child {width:20%;}
+
+{% endblock %}
+{% block javascript %}
+{% endblock %}        
+{% block mainnav %}
+{% endblock %}
+{% block content %}   
+
+<div class="lecture">
+<h3>강의실</h3>
+<table class="table lectureTable">
+  <thead>
+    <tr>
+      <th>나의 강의실</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for lecture in lectures %}
+    <tr class="body">
+      <td>1</td>
+      <td>{{lecture.teacher.name}} 선생님,
+	{% for student in lecture.student.all %}
+	{{student.name}} 학생  
+	{% endfor %}
+	강의실</td>
+      <td><button class="btn">강의실 입장</button></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<legend></legend>
+</div>
+<div class="footer">
+  <p>&copy; KnowledgeShare 2013</p>
+</div>
+
+{% endblock %}    

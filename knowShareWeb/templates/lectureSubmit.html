@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %}선생님 소개{% endblock %}>
+{% block css %}
+.lectureForm
+{
+width : 800px;
+margin : 0 auto;
+}
+
+.lectureForm .title
+{
+padding:5px 0 0 0;
+width:80px;
+float:left;
+}
+
+.count
+{
+margin: 0 0  0 20px;
+}
+
+.comment textarea
+{
+width:785px;
+}
+
+.month{width:70px;}
+.date{width:70px;}
+{% endblock %}
+{% block javascript %}
+function LectureSubmit()
+{
+var currentYear = new Date().getFullYear()
+var startMonth = $("#startMonth option").index($("#startMonth option:selected"));
+var startDay = $("#startDay option").index($("#startDay option:selected"));
+var endMonth = $("#endMonth option").index($("#endMonth option:selected"));
+var endDay = $("#endDay option").index($("#endDay option:selected"));
+
+var startDate = currentYear + '-'
+                + ((startMonth+'').length < 2 ? '0' : '') + (startMonth+1) + '-'
+                + ((startDay+'').length < 2 ? '0' : '') + (startDay+1)
+		+ ' 00:00';
+var endDate = currentYear + '-'
+                + ((endMonth+'').length < 2 ? '0' : '') + (endMonth+1) + '-'
+                + ((endDay+'').length < 2 ? '0' : '') + (endDay+1)
+		+ ' 00:00';
+					
+var startDateInput = $("<input>").attr("type", "hidden").attr("name", "startDate").val(startDate);
+var endDateInput = $("<input>").attr("type", "hidden").attr("name", "endDate").val(endDate);
+
+$(".lectureForm").append($(startDateInput));
+$(".lectureForm").append($(endDateInput));
+document.LectureSubmitForm.submit();
+}
+{% endblock %}        
+{% block mainnav %}
+{% endblock %}
+{% block content %}   
+<h3>강의실 신청</h3>
+{% if Confirmed == 0 %}
+<p>
+  로그인을 하셔야 신청이 가능하십니다.
+</p>
+{% elif Confirmed == 1 %}
+<p>
+  선생님 신청을 하셔서 승인을 받으셔야 강의실을 신청 하실 수 있습니다.
+</p>
+{% else %}
+<p>
+선생님께서 학생과 강의시간을 약속하셨다면 강의실을 신청하시면 됩니다. </br>
+승인 후 강의실 사용이 바로 가능합니다.
+</p>
+<legend></legend>
+<form method="POST" class="lectureForm" name="LectureSubmitForm" action="/lectureRegister/"> {% csrf_token %}
+  {% if error %}
+  <div>
+  <label style="color:red"> 학생 ID가 존재하지 않습니다.</label>
+  </div>
+  {% endif %}
+  <div>
+    <label class="control-label title">학생 SID</label>
+    <input style="float:left;" type="text" id="sid" name="sid" placeholder="학생 SID"> 
+    <label class="control-label title count">수업횟수</label>
+    <input type="text" id="count" name="count" placeholder="1시간 당 1회"> 
+  </div>
+  <div>
+    <label class="control-label title">날짜</label>
+    <div style="float:left">
+      <select id="startMonth" name="startMonth" class="month">
+	{% for i in months %}
+	<option> {{i}}월 </option>
+	{% endfor %}
+      </select>
+      <select id="startDay" name="startDay" class="date">
+	{% for i in months %}
+	<option> {{i}}일 </option>
+	{% endfor %}
+      </select>
+    </div>
+    <div style="float:left">
+    <label >&nbsp;~&nbsp;</label>
+    </div>
+    <div>
+    <select id="endMonth" name="endMonth" class="month">
+      {% for i in months %}
+      <option> {{i}}월 </option>
+      {% endfor %}
+    </select>
+    <select id="endDay" name="endDay" class="date">
+      {% for i in months %}
+      <option> {{i}}일 </option>
+      {% endfor %}
+    </select>
+    </div>
+  </div>
+  <button text="등록하기" style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:LectureSubmit();">신청하기</button>
+</form>
+<legend></legend>
+{% endif %}
+ 
+<div class="footer">
+  <p>&copy; KnowledgeShare 2013</p>
+</div>
+{% endblock %}    
