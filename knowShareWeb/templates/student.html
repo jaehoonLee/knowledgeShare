@@ -15,7 +15,39 @@
              $form.submit();					    
         }
 
+        function showProfile(name, grade, sex, money, tutorTime, comment)
+        {
+             $("#profileTitle").text(name + " 학생");
+             if(grade == 0)
+                 $("#profileGrade").text("학년 : 중학생 1학년");
+             else if(grade == 1)
+                 $("#profileGrade").text("학년 : 중학생 2학년");
+             else if(grade == 2)
+                 $("#profileGrade").text("학년 : 중학생 3학년");
+             else if(grade == 3)
+                 $("#profileGrade").text("학년 : 고등학생 1학년");
+             else if(grade == 4)
+                 $("#profileGrade").text("학년 : 고등학생 2학년");
 
+             if(sex == 0)
+                 $("#profileSex").text("성 : 남성");
+             else
+                 $("#profileSex").text("성 : 여성");
+             $("#profileMoney").text("과외비용 : " + money + "만원");
+             if(tutorTime == 0)
+                  $("#profileTutorTime").text("과외방식 : 주 1회 1시간");
+             else if(tutorTime == 1)
+                  $("#profileTutorTime").text("과외방식 : 주 2회 1시간");
+             else if(tutorTime == 2)
+                  $("#profileTutorTime").text("과외방식 : 주 1회 2시간");
+             else if(tutorTime == 3)
+                  $("#profileTutorTime").text("과외방식 : 주 2회 2시간");
+             else if(tutorTime == 4)
+                  $("#profileTutorTime").text("과외방식 : 기타");
+             $("#profileComment").text("코멘트 : " + comment);
+
+             $("#profileModal").modal('show')
+        }
 {% endblock %}        
 {% block mainnav %}
 {% endblock %}
@@ -45,7 +77,7 @@
             </br>
           </p>
           <p>
-	    <a href="#myModal" class="btn" data-toggle="modal">상세 프로필</a>
+	    <a href="javascript:showProfile('{{student.name}}', '{{student.grade}}', '{{student.sex}}', '{{student.money}}', '{{student.tutorTime}}', '{{student.comment}}')" class="btn">상세 프로필</a>
 	    <a href="javascript:studentRequest({{student.id}})" class="btn btn-info">수업 신청</a>
 	  </p>
         </div>
@@ -55,5 +87,24 @@
 </div>
 <div class="footer">
   <p>&copy; KnowledgeShare 2013</p>
+</div>
+
+<div id="profileModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="profileTitle"></h3>
+  </div>
+  <div class="modal-body">
+    <label id="profileGrade"></label>
+    <label id="profileSex"></label>
+    <label id="profileMoney"></label>
+    <label id="profileTutorTime"></label>
+    <label id="profileComment">
+    </label>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">닫기</button>
+    <button class="btn btn-primary" onClick="javascript:enterLectureRoom();">강의실 입장</button>  
+  </div>    
 </div>
 {% endblock %}    

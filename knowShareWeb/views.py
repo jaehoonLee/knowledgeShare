@@ -25,7 +25,12 @@ def teacher_page(request):
     teachers =  Teacher.objects.all()
     for teacher in teachers:
         teacher.career =  teacher.career.replace('\r', '</br>')
-    return render_to_response('teacher.html', RequestContext(request, {'isInGroup' : isInGroup, 'teachers' : teachers }))
+        
+    if request.user.is_authenticated() == False : 
+        teacherRequests = request.user.teacherrequest_set.all()
+        return render_to_response('teacher.html', RequestContext(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests }))
+    else :
+        return render_to_response('teacher.html', RequestContext(request, {'isInGroup' : isInGroup, 'teachers' : teachers}))
 
 def teacherSubmit_page(request):
     if request.user.is_authenticated() == False:

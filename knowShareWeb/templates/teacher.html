@@ -24,6 +24,8 @@
                  $("#profileSex").text("성 : 남성");
             else 
                  $("#profileSex").text("성 : 여성");
+
+            $("#career").empty();
             var careers = career.split("</br>")     
             for(i = 0 ; i < careers.length; i++)
             {
@@ -83,7 +85,17 @@
           </p>
           <p>
 	    <a href="javascript:showProfile('{{teacher.name}}', '{{teacher.highschool}}', '{{teacher.university}}', '{{teacher.age}}', '{{teacher.sex}}', '{{teacher.career}}', '{{teacher.money}}', '{{teacher.tutorTime}}', '{{teacher.tutorType}}')" class="btn">상세 프로필</a>
+	    {% if teacher.user.id != user.id %}
+	    {{teacherRequests}}
+	    {% for teacherRequest in teacherRequests %} 
+	    {{teacherRequest.teacher.id}}
+	    {% if teacher.id != teacherRequest.teacher.id %}
 	    <a href="javascript:teacherRequest('{{teacher.id}}')" class="btn btn-info">수강 신청</a>
+	    {% else %}
+	    <a href="javascript:teacherRequest('{{teacher.id}}')" class="btn">수강 취소</a>
+	    {% endif %}
+	    {% endfor %}
+	    {% endif %}
 	  </p>
         </div>
       </div>
@@ -116,12 +128,6 @@
     <label id="profileTutorType"></label>
   </div>
   <div class="modal-footer">
-    {% if user.username %}
-    <button class="btn" data-dismiss="modal" aria-hidden="true">닫기</button>
-    <button class="btn btn-primary" onClick="javascript:enterLectureRoom();">강의실 입장</button>  
-    {% else %}
-	  
-    {% endif %}
   </div>    
 </div>
 
