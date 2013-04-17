@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}나의 프로필{% endblock %}
+{% block css %}
+.profile {width : 920px; margin : 0 auto;}
+
+{% endblock %}
+{% block javascript %}
+{% endblock %}        
+{% block mainnav %}
+{% endblock %}
+{% block content %}   
+<h3>나의 프로필</h3>
+<div id="basicProfile" class="profile"> 
+<h4 style="float:left">기본정보</h5>
+<button class="btn">정보 변경</button>
+<button class="btn">삭제</button>
+<p></p>
+<p>
+  ID : {{user.username}} </br>
+  E-mail : {{user.email}} </br>
+  {% if isTeacher or isStudent %}
+  Group : 
+  {% for group in user.groups.all %} 
+  {% if forloop.last %}
+  {{group.name}}
+  {% else %}
+  {{group.name}},
+  {% endif %}
+  {% endfor %}
+  {% else %}
+  {% endif %}
+</p>
+</div>
+
+{% if isTeacher %}
+</br>
+<div id="TeacherProfile" class="profile"> 
+<h4 style="float:left">선생님 프로필</h4> 
+<button class="btn">정보 변경</button>
+<button class="btn">삭제</button>
+<p></p>
+<p>
+  이름 : {{user.teacher.name}} </br>
+  나이 : {{user.teacher.age}}  </br>
+  {% if user.teacher.sex == 0 %}
+  성 : 남성 </br>
+  {% elif user.teacher.sex == 1 %}
+  성 : 여성 </br>
+  {% endif %}</br>
+  고등학교 : {{user.teacher.highschool}}</br>
+  대학교 : {{user.teacher.university}}</br>
+  경력 : </br>
+  {% for career in careers %}
+  {{career}}</br>
+  {% endfor %}</br>
+  과외 비용 : {{user.teacher.money}}만원</br>
+  과외 시간 : 
+  {% if user.teacher.tutorTime == 0  %}
+  주 1회 1시간 </br>
+  {% elif user.teacher.tutorTime == 1 %}
+  주 2회 1시간 </br>
+  {% elif user.teacher.tutorTime == 2 %}
+  주 1회 2시간 </br>
+  {% elif user.teacher.tutorTime == 3 %}
+  주 2회 2시간 </br>
+  {% endif %}
+  과외 방법 : 
+  {% if user.teacher.tutorType == 0 %}
+  1 - 1 수업 </br>
+  {% elif user.teacher.tutorType == 1 %}
+  1 - 2 수업 </br>
+  {% elif user.teacher.tutorType == 2 %}
+  1 - 3 수업 </br>
+  {% endif %}
+</p>
+</div>
+{% endif %}
+
+{% if isStudent %}
+</br>
+<div id="StudentProfile" class="profile">
+<h4>학생 프로필 리스트</h4>
+{% for student in user.student.all %}
+student.name
+{% endfor %}
+<table class="table lectureTable">
+  <tbody>
+    {% for student in user.student_set.all  %}
+    <tr class="body">
+      <td>{{forloop.counter}}</td>
+      <td>{{student.name}} 학생 수업 신청</td>
+      <td>
+	<button class="btn">정보 변경</button>
+	<button class="btn">삭제</button>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<legend></legend>
+</br>
+</div>
+{% endif %}
+<div class="footer">
+  <p>&copy; KnowledgeShare 2013</p>
+</div>
+{% endblock %}    

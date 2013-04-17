@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}선생님 소개{% endblock %}>
+{% block css %}
+.studentForm
+{
+width : 800px;
+margin : 0 auto;
+}
+
+.studentForm .title
+{
+padding:5px 0 0 0;
+width:80px;
+float:left;
+}
+
+.studentForm .leftFloat label
+{
+padding-left:20px;
+}
+
+.comment textarea
+{
+width:785px;
+}
+{% endblock %}
+
+
+{% block javascript %}
+
+function StudentSubmit()
+{
+var gradeIdx = $("#grade option").index($("#grade option:selected"));
+var tutorTimeIdx = $("#tutorTime option").index($("#tutorTime option:selected"));
+
+var gradeInput = $("<input>").attr("type", "hidden").attr("name", "gradeIdx").val(gradeIdx);
+var tutorTimeInput = $("<input>").attr("type", "hidden").attr("name", "tutorTimeIdx").val(tutorTimeIdx);
+
+$(".studentForm").append($(gradeInput));
+$(".studentForm").append($(tutorTimeInput));
+document.StudentSubmitForm.submit();
+}
+
+{% endblock %}        
+{% block mainnav %}
+{% endblock %}
+{% block content %}   
+<h3>수업 신청</h3>
+{% if Confirmed == 0 %}
+<p>
+  로그인을 하셔야 신청이 가능하십니다.
+</p>
+{% else %}
+<p>
+StudyGate에 수업을 신청할 수 있습니다. 선생님들이 수업리스트를 보고 수업에 참여할 것입니다.
+</p>
+<legend></legend>
+<form method="POST" class="studentForm" name="StudentSubmitForm" action="/studentRegister/"> {% csrf_token %}
+  <div style="float:left">
+    <label class="control-label title leftTitle">이름</label>
+    <input type="text" id="name" name="name" placeholder="Name"> 
+  </div>
+  <div class="leftFloat">
+    <label class="control-label title">성별</label>
+    <div class="sexRadio">
+      <input type="radio" name="sex" id="male" value="male" checked style="float:left"><label>&nbsp;&nbsp;남자</label>
+      <input type="radio" name="sex" id="female" value="female" style="float:left;"><label>&nbsp;&nbsp;여자</label>
+    </div>
+  </div>
+  <div>
+    <label class="control-label title">학년</label>
+    <select id="grade" name="grade" class="grade">
+      <option> 중학생 1학년</option>
+      <option> 중학생 2학년</option>
+      <option> 중학생 3학년</option>
+      <option> 고등학생 1학년</option>
+      <option> 고등학생 2학년</option>
+    </select>
+  </div>
+  <div>
+    <div style="float:left;">
+      <label class="control-label title leftTitle">과외비용</label>
+      <input name="money" class="tutorMethod" type="text" id="money" placeholder="Price">
+    </div>
+    <div class="leftFloat">
+      <label class="control-label title">과외횟수</label>
+      <select id="tutorTime" name="tutorTime" class="tutorMethod">
+	<option> 주 1회 1시간</option>
+	<option> 주 2회 1시간</option>
+	<option> 주 1회 2시간</option>
+	<option> 주 2회 2시간</option>
+	<option> 기타</option>
+      </select>
+    </div>
+    <div class="comment">
+      <label class="control-label">학생관련 코멘트</label>
+      <textarea name="comment" rows="7"></textarea>
+    </div>
+    <button style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentSubmit();">신청하기</button>
+  </div>
+</form>
+<legend></legend>
+{% endif %} 
+<div class="footer">
+  <p>&copy; KnowledgeShare 2013</p>
+</div>
+{% endblock %}    

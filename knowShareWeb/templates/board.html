@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}선생님 소개{% endblock %}>
+{% block css %}
+.studentOffer
+{
+width : 900px;
+margin : 0 auto;
+}
+
+.student th
+{
+text-align : center;
+width : 11%;
+}
+
+.student th:first-child
+{
+width:8%;
+}
+
+.student th:nth-child(2)
+{
+width:70%;
+}
+
+.student thead tr
+{
+background-image: -ms-linear-gradient(bottom, #DBFFE8 0%, #2ECC71 100%);
+background-image: -moz-linear-gradient(bottom, #DBFFE8 0%, #2ECC71 100%);
+background-image: -o-linear-gradient(bottom, #DBFFE8 0%, #2ECC71 100%);
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #DBFFE8), color-stop(1, #2ECC71));
+background-image: -webkit-linear-gradient(bottom, #DBFFE8 0%, #2ECC71 100%);
+background-image: linear-gradient(to top, #DBFFE8 0%, #2ECC71 100%);
+}
+
+a
+{
+text-decoration:none;
+color:#000000;
+}
+
+a:hover
+{
+text-decoration:none;
+}
+
+.studentOfferLineNum
+{
+text-align : center;
+}
+
+.studentOfferLineNum a 
+{
+padding : 0 3px 0 3px;
+}
+
+.numActive
+{
+color:#3498DB;
+}
+
+{% endblock %}
+{% block javascript %}
+{% endblock %}        
+{% block mainnav %}
+{% endblock %}
+{% block content %}   
+<h3>과외 신청</h3>
+<div class="studentOffer">
+<table class="student table table-bordered">
+  <thead>
+    <tr class="info">
+      <th>#</th>
+      <th>제목</th>
+      <th>작성자</th>
+      <th>작성일</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="notice">
+      <th>[공지]</th>
+      <th><a href="">원하는 수업 강좌를 요청해주세요.</a></th>
+      <th>관리자</th>
+      <th>2012.03.27</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th><a href="">중학생 2학년 수학 과외 구해요</a></th>
+      <th>철수엄마</th>
+      <th>2012.03.27</th>
+    </tr>
+  </tbody>
+</table>
+<div class="studentOfferLineNum">
+  <i class="icon-backward"></i>  
+  <i class="icon-chevron-left"></i>  
+  <a class="numActive" href="">1</a>
+  <a href="">2</a>
+  <i class="icon-chevron-right"></i>  
+  <i class="icon-forward"></i>  
+</div>
+</div>
+ 
+<div class="footer">
+  <p>&copy; KnowledgeShare 2013</p>
+</div>
+{% endblock %}    

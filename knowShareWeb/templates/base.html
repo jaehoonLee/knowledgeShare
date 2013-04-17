@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="{{STATIC_URL}}bootstrap/js/bootstrap.min.js"></script>
+    <link href="{{STATIC_URL}}bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+        .container {
+        margin: 0 auto;
+        max-width: 1000px;
+        }
+        
+        .form-signin input[type="text"],
+        .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+        }
+        
+        #signUpModal{
+            width: 430px;
+            margin: 0px 0 0 -215px;
+        }
+        
+        #loginModal{
+            width: 430px;
+            margin: 0px 0 0 -215px;
+        }
+
+    {% block css %}{% endblock %}
+    </style>
+    <script type="text/javascript">
+    function RegistrationSubmit()
+    {
+        if(document.RegistrationForm.email.value == "")
+        {
+             alert('이메일을 입력하지 않으셨습니다.');
+             return;
+        }
+        else if(document.RegistrationForm.username.value =="")
+        {
+             alert('아이디를 입력하지 않으셨습니다.');
+             return;
+        }
+        else if(document.RegistrationForm.password.value =="")
+        {
+             alert('패스워드를 입력하지 않으셨습니다.');
+             return;
+        }
+        else if(document.RegistrationForm.passwordConfirm.value =="")
+        {
+             alert('패스워드 확인을 입력하지 않으셨습니다.');
+             return;
+        }
+
+        if(document.RegistrationForm.password.value != document.RegistrationForm.passwordConfirm.value)
+        {
+             alert('패스워드와 패스워드 확인 값이 다릅니다.');
+             return;
+        }
+
+        document.RegistrationForm.submit();
+    }
+    function LoginSubmit()
+    {
+        if(document.LoginForm.username.value == "")
+        {
+             alert('아이디를 입력하지 않으셨습니다.');
+             return;
+        }
+        else if(document.LoginForm.password.value =="")
+        {
+             alert('패스워드를 입력하지 않으셨습니다.');
+             return;
+        }
+        document.LoginForm.submit();
+    }
+    function SignUp()
+    {
+    $("#signUpModal").modal()   
+    }
+        
+    function Login()
+    {
+    $("#loginModal").modal()   
+    }
+
+    function Close()
+    {
+    {% if loginerror %}
+    location.href = 'http://teachrevo.cafe24.com:9000';
+    {% elif signuperror %}
+    location.href = 'http://teachrevo.cafe24.com:9000';
+    {% else %}
+    $("#loginModal").modal('hide')   
+    $("#signUpModal").modal('hide')
+    {% endif %}
+    }
+
+    
+    function getCookie(name)
+    {
+	   var cookieValue = null;
+           if (document.cookie && document.cookie != '') 
+	   {
+	        var cookies = document.cookie.split(';');
+	        for (var i = 0; i < cookies.length; i++) 
+		{
+			var cookie = jQuery.trim(cookies[i]);
+			// Does this cookie string begin with the name we want?
+			if (cookie.substring(0, name.length + 1) == (name + '=')) 
+			{
+				cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+				break;
+			}
+		}
+	    }
+            return cookieValue;
+    }
+
+
+    {% if login %}
+    window.onload = Login
+    {% endif %}
+
+    {% if signup %}
+    window.onload = SignUp
+    {% endif %}
+
+    {% block javascript %}{% endblock %}
+    </script>
+</head>
+<body>
+    <div class="container">
+    <div class="masthead">
+        <h2 class="muted">StudyGate</h2>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav" style="width:700px;">
+		<li id="Home" class="dropdown">
+		  <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">StudyGate</a>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/">소개</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/howto">서비스 이용 방법</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/contact">고객센터</a></li>
+		  </ul>
+		</li>
+		<li id="Teacher" class="dropdown">
+		  <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">선생님</a>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacher">선생님 소개</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacherSubmit">선생님 등록</a></li>
+		  </ul>
+		</li>
+		<li id="Student" class="dropdown">
+		  <a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">학생</a>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/student">수업 리스트</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/studentSubmit">수업 신청</a></li>
+		  </ul>
+		</li>
+ 		<li id="Lecture" class="dropdown">
+		  <a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">강의실</a>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/lecture">수업 강의실</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/lectureSubmit">강의실 신청</a></li>
+		    <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="/student">문제풀이 오피스</a></li>-->
+		  </ul>
+		</li>
+		{% if user.username %}
+		<li id="MyPage" class="dropdown">
+		  <a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">마이 페이지</a>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/myProfile">나의 프로필</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/submitList">요청 목록</a></li>
+		    <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="/student">문제풀이 오피스</a></li>-->
+		  </ul>
+		</li>
+		{% endif %}
+
+		{% block mainnav %}{% endblock %}
+              </ul>
+              <ul class="nav pull-right">
+		{% if user.username %}
+		<li id="LogoutNavBtn"><a href="/logout/">로그아웃</a></li>
+		{% else %}
+                <li id="SignUpNavBtn"><a href="javascript:SignUp();" data-toggle="modal">회원가입</a></li>
+                <li id="LoginNavBtn"><a href="javascript:Login();" data-toggle="modal">로그인</a></li>
+		{% endif %}
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+    {% block content %}{% endblock %}
+   
+    <!-- Modal -->
+    <div id="signUpModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" aria-hidden="true" onClick="javascript:Close();">×</button>
+      <h2 class="form-signin-heading">회원 가입</h2>
+    </div>
+    <div class="modal-body">
+        <form method="POST" class="form-signin" name="RegistrationForm" action="/register/">  {% csrf_token %}
+	  {% if signuperror %}
+	  <label style="color:red; margin: 0 0 10px 0;">가입 형식이 맞지 않습니다.</label>
+	  {% endif %}
+        <input type="text" class="input-block-level" placeholder="Email address" name="email">
+        <input type="text" class="input-block-level" placeholder="Username" name="username">
+        <input type="password" class="input-block-level" placeholder="Password" name="password">
+        <input type="password" class="input-block-level" placeholder="Password Confirm" name="passwordConfirm">
+        </form>
+    </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">닫기</button>
+          <button class="btn btn-primary" onClick="javascript:RegistrationSubmit();">회원가입</button>   
+        </div>    
+    </div>
+    
+    <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" aria-hidden="true" onClick="javascript:Close();">×</button>
+      <h2 class="form-signin-heading">회원 로그인</h2>
+    </div>
+    <div class="modal-body">
+        <form method="POST" class="form-signin" NAME="LoginForm" action="/login/"> {% csrf_token %}
+	  {% if loginerror %}
+	  <label style="color:red; margin: 0 0 10px 0;">당신의 ID나 비밀번호가 맞지 않습니다.</label>
+	  {% endif %}
+        <input type="text" class="input-block-level" placeholder="Username" name="username">
+        <input type="password" class="input-block-level" placeholder="Password" name="password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">닫기</button>
+        <button class="btn btn-primary" onClick="javascript:LoginSubmit();">로그인</button>
+    </div>    
+    </div>
+    </div> <!-- /container -->
+</body>
+</html>
