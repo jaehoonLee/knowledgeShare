@@ -4,14 +4,16 @@
 .studentInfo{ margin : 0 20px 0 0;}
 {% endblock %}
 {% block javascript %}
-        function studentRequest(studentID)
+        function studentRequest(studentID, addErase)
         {
 	     var csrftoken = getCookie('csrftoken');
              var csrfInput = $('<input>').attr("type", "hidden").attr("name", "csrfmiddlewaretoken").val(csrftoken);
              var teacherIDInput = $('<input>').attr("type", "hidden").attr("name", "studentID").val(studentID);
+             var addErase = $('<input>').attr("type", "hidden").attr("name", "addErase").val(addErase);
              $form = $('<form method="POST" action="/studentRequest/"></form>');         
 	     $form.append(csrfInput)			    
              $form.append(teacherIDInput)
+             $form.append(addErase)
              $form.submit();					    
         }
 
@@ -58,7 +60,7 @@
     <li class="span4 {% if forloop.counter|divisibleby:"3" %} {% else %}studentInfo{% endif %}">
       <div class="thumbnail">
         <div class="caption">
-          <h3>{{student.name}} 학생</h3>
+          <h3>{{student.name}} 학생 {% if student.user.id == user.id %} [본인] {% endif %}</h3>
           <p>
 	    학년 : {% if student.grade == 0 %}
 	           중학생 1학년
@@ -78,7 +80,19 @@
           </p>
           <p>
 	    <a href="javascript:showProfile('{{student.name}}', '{{student.grade}}', '{{student.sex}}', '{{student.money}}', '{{student.tutorTime}}', '{{student.comment}}')" class="btn">상세 프로필</a>
-	    <a href="javascript:studentRequest({{student.id}})" class="btn btn-info">수업 신청</a>
+	    {% if student.user.id != user.id %}
+	    {% if studentRequests|length != 0 %}
+	    {% for studentRequest in studentRequests %}
+	    {% if student.id != studentRequest.student.id %}
+	    <a href="javascript:studentRequest({{student.id}}, 1)" class="btn btn-info">수업 신청</a>
+	    {% else %}
+	    <a href="javascript:studentRequest({{student.id}}, 0)" class="btn btn-danger">수업 취소</a>
+	    {% endif %}
+	    {% endfor %}
+	    {% else %}
+	    <a href="javascript:studentRequest({{student.id}}, 1)" class="btn btn-info">수업 신청</a>
+	    {% endif %}
+	    {% endif %}
 	  </p>
         </div>
       </div>

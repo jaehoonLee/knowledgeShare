@@ -3,3 +3,6 @@
 *.pyc
 local_settings.py
 settings.py
+knowledgeShareDB
+knowShare.pid
+nohup.out

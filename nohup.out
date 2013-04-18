@@ -10417,6 +10417,7 @@ AttributeError: 'AnonymousUser' object has no attribute 'teacher'
 [10/Apr/2013 12:35:04] "GET /static/img/KnowShare01.png HTTP/1.1" 304 0
 [10/Apr/2013 12:35:04] "GET /static/img/KnowShare04.png HTTP/1.1" 304 0
 [10/Apr/2013 12:35:04] "GET /static/img/KnowShare06.png HTTP/1.1" 304 0
+<<<<<<< HEAD
 [17/Apr/2013 07:20:55] "GET /student/ HTTP/1.1" 200 12822
 [17/Apr/2013 07:21:05] "GET /student/ HTTP/1.1" 200 12822
 [17/Apr/2013 07:21:09] "GET /teacher HTTP/1.1" 301 0
@@ -10501,10 +10502,121 @@ Validating models...
 April 17, 2013 - 07:20:53
 Django version 1.5, using settings 'knowledgeShare.settings'
 Development server is running at http://0.0.0.0:9000/
+=======
+[17/Apr/2013 20:46:57] "GET / HTTP/1.1" 200 9693
+[17/Apr/2013 20:46:57] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28538
+[17/Apr/2013 20:46:57] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 105939
+[17/Apr/2013 20:47:00] "GET /student HTTP/1.1" 301 0
+[17/Apr/2013 20:47:00] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 20:49:12] "GET /myProfile HTTP/1.1" 301 0
+[17/Apr/2013 20:49:12] "GET /myProfile/ HTTP/1.1" 200 9940
+[17/Apr/2013 20:49:58] "GET /lecture HTTP/1.1" 301 0
+[17/Apr/2013 20:49:58] "GET /lecture/ HTTP/1.1" 200 8985
+[17/Apr/2013 20:49:59] "GET /lectureSubmit HTTP/1.1" 301 0
+[17/Apr/2013 20:49:59] "GET /lectureSubmit/ HTTP/1.1" 200 12931
+[17/Apr/2013 20:50:00] "GET /studentSubmit HTTP/1.1" 301 0
+[17/Apr/2013 20:50:00] "GET /studentSubmit/ HTTP/1.1" 200 11507
+[17/Apr/2013 20:50:03] "GET /teacherSubmit HTTP/1.1" 301 0
+[17/Apr/2013 20:50:03] "GET /teacherSubmit/ HTTP/1.1" 200 9924
+[17/Apr/2013 20:50:04] "GET /teacher HTTP/1.1" 301 0
+[17/Apr/2013 20:50:04] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 20:50:06] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 20:50:09] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 20:50:12] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 20:50:13] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 20:50:23] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 20:50:30] "GET / HTTP/1.1" 200 9693
+[17/Apr/2013 20:50:35] "GET /admin HTTP/1.1" 301 0
+[17/Apr/2013 20:50:35] "GET /admin/ HTTP/1.1" 200 7319
+[17/Apr/2013 20:50:39] "GET /admin/knowShareWeb/studentrequest/ HTTP/1.1" 200 4708
+[17/Apr/2013 20:50:39] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:50:46] "POST /admin/knowShareWeb/studentrequest/ HTTP/1.1" 200 2276
+[17/Apr/2013 20:50:47] "POST /admin/knowShareWeb/studentrequest/ HTTP/1.1" 302 0
+[17/Apr/2013 20:50:47] "GET /admin/knowShareWeb/studentrequest/ HTTP/1.1" 200 3114
+[17/Apr/2013 20:50:47] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:50:50] "GET /admin/knowShareWeb/studentrequest/ HTTP/1.1" 200 2983
+[17/Apr/2013 20:50:53] "GET /admin/ HTTP/1.1" 200 7586
+[17/Apr/2013 20:50:54] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 5612
+[17/Apr/2013 20:50:55] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:51:00] "POST /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 2781
+[17/Apr/2013 20:51:01] "POST /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 302 0
+[17/Apr/2013 20:51:01] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 3115
+[17/Apr/2013 20:51:01] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:51:02] "GET /admin/knowShareWeb/ HTTP/1.1" 200 4074
+[17/Apr/2013 20:51:04] "GET /admin/ HTTP/1.1" 200 8654
+[17/Apr/2013 20:51:05] "GET /admin/knowShareWeb/student/ HTTP/1.1" 200 5518
+[17/Apr/2013 20:51:05] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:51:10] "GET /admin/ HTTP/1.1" 200 8654
+[17/Apr/2013 20:51:11] "GET /admin/knowShareWeb/teacher/ HTTP/1.1" 200 5941
+[17/Apr/2013 20:51:11] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:51:13] "GET /admin/ HTTP/1.1" 200 8654
+[17/Apr/2013 20:51:14] "GET /admin/knowShareWeb/lecture/ HTTP/1.1" 200 2936
+[17/Apr/2013 20:51:14] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:51:15] "GET /admin/ HTTP/1.1" 200 8654
+[17/Apr/2013 20:51:16] "GET /admin/auth/user/ HTTP/1.1" 200 7385
+[17/Apr/2013 20:51:16] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:51:22] "POST /admin/auth/user/ HTTP/1.1" 200 2255
+[17/Apr/2013 20:51:23] "POST /admin/auth/user/ HTTP/1.1" 302 0
+[17/Apr/2013 20:51:23] "GET /admin/auth/user/ HTTP/1.1" 200 7184
+[17/Apr/2013 20:51:23] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:51:25] "GET /admin/ HTTP/1.1" 200 8629
+[17/Apr/2013 20:51:26] "GET /admin/auth/group/ HTTP/1.1" 200 4654
+[17/Apr/2013 20:51:26] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:51:27] "GET /admin/ HTTP/1.1" 200 8629
+[17/Apr/2013 20:51:28] "GET /admin/sites/site/ HTTP/1.1" 200 4904
+[17/Apr/2013 20:51:28] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 20:51:30] "GET /admin/ HTTP/1.1" 200 8629
+[17/Apr/2013 20:56:19] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 20:56:21] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 20:56:23] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 20:56:27] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 20:56:31] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 20:56:35] "GET /studentSubmit/ HTTP/1.1" 200 11507
+[17/Apr/2013 20:56:36] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 20:58:10] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 20:59:13] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 21:00:32] "GET /teacher/ HTTP/1.1" 200 14360
+[17/Apr/2013 21:01:17] "GET /teacher/ HTTP/1.1" 200 14325
+[17/Apr/2013 21:02:24] "GET /teacher/ HTTP/1.1" 200 14336
+[17/Apr/2013 21:02:33] "GET /teacher/ HTTP/1.1" 200 14334
+[17/Apr/2013 21:14:02] "GET /teacher/ HTTP/1.1" 200 14425
+[17/Apr/2013 21:14:17] "GET /teacher/ HTTP/1.1" 200 14417
+[17/Apr/2013 21:15:48] "POST /teacherRequest/ HTTP/1.1" 302 0
+[17/Apr/2013 21:15:48] "GET / HTTP/1.1" 200 9693
+[17/Apr/2013 21:15:50] "GET /myProfile/ HTTP/1.1" 200 9940
+[17/Apr/2013 21:16:03] "GET /submitList HTTP/1.1" 301 0
+[17/Apr/2013 21:16:03] "GET /submitList/ HTTP/1.1" 200 9853
+[17/Apr/2013 21:16:22] "GET /submitList/ HTTP/1.1" 200 9853
+[17/Apr/2013 21:16:24] "GET /lecture/ HTTP/1.1" 200 8985
+[17/Apr/2013 21:16:25] "GET /lectureSubmit/ HTTP/1.1" 200 12931
+[17/Apr/2013 21:16:26] "GET /myProfile/ HTTP/1.1" 200 9940
+[17/Apr/2013 21:16:27] "GET /submitList/ HTTP/1.1" 200 9853
+[17/Apr/2013 21:16:32] "GET /teacher/ HTTP/1.1" 200 14417
+[17/Apr/2013 21:16:35] "GET /submitList/ HTTP/1.1" 200 9853
+[17/Apr/2013 21:22:52] "GET /teacher/ HTTP/1.1" 200 14417
+[17/Apr/2013 21:24:27] "GET /teacher/ HTTP/1.1" 200 14417
+[17/Apr/2013 21:24:28] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 21:24:30] "GET /teacher/ HTTP/1.1" 200 14417
+[17/Apr/2013 21:24:32] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 21:24:32] "GET /teacher/ HTTP/1.1" 200 14417
+[17/Apr/2013 21:24:34] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 21:24:35] "GET /teacher/ HTTP/1.1" 200 14417
+[17/Apr/2013 21:24:55] "GET /admin/auth/user/ HTTP/1.1" 200 7064
+[17/Apr/2013 21:24:56] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+[17/Apr/2013 21:24:59] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 4701
+[17/Apr/2013 21:24:59] "GET /admin/jsi18n/ HTTP/1.1" 200 5232
+Validating models...
+
+0 errors found
+April 17, 2013 - 20:46:26
+Django version 1.6, using settings 'knowledgeShare.settings'
+Starting development server at http://0.0.0.0:9000/
+>>>>>>> affef15710127ac5e6e62eaf080c3fd95a296f30
 Quit the server with CONTROL-C.
 [<Student: Student object>]
 [<Student: Student object>]
 [<Student: Student object>]
+<<<<<<< HEAD
 Validating models...
 
 0 errors found
@@ -11080,3 +11192,5 @@ Traceback (most recent call last):
     return func(self._wrapped, *args)
 AttributeError: 'AnonymousUser' object has no attribute 'teacherrequest_set'
 [18/Apr/2013 01:42:08] "GET /teacher/ HTTP/1.1" 500 60537
+=======
+>>>>>>> affef15710127ac5e6e62eaf080c3fd95a296f30
