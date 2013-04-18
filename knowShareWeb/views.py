@@ -26,7 +26,7 @@ def teacher_page(request):
     for teacher in teachers:
         teacher.career =  teacher.career.replace('\r', '</br>')
         
-    if request.user.is_authenticated() == False : 
+    if request.user.is_authenticated() == True : 
         teacherRequests = request.user.teacherrequest_set.all()
         return render_to_response('teacher.html', RequestContext(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests }))
     else :
@@ -45,7 +45,11 @@ def teacherSubmit_page(request):
 
 def student_page(request):
     students = Student.objects.all()
-    return render_to_response('student.html', RequestContext(request, {'students' : students}))
+    if request.user.is_authenticated() == True : 
+        studentRequests = request.user.teacher.studentrequest_set.all()
+        return render_to_response('student.html', RequestContext(request, {'students' : students, 'user' : request.user, 'studentRequests' : studentRequests}))
+    else :
+        return render_to_response('student.html', RequestContext(request, {'students' : students}))
 
 def studentSubmit_page(request):
     if request.user.is_authenticated() == False:
@@ -225,27 +229,36 @@ def lecture_register_page(request):
 # Request
 def teacher_request_page(request):
     if request.method == 'POST' :
-        teacher = Teacher.objects.get(id__exact=request.POST['teacherID'])
-        TeacherRequest.objects.create_teacher_request(
-            teacher = teacher,
-            student = request.user,
-            comment = "Hi",
-            permission = 0)
         
-        return HttpResponseRedirect('/')
+        teacher = Teacher.objects.get(id__exact=request.POST['teacherID'])
+        if int(request.POST['addErase']) == 1 :
+            TeacherRequest.objects.create_teacher_request(
+                teacher = teacher,
+                student = request.user,
+                comment = "Hi",
+                permission = 0)
+        else :
+            teacherRequest = TeacherRequest.objects.get(teacher=teacher, student=request.user)
+            teacherRequest.delete()
+        
+        return HttpResponseRedirect('/teacher')
             
     else :
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/teacher')
 
 def student_request_page(request):
     if request.method == 'POST' : 
         student = Student.objects.get(id__exact=request.POST['studentID'])
-        StudentRequest.objects.create_student_request(
-            student = student,
-            teacher = request.user.teacher,
-            comment = "Hi",
-            permission = False)
+        if int(request.POST['addErase']) == 1:
+            StudentRequest.objects.create_student_request(
+                student = student,
+                teacher = request.user.teacher,
+                comment = "Hi",
+                permission = False)
+        else :
+            studentRequest = StudentRequest.objects.get(student=student, teacher=request.user.teacher)
+            studentRequest.delete()
         
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/student')
     else :
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/student')
