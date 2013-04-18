@@ -11003,3 +11003,80 @@ ImproperlyConfigured: Your STATICFILES_DIRS setting is not a tuple or list; perh
 [17/Apr/2013 10:10:37] "GET /student/ HTTP/1.1" 200 12822
 [17/Apr/2013 10:10:39] "GET /lecture/ HTTP/1.1" 200 8985
 [17/Apr/2013 10:10:40] "GET /myProfile/ HTTP/1.1" 200 9940
+[17/Apr/2013 10:22:42] "GET /howto/ HTTP/1.1" 200 11990
+[17/Apr/2013 11:41:57] "GET / HTTP/1.1" 200 9693
+[17/Apr/2013 11:41:57] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[17/Apr/2013 11:41:57] "GET / HTTP/1.1" 200 9693
+[17/Apr/2013 11:42:01] "GET /howto/ HTTP/1.1" 200 11990
+[17/Apr/2013 11:42:01] "GET /static/img/KnowShare05.png HTTP/1.1" 304 0
+[17/Apr/2013 11:42:01] "GET /static/img/KnowShare03.png HTTP/1.1" 304 0
+[17/Apr/2013 11:42:01] "GET /static/img/KnowShare01.png HTTP/1.1" 304 0
+[17/Apr/2013 11:42:01] "GET /static/img/KnowShare02.png HTTP/1.1" 304 0
+[17/Apr/2013 11:42:01] "GET /static/img/KnowShare04.png HTTP/1.1" 304 0
+[17/Apr/2013 11:42:01] "GET /static/img/KnowShare06.png HTTP/1.1" 304 0
+[17/Apr/2013 11:42:08] "GET /contact/ HTTP/1.1" 200 8948
+[17/Apr/2013 11:42:10] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 11:42:14] "GET /teacherSubmit HTTP/1.1" 301 0
+[17/Apr/2013 11:42:14] "GET /teacherSubmit/ HTTP/1.1" 200 9924
+[17/Apr/2013 11:42:16] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 11:42:22] "POST /studentRequest/ HTTP/1.1" 302 0
+[17/Apr/2013 11:42:22] "GET / HTTP/1.1" 200 9693
+[17/Apr/2013 11:42:23] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 11:42:25] "POST /studentRequest/ HTTP/1.1" 302 0
+[17/Apr/2013 11:42:26] "GET / HTTP/1.1" 200 9693
+[17/Apr/2013 11:42:30] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 11:42:32] "GET /studentSubmit HTTP/1.1" 301 0
+[17/Apr/2013 11:42:32] "GET /studentSubmit/ HTTP/1.1" 200 11507
+[17/Apr/2013 11:42:34] "GET /myProfile/ HTTP/1.1" 200 9940
+[17/Apr/2013 11:42:35] "GET /submitList/ HTTP/1.1" 200 11164
+[17/Apr/2013 11:42:56] "GET /lecture/ HTTP/1.1" 200 8985
+[17/Apr/2013 11:42:57] "GET /lectureSubmit/ HTTP/1.1" 200 12931
+[17/Apr/2013 11:42:59] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 11:43:00] "GET /studentSubmit/ HTTP/1.1" 200 11507
+[17/Apr/2013 11:43:02] "GET /lecture/ HTTP/1.1" 200 8985
+[17/Apr/2013 11:43:03] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 11:43:05] "GET /teacherSubmit/ HTTP/1.1" 200 9924
+[17/Apr/2013 11:43:07] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 11:43:10] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 11:43:13] "GET /studentSubmit/ HTTP/1.1" 200 11507
+[17/Apr/2013 11:43:14] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 11:43:22] "GET /teacher/ HTTP/1.1" 200 14322
+[17/Apr/2013 11:43:23] "GET /student/ HTTP/1.1" 200 12822
+[17/Apr/2013 11:43:25] "GET /lecture/ HTTP/1.1" 200 8985
+[17/Apr/2013 11:43:27] "GET /myProfile/ HTTP/1.1" 200 9940
+[18/Apr/2013 01:39:15] "GET / HTTP/1.1" 200 9282
+[18/Apr/2013 01:39:15] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28538
+[18/Apr/2013 01:39:15] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 105939
+[18/Apr/2013 01:39:18] "GET /teacher HTTP/1.1" 301 0
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/root/knowledgeShare/knowShareWeb/views.py", line 30, in teacher_page
+    teacherRequests = request.user.teacherrequest_set.all()
+  File "/usr/local/lib/python2.6/dist-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'teacherrequest_set'
+[18/Apr/2013 01:39:19] "GET /teacher/ HTTP/1.1" 500 60537
+[18/Apr/2013 01:39:23] "GET / HTTP/1.1" 200 9282
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/root/knowledgeShare/knowShareWeb/views.py", line 30, in teacher_page
+    teacherRequests = request.user.teacherrequest_set.all()
+  File "/usr/local/lib/python2.6/dist-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'teacherrequest_set'
+[18/Apr/2013 01:40:01] "GET /teacher/ HTTP/1.1" 500 60537
+[18/Apr/2013 01:42:07] "GET / HTTP/1.1" 200 9282
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.6/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/root/knowledgeShare/knowShareWeb/views.py", line 30, in teacher_page
+    teacherRequests = request.user.teacherrequest_set.all()
+  File "/usr/local/lib/python2.6/dist-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'teacherrequest_set'
+[18/Apr/2013 01:42:08] "GET /teacher/ HTTP/1.1" 500 60537
