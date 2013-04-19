@@ -25,10 +25,19 @@ def teacher_page(request):
     teachers =  Teacher.objects.all()
     for teacher in teachers:
         teacher.career =  teacher.career.replace('\r', '</br>')
+
+    teacherUserRels = []
+    idx = 0
+    for teacher in teachers:
+        teacherUserRels.append(False)
+        for teacherrequest in teacher.teacherrequest_set.all():
+            if teacherrequest.student == request.user : 
+                 teacherUserRels[idx] = True
+        idx += 1
         
     if request.user.is_authenticated() == True : 
         teacherRequests = request.user.teacherrequest_set.all()
-        return render_to_response('teacher.html', RequestContext(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests }))
+        return render_to_response('teacher.html', RequestContext(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests, 'teacherUserRels' : teacherUserRels, "user" : request.user}))
     else :
         return render_to_response('teacher.html', RequestContext(request, {'isInGroup' : isInGroup, 'teachers' : teachers}))
 
@@ -46,7 +55,11 @@ def teacherSubmit_page(request):
 def student_page(request):
     students = Student.objects.all()
     if request.user.is_authenticated() == True : 
-        studentRequests = request.user.teacher.studentrequest_set.all()
+        studentRequests = []
+        try : 
+            studentRequests = request.user.teacher.studentrequest_set.all()
+        except ObjectDoesNotExist : 
+            studentRequests = False
         return render_to_response('student.html', RequestContext(request, {'students' : students, 'user' : request.user, 'studentRequests' : studentRequests}))
     else :
         return render_to_response('student.html', RequestContext(request, {'students' : students}))
@@ -117,6 +130,28 @@ def submit_list_page(request):
         students = []
     
     return render_to_response('submitList.html', RequestContext(request, {'studentRequests' : studentRequests, 'teacherRequests' : teacherRequests, 'studentRequestsToMe' : studentRequestsToMe, 'students' : students}))
+
+def receive_list_page(request):
+    studentRequests = None
+    studentRequestsToMe = None
+    students = None 
+    try : 
+        studentRequests = request.user.teacher.studentrequest_set.all()
+    except ObjectDoesNotExist : 
+        studentRequests = []
+
+    teacherRequests = request.user.teacherrequest_set.all()
+    try : 
+        studentRequestsToMe = request.user.teacher.teacherrequest_set.all()
+    except ObjectDoesNotExist : 
+        studentRequestsToMe = []
+    try : 
+        students = request.user.student_set.all()
+    except ObjectDoesNotExist : 
+        students = []
+    
+    return render_to_response('receiveList.html', RequestContext(request, {'studentRequests' : studentRequests, 'teacherRequests' : teacherRequests, 'studentRequestsToMe' : studentRequestsToMe, 'students' : students}))
+
 
 #Account Setting
 @csrf_exempt
@@ -229,13 +264,13 @@ def lecture_register_page(request):
 # Request
 def teacher_request_page(request):
     if request.method == 'POST' :
-        
+        print "request" + request.POST['teacherID']
         teacher = Teacher.objects.get(id__exact=request.POST['teacherID'])
         if int(request.POST['addErase']) == 1 :
             TeacherRequest.objects.create_teacher_request(
                 teacher = teacher,
                 student = request.user,
-                comment = "Hi",
+                comment = request.POST['comment'],
                 permission = 0)
         else :
             teacherRequest = TeacherRequest.objects.get(teacher=teacher, student=request.user)
@@ -253,7 +288,7 @@ def student_request_page(request):
             StudentRequest.objects.create_student_request(
                 student = student,
                 teacher = request.user.teacher,
-                comment = "Hi",
+                comment = request.POST['comment'],
                 permission = False)
         else :
             studentRequest = StudentRequest.objects.get(student=student, teacher=request.user.teacher)
@@ -262,3 +297,4 @@ def student_request_page(request):
         return HttpResponseRedirect('/student')
     else :
         return HttpResponseRedirect('/student')
+

@@ -5,9 +5,22 @@
 .lectureTable {margin:10px 0 0 0; padding:10px 0 0 0;}
 th {font-size:20px;}
 td:first-child {width:80%;}
-
+.sign {font-size:14px; margin:5px 0 0 0;}
 {% endblock %}
 {% block javascript %}
+        function showStudentRequest(name, comment)
+        {
+             $("#commentTitle").text(name + " 학생에게 요청한 목록")
+             $("#comment").text(comment)
+             $("#commentModal").modal('show')
+        }
+
+        function showTeacherRequest(name, comment)
+        {
+             $("#commentTitle").text(name + " 선생님에게 요청한 목록")
+             $("#comment").text(comment)
+             $("#commentModal").modal('show')
+        }
 {% endblock %}        
 {% block mainnav %}
 {% endblock %}
@@ -24,8 +37,8 @@ td:first-child {width:80%;}
     {% for studentRequest in studentRequests %}
     <tr class="body">
       <td>{{studentRequest.student.name}}학생에게 요청</td>
-      <td><button class="btn">내용</button></td>
-      <td><button class="btn">요청취소</button></td>
+      <td><button class="btn" onClick="javascript:showStudentRequest('{{studentRequest.student.name}}', '{{studentRequest.comment}}');">내용</button></td>
+      <td><span class="label label-warning sign">미승인</span></td>
     </tr>
     {% endfor %}
   </tbody>
@@ -41,56 +54,28 @@ td:first-child {width:80%;}
   <tbody>
     {% for teacherRequest in teacherRequests %}
     <tr class="body">
-      <td>{{teacherRequest.teacher.name}}선생님에게 요청</td>
-      <td><button class="btn">내용</button></td>
-      <td><button class="btn">요청취소</button></td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-<legend></legend>
-<!-- 학생 요청 목록 -->
-<h3>요청 온 목록</h3>
-<table class="table lectureTable">
-  <thead>
-    <tr>
-      <th>학생 요청 목록</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for teacherRequest in studentRequestsToMe %}
-    <tr class="body">
-      <td>{{teacherRequest.student.name}} 학생이 수업요청</td>
-      <td><button class="btn">내용</button></td>
-      <td><button class="btn">요청 수락</button></td>
+      <td>{{teacherRequest.teacher.name}} 선생님에게 요청</td>
+      <td><button class="btn" onClick="javascript:showTeacherRequest('{{teacherRequest.teacher.name}}', '{{teacherRequest.comment}}')">내용</button></td>
+      <td><span class="label label-warning sign">미승인</span></td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
 <legend></legend>
 
-<!-- 선생님 요청 목록 -->
-<table class="table lectureTable">
-  <thead>
-    <tr>
-      <th>선생님 요청 목록</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for student in students %}
-    {% for studentRequest in student.studentrequest_set.all %}
-    <tr class="body">
-      <td>{{studentRequest.teacher.name}} 선생님이 요청</td>
-      <td><button class="btn">내용</button></td>
-      <td><button class="btn">요청수락</button></td>
-    </tr>
-    {% endfor %}
-    {% endfor %}
-  </tbody>
-</table>
-<legend></legend>
-
-<div class="footer">
-  <p>&copy; KnowledgeShare 2013</p>
+<div id="commentModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 id="commentTitle"></h4>
+  </div>
+  <div class="modal-body">
+    <p id="comment">
+    </p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">닫기</button>
+    <button class="btn btn-danger" onClick="javascript:studentRequest();">수업 신청 취소</button>  
+  </div>    
 </div>
+
 {% endblock %}    
