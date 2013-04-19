@@ -25,43 +25,50 @@ td:first-child {width:80%;}
 {% block mainnav %}
 {% endblock %}
 {% block content %}   
-<h3>요청한 목록</h3>
-<!-- 학생에게 요청한 목록 -->
+<!-- 학생 요청 목록 -->
+<h3>요청 온 목록</h3>
 <table class="table lectureTable">
   <thead>
     <tr>
-      <th>학생에게 요청한 목록</th>
+      <th>학생 요청 목록</th>
     </tr>
   </thead>
   <tbody>
-    {% for studentRequest in studentRequests %}
+    {% for teacherRequest in studentRequestsToMe %}
     <tr class="body">
-      <td>{{studentRequest.student.name}}학생에게 요청</td>
-      <td><button class="btn" onClick="javascript:showStudentRequest('{{studentRequest.student.name}}', '{{studentRequest.comment}}');">내용</button></td>
-      <td><span class="label label-warning sign">미승인</span></td>
+      <td>{{teacherRequest.student.name}} 학생이 수업요청</td>
+      <td><button class="btn">내용</button></td>
+      <td><button class="btn">요청 수락</button></td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
 <legend></legend>
-<!-- 선생님에게 요청한 목록 -->
+
+<!-- 선생님 요청 목록 -->
 <table class="table lectureTable">
   <thead>
     <tr>
-      <th>선생님에게 요청한 목록</th>
+      <th>선생님 요청 목록</th>
     </tr>
   </thead>
   <tbody>
-    {% for teacherRequest in teacherRequests %}
+    {% for student in students %}
+    {% for studentRequest in student.studentrequest_set.all %}
     <tr class="body">
-      <td>{{teacherRequest.teacher.name}} 선생님에게 요청</td>
-      <td><button class="btn" onClick="javascript:showTeacherRequest('{{teacherRequest.teacher.name}}', '{{teacherRequest.comment}}')">내용</button></td>
-      <td><span class="label label-warning sign">미승인</span></td>
+      <td>{{studentRequest.teacher.name}} 선생님이 요청</td>
+      <td><button class="btn">내용</button></td>
+      <td><button class="btn">요청수락</button></td>
     </tr>
+    {% endfor %}
     {% endfor %}
   </tbody>
 </table>
 <legend></legend>
+
+<div class="footer">
+  <p>&copy; KnowledgeShare 2013</p>
+</div>
 
 <div id="commentModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">

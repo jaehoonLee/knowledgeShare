@@ -18,6 +18,7 @@ urlpatterns = patterns('',
     url(r'^contact/$', contact_page),
     url(r'^myProfile/$', my_profile_page),
     url(r'^submitList/$', submit_list_page),
+    url(r'^receiveList/$', receive_list_page),
 
     # url(r'^knowledgeShare/', include('knowledgeShare.foo.urls')),
 
@@ -40,6 +41,7 @@ urlpatterns = patterns('',
     # Request
     url(r'^teacherRequest/$', teacher_request_page),
     url(r'^studentRequest/$', student_request_page),
+
 )
 
 urlpatterns += staticfiles_urlpatterns()
