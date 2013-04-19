@@ -96,7 +96,7 @@
           </p>
           <p>
 	    <a href="javascript:showProfile('{{student.name}}', '{{student.grade}}', '{{student.sex}}', '{{student.money}}', '{{student.tutorTime}}', '{{student.comment}}')" class="btn">상세 프로필</a>
-	    {% if studentRequests %}
+	    {% if user.username %}
 	    {% if student.user.id != user.id %}
 	    {% if studentRequests|length != 0 %}
 	    {% for studentRequest in studentRequests %}

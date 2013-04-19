@@ -59,7 +59,8 @@ def student_page(request):
         try : 
             studentRequests = request.user.teacher.studentrequest_set.all()
         except ObjectDoesNotExist : 
-            studentRequests = False
+            return render_to_response('student.html', RequestContext(request, {'students' : students}))
+
         return render_to_response('student.html', RequestContext(request, {'students' : students, 'user' : request.user, 'studentRequests' : studentRequests}))
     else :
         return render_to_response('student.html', RequestContext(request, {'students' : students}))
