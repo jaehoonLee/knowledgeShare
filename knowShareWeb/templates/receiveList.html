@@ -4,22 +4,52 @@
 .lecture button { float:right; }
 .lectureTable {margin:10px 0 0 0; padding:10px 0 0 0;}
 th {font-size:20px;}
-td:first-child {width:80%;}
-.sign {font-size:14px; margin:5px 0 0 0;}
+td:first-child {width:70%;}
+td:last-child {width:9%;}
+.sign {font-size:14px; margin:5px 0 0 0; float:right;}
 {% endblock %}
 {% block javascript %}
-        function showStudentRequest(name, comment)
+        function showStudentResponse(name, comment, studentID)
         {
-             $("#commentTitle").text(name + " 학생에게 요청한 목록")
-             $("#comment").text(comment)
-             $("#commentModal").modal('show')
+             $("#studentCommentTitle").text(name + " 학생이 수업 요청")
+             $("#studentComment").empty();
+             var comments = comment.split("</br>")
+             for(i = 0; i < comments.length; i++)
+             {
+                var commentText = $("<label>").text(comments[i]);
+                $("#studentComment").append(commentText);
+             }			  
+             $("#studentID").val(studentID)
+             $("#studentCommentModal").modal('show')
         }
 
-        function showTeacherRequest(name, comment)
+        function showTeacherResponse(name, comment, studentID, teacherID)
         {
-             $("#commentTitle").text(name + " 선생님에게 요청한 목록")
-             $("#comment").text(comment)
-             $("#commentModal").modal('show')
+             $("#teacherCommentTitle").text(name + " 선생님에게 요청한 목록")
+	     $("#teacherComment").empty();
+             var comments = comment.split("</br>")
+             for(i = 0; i < comments.length; i++)
+             {
+                var commentText = $("<label>").text(comments[i]);
+                $("#teacherComment").append(commentText);
+             }			  			    
+             $("#uStudentID").val(studentID)
+             $("#teacherID").val(teacherID)
+             $("#teacherCommentModal").modal('show')
+        }
+
+        function changeStudentRequestPermission(permission)
+        {
+             var permissionIn = $('<input>').attr("type", "hidden").attr("name", "permission").val(permission);
+             $(".studentRequestPermission").append($(permissionIn));
+             document.studentRequestPermissionForm.submit();
+        }
+
+        function changeTeacherRequestPermission(permission)
+        {             
+             var permissionIn = $('<input>').attr("type", "hidden").attr("name", "permission").val(permission);
+             $(".teacherRequestPermission").append($(permissionIn));
+             document.teacherRequestPermissionForm.submit();
         }
 {% endblock %}        
 {% block mainnav %}
@@ -36,9 +66,16 @@ td:first-child {width:80%;}
   <tbody>
     {% for teacherRequest in studentRequestsToMe %}
     <tr class="body">
-      <td>{{teacherRequest.student.name}} 학생이 수업요청</td>
-      <td><button class="btn">내용</button></td>
-      <td><button class="btn">요청 수락</button></td>
+      <td>{{teacherRequest.student.username}}계정의 학생이 수업요청</td>
+      <td><button style="float:right;" class="btn" onClick="javascript:showStudentResponse('{{teacherRequest.student.username}}', '{{teacherRequest.comment}}', {{teacherRequest.student.id}})">내용</button></td>
+      
+      {% if teacherRequest.permission == 0 %}
+      <td><span class="label label-warning sign">미승인</span></td>
+      {% elif teacherRequest.permission == 1 %}
+      <td><span class="label label-success sign">승인</span></td>
+      {% else %}
+      <td><span class="label label-important sign">거절</span></td>
+      {% endif %}
     </tr>
     {% endfor %}
   </tbody>
@@ -57,8 +94,22 @@ td:first-child {width:80%;}
     {% for studentRequest in student.studentrequest_set.all %}
     <tr class="body">
       <td>{{studentRequest.teacher.name}} 선생님이 요청</td>
-      <td><button class="btn">내용</button></td>
-      <td><button class="btn">요청수락</button></td>
+      <td><button class="btn" onClick="javascript:showTeacherResponse('{{studentRequest.teacher.name}}', '{{studentRequest.comment}}', {{studentRequest.student.id}}, {{studentRequest.teacher.id}})">내용</button></td>
+
+      {% if studentRequest.permission == 1 %}
+      <td><button style="float:right;" class="btn" onClick="location.href='../lectureSubmit?studentID={{studentRequest.student.id}}'">강의실 신청</button></td>
+      {% else %} 
+      <td><button style="float:right;" class="btn">강의실 대기</button></td>
+      {% endif %}
+
+      {% if studentRequest.permission == 0 %}
+      <td><span class="label label-warning sign">미승인</span></td>
+      {% elif studentRequest.permission == 1 %}
+      <td><span class="label label-success sign">승인</span></td>
+      {% else %}
+      <td><span class="label label-important sign">거절</span></td>
+      {% endif %}
+
     </tr>
     {% endfor %}
     {% endfor %}
@@ -70,19 +121,43 @@ td:first-child {width:80%;}
   <p>&copy; KnowledgeShare 2013</p>
 </div>
 
-<div id="commentModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="studentCommentModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h4 id="commentTitle"></h4>
+    <h4 id="studentCommentTitle"></h4>
   </div>
   <div class="modal-body">
-    <p id="comment">
-    </p>
+    <div id="studentComment">
+    </div>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">닫기</button>
-    <button class="btn btn-danger" onClick="javascript:studentRequest();">수업 신청 취소</button>  
+    <button class="btn btn-info" onClick="javascript:changeTeacherRequestPermission(1)">요청 승인</button>
+    <button class="btn btn-danger" onClick="javascript:changeTeacherRequestPermission(2);">요청 거절</button>  
   </div>    
 </div>
+
+<div id="teacherCommentModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 id="teacherCommentTitle"></h4>
+  </div>
+  <div class="modal-body">
+    <div id="teacherComment">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-info" onClick="javascript:changeStudentRequestPermission(1)">요청 승인</button>
+    <button class="btn btn-danger" onClick="javascript:changeStudentRequestPermission(2);">요청 거절</button>  
+  </div>    
+</div>
+
+<form method="POST" class="teacherRequestPermission" name="teacherRequestPermissionForm" action="/teacherRequestPermission/"> {% csrf_token %}
+  <input id="studentID" class="studentID" name="studentID" type="hidden">
+</form>
+
+<form method="POST" class="studentRequestPermission" name="studentRequestPermissionForm" action="/studentRequestPermission/"> {% csrf_token %}
+  <input id="uStudentID" class="uStudentID" name="userStudentID" type="hidden">
+  <input id="teacherID" class="teacherID" name="teacherID" type="hidden">
+</form>
 
 {% endblock %}    
