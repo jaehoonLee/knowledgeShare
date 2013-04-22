@@ -42,6 +42,9 @@ urlpatterns = patterns('',
     url(r'^teacherRequest/$', teacher_request_page),
     url(r'^studentRequest/$', student_request_page),
 
+    url(r'^teacherRequestPermission/$', teacher_request_permission),
+    url(r'^studentRequestPermission/$', student_request_permission),
+
 )
 
 urlpatterns += staticfiles_urlpatterns()

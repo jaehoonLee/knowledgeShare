@@ -95,7 +95,7 @@ class TeacherRequest(models.Model):
     teacher = models.ForeignKey(Teacher)
     student = models.ForeignKey(User)
     comment = models.TextField()
-    permission = models.BooleanField()
+    permission = models.IntegerField()
     objects = TeacherRequestManager()
 
 class TeacherRequestAdmin(admin.ModelAdmin):
@@ -118,7 +118,7 @@ class StudentRequest(models.Model):
     student = models.ForeignKey(Student)
     teacher = models.ForeignKey(Teacher)
     comment = models.TextField()
-    permission = models.BooleanField()
+    permission = models.IntegerField()
     objects = StudentRequestManager()
     
 class StudentRequestAdmin(admin.ModelAdmin):

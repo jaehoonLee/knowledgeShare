@@ -6,7 +6,7 @@ from django.contrib import auth
 from django.contrib.auth import *
 from django.contrib.auth.models import *
 from django.views.decorators.csrf import csrf_exempt
-from django.core.exceptions import ObjectDoesNotExist 
+from django.core.exceptions import *
 from knowShareWeb.forms import * 
 from knowShareWeb.models import *
 
@@ -91,7 +91,9 @@ def lectureSubmit_page(request):
     except ObjectDoesNotExist :
         return render_to_response('lectureSubmit.html', RequestContext(request, {'months' : range(1, 13), 'Confirmed' : 1}))
 
-    return render_to_response('lectureSubmit.html', RequestContext(request, {'months' : range(1, 13)}))       
+    studentID = request.GET.get('studentID', '')
+
+    return render_to_response('lectureSubmit.html', RequestContext(request, {'months' : range(1, 13), 'Confirmed' : 2, 'studentID' : studentID}))       
 
 def contact_page(request):
     return render_to_response('contact.html', RequestContext(request))
@@ -113,45 +115,43 @@ def my_profile_page(request):
 
 def submit_list_page(request):
     studentRequests = None
-    studentRequestsToMe = None
-    students = None 
     try : 
         studentRequests = request.user.teacher.studentrequest_set.all()
+        for studentRequest in studentRequests :
+            studentRequest.comment = studentRequest.comment.replace('\r', '</br>').replace('\n','')
     except ObjectDoesNotExist : 
         studentRequests = []
 
     teacherRequests = request.user.teacherrequest_set.all()
-    try : 
-        studentRequestsToMe = request.user.teacher.teacherrequest_set.all()
-    except ObjectDoesNotExist : 
-        studentRequestsToMe = []
+    for teacherRequest in teacherRequests :
+        teacherRequest.comment = teacherRequest.comment.replace('\r', '</br>').replace('\n','')
+        print teacherRequest.comment
     try : 
         students = request.user.student_set.all()
     except ObjectDoesNotExist : 
         students = []
     
-    return render_to_response('submitList.html', RequestContext(request, {'studentRequests' : studentRequests, 'teacherRequests' : teacherRequests, 'studentRequestsToMe' : studentRequestsToMe, 'students' : students}))
+    return render_to_response('submitList.html', RequestContext(request, {'studentRequests' : studentRequests, 'teacherRequests' : teacherRequests}))
 
 def receive_list_page(request):
-    studentRequests = None
     studentRequestsToMe = None
     students = None 
     try : 
-        studentRequests = request.user.teacher.studentrequest_set.all()
-    except ObjectDoesNotExist : 
-        studentRequests = []
-
-    teacherRequests = request.user.teacherrequest_set.all()
-    try : 
         studentRequestsToMe = request.user.teacher.teacherrequest_set.all()
+        for teacherRequest in studentRequestsToMe :
+            teacherRequest.comment = teacherRequest.comment.replace('\r', '</br>').replace('\n','')
     except ObjectDoesNotExist : 
         studentRequestsToMe = []
     try : 
         students = request.user.student_set.all()
+        for student in students :
+            for studentRequest in student.studentrequest_set.all() :
+                studentRequest.comment = studentRequest.comment.replace('\r', '</br>').replace('\n','')
+
     except ObjectDoesNotExist : 
         students = []
     
-    return render_to_response('receiveList.html', RequestContext(request, {'studentRequests' : studentRequests, 'teacherRequests' : teacherRequests, 'studentRequestsToMe' : studentRequestsToMe, 'students' : students}))
+    return render_to_response('receiveList.html', RequestContext(request, {'studentRequestsToMe' : studentRequestsToMe, 'students' : students}))
 
 
 #Account Setting
@@ -204,7 +204,7 @@ def teacher_register_page(request):
             sex = 0
         else :
             sex = 1
-
+        
         teacher = Teacher.objects.create_teacher(
             name = request.POST['name'],
             highschool = request.POST['highschool'],
@@ -217,6 +217,11 @@ def teacher_register_page(request):
             tutorType = request.POST['tutorTypeIdx'],
             user = request.user
             )
+        
+        # add in TeacherGroup 
+        g = Group.objects.get_or_create(name='Teacher')[0]
+        request.user.groups.add(g)
+        g.save()
 
         return HttpResponseRedirect('/')
 
@@ -237,6 +242,11 @@ def student_register_page(request):
             comment = request.POST['comment'],
             user = request.user
             )
+
+        # add in StudentGroup 
+        g = Group.objects.get_or_create(name='Student')[0]
+        request.user.groups.add(g)
+        g.save()
         
         return HttpResponseRedirect('/')
 
@@ -290,7 +300,7 @@ def student_request_page(request):
                 student = student,
                 teacher = request.user.teacher,
                 comment = request.POST['comment'],
-                permission = False)
+                permission = 0)
         else :
             studentRequest = StudentRequest.objects.get(student=student, teacher=request.user.teacher)
             studentRequest.delete()
@@ -298,4 +308,30 @@ def student_request_page(request):
         return HttpResponseRedirect('/student')
     else :
         return HttpResponseRedirect('/student')
+
+
+def teacher_request_permission(request):
+    if request.method == 'POST' : 
+        student = User.objects.get(id__exact=request.POST['studentID'])
+        teacherRequest = TeacherRequest.objects.get(teacher=request.user.teacher, student=student)
+        teacherRequest.permission = request.POST['permission']
+        teacherRequest.save()
+        return HttpResponseRedirect('/receiveList')
+
+def student_request_permission(request):
+    if request.method == 'POST' : 
+        student = Student.objects.get(id__exact=request.POST['userStudentID'])
+        teacher = Teacher.objects.get(id__exact=request.POST['teacherID'])
+        studentRequest = StudentRequest.objects.get(student=student, teacher=teacher)
+        studentRequest.permission = request.POST['permission']
+        studentRequest.save()
+        return HttpResponseRedirect('/receiveList')
+
+
+# Lecture Creation
+#def lecture_creation(request):
+#    return HttpResponseRidirect('/')
+        
+        
+    
 
