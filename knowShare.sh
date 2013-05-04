@@ -2,7 +2,7 @@
 case "$1" in 
     start)
 	echo "=========================================Starting knowSharePid Server============================================"
-	nohup python manage.py runserver 0.0.0.0:9000 &
+	nohup python manage.py runserver 0.0.0.0:80 &
 	LASTPID=$!
 	echo $LASTPID > knowShare.pid
     ;;
