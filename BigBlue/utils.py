@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.conf import settings 
 from hashlib import sha1
 
