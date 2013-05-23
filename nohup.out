@@ -11864,3 +11864,45 @@ Quit the server with CONTROL-C.
 [03/May/2013 23:57:59] "GET /contact/favicon.ico HTTP/1.1" 404 4933
 [03/May/2013 23:58:01] "GET /teacher/ HTTP/1.1" 200 17632
 [03/May/2013 23:58:02] "GET /teacher/favicon.ico HTTP/1.1" 404 4933
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowledgeShare/urls.py", line 4, in <module>
+    from BigBlue.views import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/views.py", line 2, in <module>
+    from BigBlue.utils import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/utils.py", line 1
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+[23/May/2013 08:32:43] "GET /teacher/ HTTP/1.1" 500 104231
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowledgeShare/urls.py", line 4, in <module>
+    from BigBlue.views import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/views.py", line 2, in <module>
+    from BigBlue.utils import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/utils.py", line 1
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+[23/May/2013 08:33:32] "GET /teacher/ HTTP/1.1" 500 104177
