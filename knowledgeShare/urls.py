@@ -1,6 +1,8 @@
 from django.conf.urls import patterns, include, url
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from knowShareWeb.views import * 
+from BigBlue.views import *
+from django.views.generic import RedirectView
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -45,6 +47,10 @@ urlpatterns = patterns('',
     url(r'^teacherRequestPermission/$', teacher_request_permission),
     url(r'^studentRequestPermission/$', student_request_permission),
 
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico', permanent=False)),
+
+    # BigBlue
+    url(r'^meeting/$', create_meeting),
 )
 
 urlpatterns += staticfiles_urlpatterns()

@@ -73,7 +73,8 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 #    "/Users/leejaehoon/Documents/KnowShare/knowledgeShare/knowShareWeb/templates",
-    "/root/knowledgeShare/knowShareWeb/templates",
+    "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/templates/",
+#    "/root/knowledgeShare/knowShareWeb/templates",
 )
 
 # List of finder classes that know how to find static files in
@@ -113,7 +114,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/root/knowledgeShare/knowShareWeb/templates",
+    # "/root/knowledgeShare/knowShareWeb/templates",
+    "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/templates/",
 )
 
 INSTALLED_APPS = (
@@ -128,6 +130,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'knowShareWeb',
+    'BigBlue',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -158,3 +161,6 @@ LOGGING = {
         },
     }
 }
+
+#BigBlueButton
+SALT = "60d5c3bfee287b3417a011f31d16a7f7"

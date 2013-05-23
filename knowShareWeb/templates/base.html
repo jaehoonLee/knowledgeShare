@@ -6,6 +6,7 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="{{STATIC_URL}}bootstrap/js/bootstrap.min.js"></script>
     <link href="{{STATIC_URL}}bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
     <style type="text/css">
         .container {
         margin: 0 auto;
@@ -32,6 +33,15 @@
 
     {% block css %}{% endblock %}
     </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40618727-1', 'studygate.co.kr');
+      ga('send', 'pageview');
+    </script>
     <script type="text/javascript">
     function RegistrationSubmit()
     {
@@ -136,7 +146,7 @@
 <body>
     <div class="container">
     <div class="masthead">
-        <h2 class="muted">StudyGate</h2>
+        <h2 class="muted">StudyGate Beta</h2>
         <div class="navbar">
           <div class="navbar-inner">
             <div class="container">
@@ -149,6 +159,24 @@
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/contact">고객센터</a></li>
 		  </ul>
 		</li>
+		<li id="LectureSubmit" class="dropdown">
+		  <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">수업신청</a>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+		    {% if user.username %}
+		    {% if isStudent %}
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacher">선생님께 수업신청</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/studentSubmit">수업신청 올리기</a></li>
+		    {% endif %}
+		    {% if isTeacher %}
+ 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacher">선생님 리스트</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/student">학생에게 수업제안</a></li>
+		    {% endif %}
+		    {% else %}
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacher">선생님 리스트</a></li>
+		    {% endif %} 
+		  </ul>
+		</li>
+		<!--
 		<li id="Teacher" class="dropdown">
 		  <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">선생님</a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
@@ -163,11 +191,14 @@
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/studentSubmit">수업 신청</a></li>
 		  </ul>
 		</li>
- 		<li id="Lecture" class="dropdown">
-		  <a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">강의실</a>
+		-->
+		<li id="Lecture" class="dropdown">
+		  <a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">강의실</a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/lecture">수업 강의실</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/lecture">나의 강의실</a></li>
+		    {% if isTeacher %}
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/lectureSubmit">강의실 신청</a></li>
+		    {% endif %}
 		    <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="/student">문제풀이 오피스</a></li>-->
 		  </ul>
 		</li>
