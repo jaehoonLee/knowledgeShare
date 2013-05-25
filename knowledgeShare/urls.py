@@ -51,6 +51,7 @@ urlpatterns = patterns('',
 
     # BigBlue
     url(r'^meeting/$', create_meeting),
+    url(r'^join/$', join_meeting),
 )
 
 urlpatterns += staticfiles_urlpatterns()
