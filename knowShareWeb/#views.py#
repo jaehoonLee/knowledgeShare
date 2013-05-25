@@ -125,6 +125,7 @@ def submit_list_page(request):
     teacherRequests = request.user.teacherrequest_set.all()
     for teacherRequest in teacherRequests :
         teacherRequest.comment = teacherRequest.comment.replace('\r', '</br>').replace('\n','')
+        print teacherRequest.comment
     try : 
         students = request.user.student_set.all()
     except ObjectDoesNotExist : 

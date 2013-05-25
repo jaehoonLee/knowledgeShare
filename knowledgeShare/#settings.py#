@@ -128,7 +128,6 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'knowShareWeb',
-    'BigBlue',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -159,6 +158,3 @@ LOGGING = {
         },
     }
 }
-
-#BigBlueButton
-SALT = "60d5c3bfee287b3417a011f31d16a7f7"
