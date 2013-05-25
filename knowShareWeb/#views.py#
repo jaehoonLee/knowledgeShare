@@ -3,19 +3,20 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import Context, RequestContext 
 from django.shortcuts import render_to_response
 from django.contrib import auth
-from django.contrib.auth import *
+3from django.contrib.auth import *
 from django.contrib.auth.models import *
 from django.views.decorators.csrf import csrf_exempt
 from django.core.exceptions import *
 from knowShareWeb.forms import * 
 from knowShareWeb.models import *
+from knowShareWeb.utils import *
 
 #HTML ACCESS
 def main_page(request):
-    return render_to_response('index.html', RequestContext(request))
+    return render_to_response('index.html', RequestContext(request, permission(request)))
 
 def howto_page(request):
-    return render_to_response('howto.html', RequestContext(request))
+    return render_to_response('howto.html', RequestContext(request, permission(request)))
 
 def teacher_page(request):
     isInGroup = False
@@ -37,66 +38,79 @@ def teacher_page(request):
         
     if request.user.is_authenticated() == True : 
         teacherRequests = request.user.teacherrequest_set.all()
-        return render_to_response('teacher.html', RequestContext(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests, 'teacherUserRels' : teacherUserRels, "user" : request.user}))
+
+        return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests, 'teacherUserRels' : teacherUserRels, "user" : request.user})))
     else :
-        return render_to_response('teacher.html', RequestContext(request, {'isInGroup' : isInGroup, 'teachers' : teachers}))
+        return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'isInGroup' : isInGroup, 'teachers' : teachers})))
 
 def teacherSubmit_page(request):
     if request.user.is_authenticated() == False:
-        return render_to_response('teacherSubmit.html', RequestContext(request,{'Confirmed' : 0}))
+        return render_to_response('teacherSubmit.html', RequestContext(request, addPerm(request, {'Confirmed' : 0})))
 
     try :
         request.user.teacher
     except ObjectDoesNotExist :
-        return render_to_response('teacherSubmit.html', RequestContext(request))
+        return render_to_response('teacherSubmit.html', RequestContext(request, permission(request)))
 
-    return render_to_response('teacherSubmit.html', RequestContext(request, {'Confirmed' : 1, 'name' : request.user.teacher.name}))
+    return render_to_response('teacherSubmit.html', RequestContext(request, addPerm(request, {'Confirmed' : 1, 'name' : request.user.teacher.name})))
 
 def student_page(request):
     students = Student.objects.all()
+    studentreq = []
+
     if request.user.is_authenticated() == True : 
         studentRequests = []
         try : 
             studentRequests = request.user.teacher.studentrequest_set.all()
         except ObjectDoesNotExist : 
-            return render_to_response('student.html', RequestContext(request, {'students' : students}))
+            return render_to_response('student.html', RequestContext(request, addPerm(request, {'students' : students})))
 
-        return render_to_response('student.html', RequestContext(request, {'students' : students, 'user' : request.user, 'studentRequests' : studentRequests}))
+        for student in students : 
+            exist = False
+            for studentRequest in studentRequests : 
+                if(student.id == studentRequest.student.id) :
+                    studentreq.append(True)
+                    exist = True
+                    
+            if exist == False :
+                studentreq.append(False)
+
+        return render_to_response('student.html', RequestContext(request, addPerm(request, {'students' : students, 'user' : request.user, 'studentreq' : studentreq})))
     else :
-        return render_to_response('student.html', RequestContext(request, {'students' : students}))
+        return render_to_response('student.html', RequestContext(request, addPerm(request, {'students' : students})))
 
 def studentSubmit_page(request):
     if request.user.is_authenticated() == False:
-        return render_to_response('studentSubmit.html', RequestContext(request,{'Confirmed' : 0}))
+        return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'Confirmed' : 0})))
 
-    return render_to_response('studentSubmit.html', RequestContext(request))
+    return render_to_response('studentSubmit.html', RequestContext(request, permission(request)))
 
 def lecture_page(request):
     #lectures = None
     if request.user.is_authenticated() == False:
-            return render_to_response('lecture.html', RequestContext(request, {'Confirmed' : 0 }))
+            return render_to_response('lecture.html', RequestContext(request, addPerm(request,{'Confirmed' : 0 })))
     try : 
         lectures = request.user.teacher.lecture_set.all()
-        return render_to_response('lecture.html', RequestContext(request, {'lectures' : lectures}))
+        return render_to_response('lecture.html', RequestContext(request, addPerm(request,{'lectures' : lectures})))
     except ObjectDoesNotExist :
-        return render_to_response('lecture.html', RequestContext(request))
+        return render_to_response('lecture.html', RequestContext(request, permission(request)))
 
 def lectureSubmit_page(request):
     if request.user.is_authenticated() == False:
-        return render_to_response('lectureSubmit.html', RequestContext(request, {'months' : range(1, 12), 'Confirmed' : 0}))
+        return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request, {'months' : range(1, 12), 'Confirmed' : 0})))
 
     #Teacher Attribute Check 
     try :
         request.user.teacher 
     except ObjectDoesNotExist :
-        return render_to_response('lectureSubmit.html', RequestContext(request, {'months' : range(1, 13), 'Confirmed' : 1}))
+        return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 1})))
 
     studentID = request.GET.get('studentID', '')
 
-    return render_to_response('lectureSubmit.html', RequestContext(request, {'months' : range(1, 13), 'Confirmed' : 2, 'studentID' : studentID}))       
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'studentID' : studentID})))
 
 def contact_page(request):
-    return render_to_response('contact.html', RequestContext(request))
+    return render_to_response('contact.html', RequestContext(request, permission(request)))
 
 def my_profile_page(request):
     isTeacher = False
@@ -111,7 +125,7 @@ def my_profile_page(request):
             isStudent = True
 
 
-    return render_to_response('myProfile.html', RequestContext(request, {'user' : request.user, 'isTeacher' : isTeacher, 'isStudent' : isStudent, 'careers' : careers }))
+    return render_to_response('myProfile.html', RequestContext(request, addPerm(request,{'user' : request.user, 'isTeacher' : isTeacher, 'isStudent' : isStudent, 'careers' : careers })))
 
 def submit_list_page(request):
     studentRequests = None
@@ -125,13 +139,12 @@ def submit_list_page(request):
     teacherRequests = request.user.teacherrequest_set.all()
     for teacherRequest in teacherRequests :
         teacherRequest.comment = teacherRequest.comment.replace('\r', '</br>').replace('\n','')
-        print teacherRequest.comment
     try : 
         students = request.user.student_set.all()
     except ObjectDoesNotExist : 
         students = []
     
-    return render_to_response('submitList.html', RequestContext(request, {'studentRequests' : studentRequests, 'teacherRequests' : teacherRequests}))
+    return render_to_response('submitList.html', RequestContext(request, addPerm(request,{'studentRequests' : studentRequests, 'teacherRequests' : teacherRequests})))
 
 def receive_list_page(request):
     studentRequestsToMe = None
@@ -151,7 +164,7 @@ def receive_list_page(request):
     except ObjectDoesNotExist : 
         students = []
     
-    return render_to_response('receiveList.html', RequestContext(request, {'studentRequestsToMe' : studentRequestsToMe, 'students' : students}))
+    return render_to_response('receiveList.html', RequestContext(request, addPerm(request, {'studentRequestsToMe' : studentRequestsToMe, 'students' : students})))
 
 
 #Account Setting
@@ -164,9 +177,9 @@ def login_page(request):
                 auth.login(request, user)
             return HttpResponseRedirect('/')
         else:
-            return render_to_response('index.html', RequestContext(request, {'loginerror' : True, 'login' : True}))
+            return render_to_response('index.html', RequestContext(request, addPerm(request,{'loginerror' : True, 'login' : True})))
     else:
-        return render_to_response('index.html', RequestContext(request, {'loginerror' : False, 'login' : True}))
+        return render_to_response('index.html', RequestContext(request, addPerm(request,{'loginerror' : False, 'login' : True})))
     
 
 def logout_page(request):
@@ -189,7 +202,7 @@ def register_page(request):
 
           return HttpResponseRedirect('/')
        else :
-          return render_to_response('index.html', RequestContext(request, {'signuperror' : True, 'signup' : True}))
+          return render_to_response('index.html', RequestContext(request, addPerm(request,{'signuperror' : True, 'signup' : True})))
     else :
         return HttpResponseRedirect('/studentSubmit')
     
@@ -256,7 +269,7 @@ def lecture_register_page(request):
         try : 
             student =  Student.objects.get(id__exact=request.POST['sid'])
         except : 
-            return render_to_response('lectureSubmit.html', RequestContext(request, {'error' : True, 'months' : range(1,13)}))
+            return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request, {'error' : True, 'months' : range(1,13)})))
         
 
         lecture = Lecture.objects.create_lecture(
@@ -270,7 +283,7 @@ def lecture_register_page(request):
 
         return HttpResponseRedirect('/')
     else :
-        return render_to_response('lectureSubmit.html', RequestContext(request, {'months' : range(1,13)}));
+        return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1,13)})))
 
 # Request
 def teacher_request_page(request):

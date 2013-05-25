@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load knowShareCustomFilter %}
 {% block title %}수업 리스트{% endblock %}>
 {% block css %}
 .studentInfo{ margin : 0 20px 0 0;}
@@ -96,16 +97,10 @@
           </p>
           <p>
 	    <a href="javascript:showProfile('{{student.name}}', '{{student.grade}}', '{{student.sex}}', '{{student.money}}', '{{student.tutorTime}}', '{{student.comment}}')" class="btn">상세 프로필</a>
-	    {% if user.username %}
+	    {% if user.username %} 
 	    {% if student.user.id != user.id %}
-	    {% if studentRequests|length != 0 %}
-	    {% for studentRequest in studentRequests %}
-	    {% if student.id != studentRequest.student.id %}
-	    <a href="javascript:showRequest('{{student.name}}', {{student.id}})" class="btn btn-info">수업 신청</a>
-	    {% else %}
+	    {% if studentreq|lookupfor:forloop.counter  %}
 	    <a href="javascript:cancelRequest('{{student.name}}', {{student.id}})" class="btn btn-danger">수업 취소</a>
-	    {% endif %}
-	    {% endfor %}
 	    {% else %}
 	    <a href="javascript:showRequest('{{student.name}}', {{student.id}})" class="btn btn-info">수업 신청</a>
 	    {% endif %}

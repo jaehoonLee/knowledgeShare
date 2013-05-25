@@ -7,7 +7,7 @@ case "$1" in
     ;;
     stop)
 	echo "=========================================Stoping knowSharePid Server============================================"
-	KNOWSHAREPID=$(cat /root/knowledgeShare/knowShare.pid)
+	KNOWSHAREPID=$(cat /Users/leejaehoon/Documents/Development/knowledgeShare/knowShare.pid)
 	echo $KNOWSHAREPID
 	pkill -9 -P $KNOWSHAREPID
     ;;

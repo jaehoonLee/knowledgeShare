@@ -6,4 +6,3 @@ from django.http import HttpResponseRedirect
 def create_meeting(request):
     print checksum('create', 'createName=Test')
     return HttpResponseRedirect('http://1.226.82.11:8002/bigbluebutton/api/create')
-    

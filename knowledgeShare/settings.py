@@ -73,7 +73,8 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 #    "/Users/leejaehoon/Documents/KnowShare/knowledgeShare/knowShareWeb/templates",
-    "/root/knowledgeShare/knowShareWeb/templates",
+    "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/templates/",
+#    "/root/knowledgeShare/knowShareWeb/templates",
 )
 
 # List of finder classes that know how to find static files in
@@ -113,7 +114,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/root/knowledgeShare/knowShareWeb/templates",
+    # "/root/knowledgeShare/knowShareWeb/templates",
+    "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/templates/",
 )
 
 INSTALLED_APPS = (

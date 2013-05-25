@@ -159,6 +159,24 @@
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/contact">고객센터</a></li>
 		  </ul>
 		</li>
+		<li id="LectureSubmit" class="dropdown">
+		  <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">수업신청</a>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+		    {% if user.username %}
+		    {% if isStudent %}
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacher">선생님께 수업신청</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/studentSubmit">수업신청 올리기</a></li>
+		    {% endif %}
+		    {% if isTeacher %}
+ 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacher">선생님 리스트</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/student">학생에게 수업제안</a></li>
+		    {% endif %}
+		    {% else %}
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacher">선생님 리스트</a></li>
+		    {% endif %} 
+		  </ul>
+		</li>
+		<!--
 		<li id="Teacher" class="dropdown">
 		  <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">선생님</a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
@@ -173,11 +191,14 @@
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/studentSubmit">수업 신청</a></li>
 		  </ul>
 		</li>
- 		<li id="Lecture" class="dropdown">
-		  <a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">강의실</a>
+		-->
+		<li id="Lecture" class="dropdown">
+		  <a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">강의실</a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/lecture">수업 강의실</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/lecture">나의 강의실</a></li>
+		    {% if isTeacher %}
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/lectureSubmit">강의실 신청</a></li>
+		    {% endif %}
 		    <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="/student">문제풀이 오피스</a></li>-->
 		  </ul>
 		</li>
