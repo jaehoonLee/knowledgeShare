@@ -31,28 +31,33 @@ width:785px;
 function StudentSubmit()
 {
 var gradeIdx = $("#grade option").index($("#grade option:selected"));
-var tutorTimeIdx = $("#tutorTime option").index($("#tutorTime option:selected"));
-
 var gradeInput = $("<input>").attr("type", "hidden").attr("name", "gradeIdx").val(gradeIdx);
-var tutorTimeInput = $("<input>").attr("type", "hidden").attr("name", "tutorTimeIdx").val(tutorTimeIdx);
 
 $(".studentForm").append($(gradeInput));
-$(".studentForm").append($(tutorTimeInput));
 document.StudentSubmitForm.submit();
+}
+
+function StudentLectureOffer()
+{
+var tutorTimeIdx = $("#tutorTime option").index($("#tutorTime option:selected"));
+var tutorTimeInput = $("<input>").attr("type", "hidden").attr("name", "tutorTimeIdx").val(tutorTimeIdx);
+
+$(".studentForm").append($(tutorTimeInput));
+document.StudentLectureOfferForm.submit();
 }
 
 {% endblock %}        
 {% block mainnav %}
 {% endblock %}
 {% block content %}   
-<h3>수업 신청</h3>
 {% if Confirmed == 0 %}
 <p>
   로그인을 하셔야 신청이 가능하십니다.
 </p>
 {% else %}
+<h3>학생 프로필 등록</h3>
 <p>
-StudyGate에 수업을 신청할 수 있습니다. 선생님들이 수업리스트를 보고 수업에 참여할 것입니다.
+선생님이 알아야 할 학생 정보 입력을 부탁드립니다.
 </p>
 <legend></legend>
 <form method="POST" class="studentForm" name="StudentSubmitForm" action="/studentRegister/"> {% csrf_token %}
@@ -77,30 +82,62 @@ StudyGate에 수업을 신청할 수 있습니다. 선생님들이 수업리스�
       <option> 고등학생 2학년</option>
     </select>
   </div>
+  <button style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentSubmit();">신청하기</button>
+</form>
+<legend></legend>
+<h3>수업 신청</h3>
+<p>
+StudyGate에 수업을 신청할 수 있습니다. 선생님들이 수업리스트를 보고 수업에 참여할 것입니다.
+</p>
+<legend></legend>
+<form method="POST" class="studentForm" name="StudentLectureOfferForm" action="/studentLectureOffer/"> {% csrf_token %}
   <div>
     <div style="float:left;">
       <label class="control-label title leftTitle">과외비용</label>
-      <input name="money" class="tutorMethod" type="text" id="money" placeholder="Price">
+      <input style="width:100px;" name="money" class="tutorMethod" type="text" id="money" placeholder="Price">
     </div>
-    <div class="leftFloat">
-      <label class="control-label title">과외횟수</label>
-      <select id="tutorTime" name="tutorTime" class="tutorMethod">
-	<option> 주 1회 1시간</option>
-	<option> 주 2회 1시간</option>
-	<option> 주 1회 2시간</option>
-	<option> 주 2회 2시간</option>
-	<option> 기타</option>
-      </select>
-    </div>
+    <label style="margin-left:20px;" class="control-label title">과외횟수</label>
+    <select style="float:left; width:150px;"id="tutorTime" name="tutorTime" class="tutorMethod">
+      <option> 주 1회 1시간</option>
+      <option> 주 2회 1시간</option>
+      <option> 주 1회 2시간</option>
+      <option> 주 2회 2시간</option>
+      <option> 기타</option>
+    </select>
+    <label style="margin-left:20px;"class="control-label title">과목</label>
+    <select style="width:100px" id="tutorTime" name="tutorTime" class="tutorMethod">
+      <option> 국어</option>
+      <option> 영어</option>
+      <option> 수학</option>
+      <option> 과학</option>
+      <option> 사회</option>
+    </select>
     <div class="comment">
       <label class="control-label">학생관련 코멘트</label>
       <textarea name="comment" rows="7"></textarea>
     </div>
-    <button style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentSubmit();">신청하기</button>
+    <button style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentLectureOffer();">신청하기</button>
   </div>
 </form>
 <legend></legend>
 {% endif %} 
+<h3>신청한 수업 리스트</h3>
+<table class="table">
+  <thead>
+    <tr><th>신청한 수업</th></tr>
+  </thead>
+  <tbody>
+    {% for student in studentLectureOffers %}
+    <tr class="body">
+      <td>수학</td>
+      <td>{{student.money}}</td>
+      <td>{{student.tutorTime}}</td>
+      <td>{{student.comment}}</td>
+      <td><button class="btn">강의실입장</button></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 <div class="footer">
   <p>&copy; KnowledgeShare 2013</p>
 </div>

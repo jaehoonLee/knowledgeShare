@@ -10,6 +10,19 @@ class TeacherManager(models.Manager):
         teacher.save()
         return teacher 
 
+    def change_teacher(self, id, name, highschool, university, age, sex, career, money, tutorTime, tutorType):
+        teacher =  self.get(id=id)
+        teacher.name = name
+        teacher.highschool = highschool
+        teacher.university = university
+        teacher.age = age
+        teacher.sex = sex
+        teacher.career = career
+        teacher.money = money
+        teacher.tutorTime = tutorTime
+        teacher.tutorType = tutorType
+        teacher.save()
+        return teacher
 
 class Teacher(models.Model):
     name = models.CharField(max_length = 30)
@@ -32,8 +45,8 @@ admin.site.register(Teacher, TeacherAdmin)
 
 
 class StudentManager(models.Manager):
-    def create_student(self, name, grade, sex, money, tutorTime, comment, user):
-        student = self.model(name=name, grade=grade, sex=sex, money=money, tutorTime=tutorTime, comment=comment, user=user)
+    def create_student(self, name, grade, sex, user):
+        student = self.model(name=name, grade=grade, sex=sex)
         student.user = user
         student.save()
         return student
@@ -42,18 +55,35 @@ class Student(models.Model):
     name = models.CharField(max_length = 30)
     grade = models.IntegerField()
     sex = models.IntegerField()
-    money = models.IntegerField()
-    tutorTime = models.IntegerField()
-    comment = models.TextField()
-    user = models.ForeignKey(User)
+    user = models.OneToOneField(User, null=True)
     objects = StudentManager()
 
 class StudentAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'grade', 'sex', 'money', 'tutorTime', 'comment', 'get_user')
+    list_display = ('id', 'name', 'grade', 'sex', 'get_user')
     def get_user(self, obj):
         return obj.user.username
 admin.site.register(Student, StudentAdmin)
 
+
+class StudentLectureOfferManager(models.Manager):
+    def create(self, money, tutorTime, comment, user):
+        studentLectureOffer = self.model(money=money, tutorTime=tutorTime, comment=comment)
+        studentLectureOffer.user = user 
+        studentLectureOffer.save()
+        return studentLectureOffer;
+
+class StudentLectureOffer(models.Model):
+    money = models.IntegerField()
+    tutorTime = models.IntegerField()
+    comment = models.TextField()
+    user = models.ForeignKey(User)
+    objects = StudentLectureOfferManager()
+
+class StudentLectureOfferAdmin(admin.ModelAdmin):    
+    list_display = ('id', 'get_user', 'money', 'tutorTime', 'comment')
+    def get_user(self, obj):
+        return obj.user.username
+admin.site.register(StudentLectureOffer, StudentLectureOfferAdmin)
 
 class LectureManager(models.Manager):
     def create_lecture(self, teacher, student, startDate, endDate, totalTime, spentTime):

@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     url(r'^howto/', howto_page),
     url(r'^teacher/$', teacher_page),
     url(r'^teacherSubmit/$', teacherSubmit_page),
+    url(r'^teacherInfoChange/$', teacherInfoChange_page),                    
     url(r'^student/$', student_page),
     url(r'^studentSubmit/$', studentSubmit_page),
     url(r'^lecture/$', lecture_page),
@@ -37,8 +38,10 @@ urlpatterns = patterns('',
 
     # Register
     url(r'^teacherRegister/$', teacher_register_page),
+    url(r'^teacherProfileChange/$', teacher_profile_change_page),
     url(r'^studentRegister/$', student_register_page),
     url(r'^lectureRegister/$', lecture_register_page),
+    url(r'^studentLectureOffer/$', student_lecture_offer_page),
                        
     # Request
     url(r'^teacherRequest/$', teacher_request_page),

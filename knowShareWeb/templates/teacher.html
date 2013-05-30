@@ -103,6 +103,17 @@
 {% endblock %}
 {% block content %}    
 <div class="row-fluid">
+  {% if isTeacher %}
+  <div style="width:940px; height:40px;">
+    {% if user.teacher %}
+    <a href="/teacherInfoChange" class="btn btn-info">선생님 정보 변경하기</a>
+    * 선생님 프로필 정보를 변경하실 수 있습니다.
+    {% else %}
+    <a href="/teacherSubmit" class="btn btn-info">선생님 등록하기</a>
+    * 선생님으로 등록하시면 학생들에게 과외 신청을 받으실 수 있습니다.
+    {% endif %}
+  </div>
+  {% endif %}
   {% for teacher in teachers %}
   <ul class="thumbnails">
     <li class="span4 {% if forloop.counter|divisibleby:"3" %} {% else %}teacherInfo{% endif %}">
@@ -119,7 +130,8 @@
           <p>
 	    <a href="javascript:showProfile('{{teacher.name}}', '{{teacher.highschool}}', '{{teacher.university}}', '{{teacher.age}}', '{{teacher.sex}}', '{{teacher.career}}', '{{teacher.money}}', '{{teacher.tutorTime}}', '{{teacher.tutorType}}')" class="btn">상세 프로필</a>
 	    {% if user.username %}
-	    {% if teacher.user.id != user.id %}
+	    <!--{% if teacher.user.id != user.id %}-->
+	    {% if isTeacher == False %}
 	    {% if teacherRequests|length != 0 %}
 	    {% if teacherUserRels|lookupfor:forloop.counter == False %}
 	    <a href="javascript:showRequest('{{teacher.name}}', '{{teacher.id}}')" class="btn btn-info">수강 신청</a>
@@ -130,6 +142,7 @@
 	    <a href="javascript:showRequest('{{teacher.name}}', '{{teacher.id}}')" class="btn btn-info">수강 신청</a>
 	    {% endif %}
 	    {% endif %}
+	    <!--{% endif %}-->
 	    {% endif %}
 	  </p>
         </div>

@@ -54,6 +54,18 @@ def teacherSubmit_page(request):
 
     return render_to_response('teacherSubmit.html', RequestContext(request, addPerm(request, {'Confirmed' : 1, 'name' : request.user.teacher.name})))
 
+def teacherInfoChange_page(request):
+    Teacher = None
+    if request.user.is_authenticated() == False:
+        return render_to_response('teacherInfoChange.html', RequestContext(request, addPerm(request, {'Confirmed' : 0})))
+
+    try :
+        Teacher = request.user.teacher
+    except ObjectDoesNotExist :
+        return render_to_response('teacherInfoChange.html', RequestContext(request, permission(request)))
+
+    return render_to_response('teacherInfoChange.html', RequestContext(request, addPerm(request, {'name' : Teacher.name, 'age' : Teacher.age, 'highschool' : Teacher.highschool, 'university' : Teacher.university, 'age' : Teacher.age, 'sex' : Teacher.sex, 'career' : Teacher.career, 'money' : Teacher.money, 'tutorTime' : Teacher.tutorTime, 'tutorType' : Teacher.tutorType})))
+
 def student_page(request):
     students = Student.objects.all()
     studentreq = []
@@ -80,10 +92,17 @@ def student_page(request):
         return render_to_response('student.html', RequestContext(request, addPerm(request, {'students' : students})))
 
 def studentSubmit_page(request):
+    studentLectureOffers = []
+
     if request.user.is_authenticated() == False:
         return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'Confirmed' : 0})))
 
-    return render_to_response('studentSubmit.html', RequestContext(request, permission(request)))
+    try:
+        studentLectureOffers = request.user.studentlectureoffer_set.all()
+    except :
+        return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers})))
+
+    return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers})))
 
 def lecture_page(request):
     #lectures = None
@@ -238,6 +257,30 @@ def teacher_register_page(request):
 
         return HttpResponseRedirect('/')
 
+def teacher_profile_change_page(request):
+    if request.method == 'POST' : 
+        sex = 0
+        if request.POST['sex'] == 'male':
+            sex = 0
+        else :
+            sex = 1
+
+        teacher = Teacher.objects.change_teacher(
+            id = request.user.teacher.id,
+            name = request.POST['name'],
+            highschool = request.POST['highschool'],
+            university = request.POST['university'],
+            age = request.POST['age'],
+            sex = sex,
+            career = request.POST['career'],
+            money = request.POST['money'],
+            tutorTime = request.POST['tutorTimeIdx'],
+            tutorType = request.POST['tutorTypeIdx']
+        )
+        return HttpResponseRedirect('/teacher')
+
+
+
 def student_register_page(request):
     if request.method == 'POST' :        
         sex = 0
@@ -250,9 +293,6 @@ def student_register_page(request):
             name = request.POST['name'],
             grade = request.POST['gradeIdx'],
             sex = sex,
-            money = request.POST['money'],
-            tutorTime = request.POST['tutorTimeIdx'],
-            comment = request.POST['comment'],
             user = request.user
             )
 
@@ -261,7 +301,19 @@ def student_register_page(request):
         request.user.groups.add(g)
         g.save()
         
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/studentSubmit')
+
+def student_lecture_offer_page(request):
+    if request.method == 'POST' :        
+        
+        studentLectureOffer = Studentlectureoffer.Objects.create(
+            money = request.POST['money'],
+            tutorTime = request.POST['tutorTimeIdx'],
+            comment = request.POST['comment'],
+            user = request.user
+            )
+        
+        return HttpResponseRedirect('/studentSubmit')
 
 def lecture_register_page(request):
     if request.method == 'POST':
@@ -288,7 +340,6 @@ def lecture_register_page(request):
 # Request
 def teacher_request_page(request):
     if request.method == 'POST' :
-        print "request" + request.POST['teacherID']
         teacher = Teacher.objects.get(id__exact=request.POST['teacherID'])
         if int(request.POST['addErase']) == 1 :
             TeacherRequest.objects.create_teacher_request(
