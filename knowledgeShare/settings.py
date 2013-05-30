@@ -72,7 +72,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/Users/leejaehoon/Documents/Development/knowledgeShare_HELLO/knowShareWeb/templates/",
+    "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/templates/",
 #    "/root/knowledgeShare/knowShareWeb/templates",
 )
 
@@ -114,7 +114,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     # "/root/knowledgeShare/knowShareWeb/templates",
-    "/Users/leejaehoon/Documents/Development/knowledgeShare_HELLO/knowShareWeb/templates/",
+    "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/templates/",
 )
 
 INSTALLED_APPS = (
