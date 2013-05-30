@@ -10,6 +10,7 @@ from django.core.exceptions import *
 from knowShareWeb.forms import * 
 from knowShareWeb.models import *
 from knowShareWeb.utils import *
+from BigBlue.views import *
 
 #HTML ACCESS
 def main_page(request):
@@ -109,8 +110,14 @@ def lecture_page(request):
     if request.user.is_authenticated() == False:
             return render_to_response('lecture.html', RequestContext(request, addPerm(request,{'Confirmed' : 0 })))
     try : 
-        lectures = request.user.teacher.lecture_set.all()
-        return render_to_response('lecture.html', RequestContext(request, addPerm(request,{'lectures' : lectures})))
+        lectures = []
+        if isTeacher(request) : 
+            lectures = request.user.teacher.lecture_set.all()
+        else  : 
+            for student in request.user.student_set.all() : 
+                lectures.extend(student.lecture_set.all())                
+        runnings = isLectureRunning(['1'])
+        return render_to_response('lecture.html', RequestContext(request, addPerm(request,{'lectures' : lectures, 'runnings' : runnings})))
     except ObjectDoesNotExist :
         return render_to_response('lecture.html', RequestContext(request, permission(request)))
 
@@ -124,9 +131,16 @@ def lectureSubmit_page(request):
     except ObjectDoesNotExist :
         return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 1})))
 
-    studentID = request.GET.get('studentID', '')
-
-    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'studentID' : studentID})))
+    count = request.GET.get('count', 0)
+    students = []
+    studentID = None 
+    for i in range(0, int(count)) :  
+        studentID = request.GET.get('studentID', '')
+        student  = Student.objects.get(id__exact=int(studentID))
+        students.append(student)
+    
+    sets = [16, 32, 54, 64]
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'studentID' : studentID, 'sets' : sets, 'students' : students, 'count' : count})))
 
 def contact_page(request):
     return render_to_response('contact.html', RequestContext(request, permission(request)))
@@ -316,12 +330,13 @@ def student_lecture_offer_page(request):
         return HttpResponseRedirect('/studentSubmit')
 
 def lecture_register_page(request):
+    sets = [16, 32, 48, 64]
     if request.method == 'POST':
         student = None
         try : 
             student =  Student.objects.get(id__exact=request.POST['sid'])
         except : 
-            return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request, {'error' : True, 'months' : range(1,13)})))
+            return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request, {'error' : True, 'months' : range(1,13), 'sets' : sets})))
         
 
         lecture = Lecture.objects.create_lecture(
@@ -335,7 +350,7 @@ def lecture_register_page(request):
 
         return HttpResponseRedirect('/')
     else :
-        return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1,13)})))
+        return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1,13), 'sets' : sets})))
 
 # Request
 def teacher_request_page(request):
@@ -391,10 +406,6 @@ def student_request_permission(request):
         studentRequest.save()
         return HttpResponseRedirect('/receiveList')
 
-
-# Lecture Creation
-#def lecture_creation(request):
-#    return HttpResponseRidirect('/')
         
         
     
