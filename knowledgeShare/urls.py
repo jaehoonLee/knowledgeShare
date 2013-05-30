@@ -50,8 +50,13 @@ urlpatterns = patterns('',
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico', permanent=False)),
 
     # BigBlue
-    url(r'^meeting/$', create_meeting),
-    url(r'^join/$', join_meeting),
+    url(r'^createMeeting/$', create_meeting),
+    url(r'^endMeeting/$', end_meeting),
+    url(r'^joinMeeting/$', join_meeting),
+    url(r'^isMeetingRunning/$', isMeetingRunning),
+    url(r'^getMeetingInfo/$', getMeetingInfo),
+    url(r'^getMeetings/$', getMeetings),
+
 )
 
 urlpatterns += staticfiles_urlpatterns()
