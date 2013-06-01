@@ -69,26 +69,31 @@ def teacherInfoChange_page(request):
 
 def student_page(request):
     students = Student.objects.all()
+    studentLectureOffers = StudentLectureOffer.objects.all()
     studentreq = []
-
     if request.user.is_authenticated() == True : 
         studentRequests = []
+
         try : 
             studentRequests = request.user.teacher.studentrequest_set.all()
         except ObjectDoesNotExist : 
-            return render_to_response('student.html', RequestContext(request, addPerm(request, {'students' : students})))
+            for studentOffer in studentLectureOffers : 
+                print studentOffer.student.name
+                studentreq.append(False)
+            return render_to_response('student.html', RequestContext(request, addPerm(request, {'students' : studentLectureOffers, 'studentreq' : studentreq, 'user' : request.user})))
 
-        for student in students : 
+        for studentOffer in studentLectureOffers : 
             exist = False
             for studentRequest in studentRequests : 
-                if(student.id == studentRequest.student.id) :
+                if(studentOffer.student.id == studentRequest.student.id) :
                     studentreq.append(True)
                     exist = True
                     
             if exist == False :
                 studentreq.append(False)
 
-        return render_to_response('student.html', RequestContext(request, addPerm(request, {'students' : students, 'user' : request.user, 'studentreq' : studentreq})))
+
+        return render_to_response('student.html', RequestContext(request, addPerm(request, {'students' : studentLectureOffers, 'user' : request.user, 'studentreq' : studentreq})))
     else :
         return render_to_response('student.html', RequestContext(request, addPerm(request, {'students' : students})))
 
@@ -99,11 +104,12 @@ def studentSubmit_page(request):
         return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'Confirmed' : 0})))
 
     try:
-        studentLectureOffers = request.user.studentlectureoffer_set.all()
+        student = request.user.student;
+        studentLectureOffers = request.user.student.studentlectureoffer_set.all()
     except :
-        return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers})))
+        return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers, 'student' : student})))
 
-    return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers})))
+    return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers, 'student' : student})))
 
 def lecture_page(request):
     #lectures = None
@@ -134,31 +140,34 @@ def lectureSubmit_page(request):
     count = request.GET.get('count', 0)
     students = []
     studentID = None 
+    studentIDs = []
     for i in range(0, int(count)) :  
-        studentID = request.GET.get('studentID', '')
-        student  = Student.objects.get(id__exact=int(studentID))
+        sID = "studentID%02d" % (i+1)
+        studentID = request.GET.get(sID, '')
+        student  = Studen.objects.get(id__exact=int(studentID))
+        studentIDs.append(studentID)
         students.append(student)
     
     sets = [16, 32, 54, 64]
-    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'studentID' : studentID, 'sets' : sets, 'students' : students, 'count' : count})))
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'sets' : sets, 'students' : students, 'count' : count, 'studentIDs' : studentIDs})))
 
 def contact_page(request):
     return render_to_response('contact.html', RequestContext(request, permission(request)))
 
 def my_profile_page(request):
-    isTeacher = False
-    isStudent = False
+    isTeacherBool = False
+    isStudentBool = False
     careers = None
-    print request.user.student_set.all()
+    
     for group in request.user.groups.all():
-        if group.name == 'Teacher' :
-            isTeacher = True
+        if isTeacher(request) :
+            isTeacherBool = True
             careers =  request.user.teacher.career.split('\r')
-        elif group.name == 'Student' :
-            isStudent = True
+        elif isStudent(request):
+            isStudentBool = True
 
 
-    return render_to_response('myProfile.html', RequestContext(request, addPerm(request,{'user' : request.user, 'isTeacher' : isTeacher, 'isStudent' : isStudent, 'careers' : careers })))
+    return render_to_response('myProfile.html', RequestContext(request, addPerm(request,{'user' : request.user, 'isTeacher' : isTeacherBool, 'isStudent' : isStudentBool, 'careers' : careers })))
 
 def submit_list_page(request):
     studentRequests = None
@@ -166,7 +175,7 @@ def submit_list_page(request):
         studentRequests = request.user.teacher.studentrequest_set.all()
         for studentRequest in studentRequests :
             studentRequest.comment = studentRequest.comment.replace('\r', '</br>').replace('\n','')
-    except ObjectDoesNotExist : 
+    except : 
         studentRequests = []
 
     teacherRequests = request.user.teacherrequest_set.all()
@@ -174,7 +183,7 @@ def submit_list_page(request):
         teacherRequest.comment = teacherRequest.comment.replace('\r', '</br>').replace('\n','')
     try : 
         students = request.user.student_set.all()
-    except ObjectDoesNotExist : 
+    except : 
         students = []
     
     return render_to_response('submitList.html', RequestContext(request, addPerm(request,{'studentRequests' : studentRequests, 'teacherRequests' : teacherRequests})))
@@ -186,7 +195,7 @@ def receive_list_page(request):
         studentRequestsToMe = request.user.teacher.teacherrequest_set.all()
         for teacherRequest in studentRequestsToMe :
             teacherRequest.comment = teacherRequest.comment.replace('\r', '</br>').replace('\n','')
-    except ObjectDoesNotExist : 
+    except :
         studentRequestsToMe = []
     try : 
         students = request.user.student_set.all()
@@ -194,7 +203,7 @@ def receive_list_page(request):
             for studentRequest in student.studentrequest_set.all() :
                 studentRequest.comment = studentRequest.comment.replace('\r', '</br>').replace('\n','')
 
-    except ObjectDoesNotExist : 
+    except :
         students = []
     
     return render_to_response('receiveList.html', RequestContext(request, addPerm(request, {'studentRequestsToMe' : studentRequestsToMe, 'students' : students})))
@@ -320,11 +329,11 @@ def student_register_page(request):
 def student_lecture_offer_page(request):
     if request.method == 'POST' :        
         
-        studentLectureOffer = Studentlectureoffer.Objects.create(
+        studentLectureOffer = StudentLectureOffer.objects.create(
             money = request.POST['money'],
             tutorTime = request.POST['tutorTimeIdx'],
             comment = request.POST['comment'],
-            user = request.user
+            student = request.user.student
             )
         
         return HttpResponseRedirect('/studentSubmit')
@@ -336,7 +345,7 @@ def lecture_register_page(request):
         try : 
             student =  Student.objects.get(id__exact=request.POST['sid'])
         except : 
-            return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request, {'error' : True, 'months' : range(1,13), 'sets' : sets})))
+            return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request, {'error' : True, 'sets' : sets})))
         
 
         lecture = Lecture.objects.create_lecture(
@@ -350,7 +359,7 @@ def lecture_register_page(request):
 
         return HttpResponseRedirect('/')
     else :
-        return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1,13), 'sets' : sets})))
+        return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'sets' : sets})))
 
 # Request
 def teacher_request_page(request):

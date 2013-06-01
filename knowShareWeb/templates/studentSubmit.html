@@ -23,6 +23,18 @@ padding-left:20px;
 {
 width:785px;
 }
+
+.studentReqTable tr
+{
+background-color : #DFDFDF;
+
+}
+
+.head
+{
+
+height:10px;
+}
 {% endblock %}
 
 
@@ -60,6 +72,28 @@ document.StudentLectureOfferForm.submit();
 선생님이 알아야 할 학생 정보 입력을 부탁드립니다.
 </p>
 <legend></legend>
+{% if isStudent %}
+<div style="width : 800px; margin : 0 auto;">
+    <label class="control-label title">이름 : {{student.name}}</label>
+    {% if student.sex == 0 %}
+    <label class="control-label title">성별 : 남성</label>
+    {% else %}
+    <label class="control-label title">성별 : 여성</label>
+    {% endif %}
+    {% if student.grade == 0 %}
+    <label class="control-label title">학년 : 중학생 1학년</label>
+    {% elif student.grade == 1 %}
+    <label class="control-label title">학년 : 중학생 2학년</label>
+    {% elif student.grade == 2 %}
+    <label class="control-label title">학년 : 중학생 3학년</label>
+    {% elif student.grade == 3 %}
+    <label class="control-label title">학년 : 고등학생 1학년</label>
+    {% elif student.grade == 4 %}
+    <label class="control-label title">학년 : 고등학생 2학년</label>
+    {% endif %}
+  <button style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentSubmit();">변경하기</button>
+</div>
+{% else %}
 <form method="POST" class="studentForm" name="StudentSubmitForm" action="/studentRegister/"> {% csrf_token %}
   <div style="float:left">
     <label class="control-label title leftTitle">이름</label>
@@ -84,11 +118,33 @@ document.StudentLectureOfferForm.submit();
   </div>
   <button style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentSubmit();">신청하기</button>
 </form>
+{% endif %}
 <legend></legend>
 <h3>수업 신청</h3>
 <p>
 StudyGate에 수업을 신청할 수 있습니다. 선생님들이 수업리스트를 보고 수업에 참여할 것입니다.
 </p>
+<legend></legend>
+<table class="table studentReqTable">
+  <tbody>
+    <tr class="head">
+      <td>과목</td>
+      <td>비용</td>
+      <td>수업방식</td>
+      <td>커멘트</td>
+      <td>승인여부</td>
+    </tr>
+    {% for student in studentLectureOffers %}
+    <tr class="body">
+      <td>수학</td>
+      <td>{{student.money}}만원</td>
+      <td>{{student.tutorTime}}</td>
+      <td>{{student.comment}}</td>
+      <td><button class="btn">강의실입장</button></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 <legend></legend>
 <form method="POST" class="studentForm" name="StudentLectureOfferForm" action="/studentLectureOffer/"> {% csrf_token %}
   <div>
@@ -121,23 +177,7 @@ StudyGate에 수업을 신청할 수 있습니다. 선생님들이 수업리스�
 </form>
 <legend></legend>
 {% endif %} 
-<h3>신청한 수업 리스트</h3>
-<table class="table">
-  <thead>
-    <tr><th>신청한 수업</th></tr>
-  </thead>
-  <tbody>
-    {% for student in studentLectureOffers %}
-    <tr class="body">
-      <td>수학</td>
-      <td>{{student.money}}</td>
-      <td>{{student.tutorTime}}</td>
-      <td>{{student.comment}}</td>
-      <td><button class="btn">강의실입장</button></td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+
 <div class="footer">
   <p>&copy; KnowledgeShare 2013</p>
 </div>

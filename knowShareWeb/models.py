@@ -66,9 +66,9 @@ admin.site.register(Student, StudentAdmin)
 
 
 class StudentLectureOfferManager(models.Manager):
-    def create(self, money, tutorTime, comment, user):
+    def create(self, money, tutorTime, comment, student):
         studentLectureOffer = self.model(money=money, tutorTime=tutorTime, comment=comment)
-        studentLectureOffer.user = user 
+        studentLectureOffer.student = student
         studentLectureOffer.save()
         return studentLectureOffer;
 
@@ -76,13 +76,13 @@ class StudentLectureOffer(models.Model):
     money = models.IntegerField()
     tutorTime = models.IntegerField()
     comment = models.TextField()
-    user = models.ForeignKey(User)
+    student= models.ForeignKey(Student)
     objects = StudentLectureOfferManager()
 
 class StudentLectureOfferAdmin(admin.ModelAdmin):    
-    list_display = ('id', 'get_user', 'money', 'tutorTime', 'comment')
-    def get_user(self, obj):
-        return obj.user.username
+    list_display = ('id', 'get_student', 'money', 'tutorTime', 'comment')
+    def get_student(self, obj):
+        return obj.studentx.name
 admin.site.register(StudentLectureOffer, StudentLectureOfferAdmin)
 
 class LectureManager(models.Manager):

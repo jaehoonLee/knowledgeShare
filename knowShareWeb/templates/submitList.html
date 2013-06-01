@@ -40,14 +40,10 @@ rightfloat { float:right; }
 {% block mainnav %}
 {% endblock %}
 {% block content %}   
-<h3>요청 한 목록</h3>
+{% if isTeacher %}
+<h3>학생에게 요청 한 목록</h3>
 <!-- 학생에게 요청한 목록 -->
 <table class="table lectureTable">
-  <thead>
-    <tr>
-      <th>학생에게 요청한 목록</th>
-    </tr>
-  </thead>
   <tbody>
     {% for studentRequest in studentRequests %}
     <tr class="body">
@@ -71,14 +67,10 @@ rightfloat { float:right; }
     {% endfor %}
   </tbody>
 </table>
-<legend></legend>
+{% elif isStudent %}
+<h3>선생님께 요청 한 목록</h3>
 <!-- 선생님에게 요청한 목록 -->
 <table class="table lectureTable">
-  <thead>
-    <tr>
-      <th>선생님에게 요청한 목록</th>
-    </tr>
-  </thead>
   <tbody>
     {% for teacherRequest in teacherRequests %}
     <tr class="body">
@@ -96,7 +88,7 @@ rightfloat { float:right; }
     {% endfor %}
   </tbody>
 </table>
-<legend></legend>
+{% endif %}
 
 <div id="commentModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">

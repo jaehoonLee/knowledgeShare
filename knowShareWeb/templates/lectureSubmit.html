@@ -43,6 +43,8 @@ td:last-child{width:50%;}
 
 {% endblock %}
 {% block javascript %}
+var studentIDs = new Array();;
+
 function LectureSubmit()
 {
 var currentYear = new Date().getFullYear()
@@ -67,6 +69,29 @@ $(".lectureForm").append($(startDateInput));
 $(".lectureForm").append($(endDateInput));
 document.LectureSubmitForm.submit();
 }
+
+function AddStudent()
+{
+var studentIDBtn = $("input[id=sid]");
+studentIDs.push(studentIDBtn.val());
+
+var url = "/lectureSubmit?count=" + studentIDs.length ;
+for(var i = 0; i < studentIDs.length; i++)
+{
+    if(i < 9)
+	   url += "&studentID0" + (i+1) + "=" + studentIDs[i];
+    else
+	   url += "&studentID" + (i+1) + "=" + studentIDs[i];
+}
+document.location = url
+}
+
+window.onload = function()
+{
+{% for studentID in studentIDs %}
+	   studentIDs.push({{studentID}})
+{% endfor %}
+}
 {% endblock %}        
 {% block mainnav %}
 {% endblock %}
@@ -86,6 +111,9 @@ document.LectureSubmitForm.submit();
 승인 후 강의실 사용이 바로 가능합니다.
 </p>
 <legend></legend>
+<form method="GET" class="addStudentForm" name="AddStudentForm" action="/lectureSubmit/">
+</form>
+
 <form method="POST" class="lectureForm" name="LectureSubmitForm" action="/lectureRegister/"> {% csrf_token %}
   {% if error %}
   <div>
@@ -95,7 +123,7 @@ document.LectureSubmitForm.submit();
   <div>
     <label class="control-label title">학생</label>
     <input style="float:left; width:140px" type="text" id="sid" name="sid" placeholder="학생 SID" value={{studentID}}> 
-    <button style="float:left; margin:0 0 0 10px" class="btn btn-primary">추가</button>
+    <button type="button" style="float:left; margin:0 0 0 10px"  class="btn btn-primary"  onClick="javascript:AddStudent();">추가</button>
     <label style="float:left; margin:0 0 0 20px" class="control-label title">수업횟수</label>
     <select>
       {% for i in sets %}

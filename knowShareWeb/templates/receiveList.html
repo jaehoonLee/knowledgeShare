@@ -56,13 +56,9 @@ td:last-child {width:9%;}
 {% endblock %}
 {% block content %}   
 <!-- 학생 요청 목록 -->
-<h3>요청 온 목록</h3>
+{% if isTeacher %}
+<h3>학생으로부터 요청 온 목록</h3>
 <table class="table lectureTable">
-  <thead>
-    <tr>
-      <th>학생 요청 목록</th>
-    </tr>
-  </thead>
   <tbody>
     {% for teacherRequest in studentRequestsToMe %}
     <tr class="body">
@@ -80,15 +76,10 @@ td:last-child {width:9%;}
     {% endfor %}
   </tbody>
 </table>
-<legend></legend>
-
+{% elif isStudent %}
+<h3>선생님으로부터 요청 온 목록</h3>
 <!-- 선생님 요청 목록 -->
 <table class="table lectureTable">
-  <thead>
-    <tr>
-      <th>선생님 요청 목록</th>
-    </tr>
-  </thead>
   <tbody>
     {% for student in students %}
     {% for studentRequest in student.studentrequest_set.all %}
@@ -115,7 +106,7 @@ td:last-child {width:9%;}
     {% endfor %}
   </tbody>
 </table>
-<legend></legend>
+{% endif %}
 
 <div class="footer">
   <p>&copy; KnowledgeShare 2013</p>
