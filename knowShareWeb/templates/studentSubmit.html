@@ -32,9 +32,26 @@ background-color : #DFDFDF;
 
 .head
 {
-
 height:10px;
 }
+
+.head td
+{
+font-size:16px;
+}
+
+.lectureBody 
+{
+height:10px;
+}
+
+.lectureBody td
+{
+font-size:12px;
+}
+
+td:last-child {width:15%}
+
 {% endblock %}
 
 
@@ -53,8 +70,19 @@ function StudentLectureOffer()
 {
 var tutorTimeIdx = $("#tutorTime option").index($("#tutorTime option:selected"));
 var tutorTimeInput = $("<input>").attr("type", "hidden").attr("name", "tutorTimeIdx").val(tutorTimeIdx);
+var addErase = $("<input>").attr("type", "hidden").attr("name", "addErase").val(1);
 
 $(".studentForm").append($(tutorTimeInput));
+$(".studentForm").append($(addErase));
+document.StudentLectureOfferForm.submit();
+}
+
+function DeleteLectureOffer(id)
+{
+var id = $("<input>").attr("type", "hidden").attr("name", "id").val(id);
+var addErase = $("<input>").attr("type", "hidden").attr("name", "addErase").val(0);
+$(".studentForm").append($(id));
+$(".studentForm").append($(addErase));
 document.StudentLectureOfferForm.submit();
 }
 
@@ -72,7 +100,7 @@ document.StudentLectureOfferForm.submit();
 선생님이 알아야 할 학생 정보 입력을 부탁드립니다.
 </p>
 <legend></legend>
-{% if isStudent %}
+{% if student %}
 <div style="width : 800px; margin : 0 auto;">
     <label class="control-label title">이름 : {{student.name}}</label>
     {% if student.sex == 0 %}
@@ -114,6 +142,7 @@ document.StudentLectureOfferForm.submit();
       <option> 중학생 3학년</option>
       <option> 고등학생 1학년</option>
       <option> 고등학생 2학년</option>
+      <option> 고등학생 3학년</option>
     </select>
   </div>
   <button style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentSubmit();">신청하기</button>
@@ -132,15 +161,30 @@ StudyGate에 수업을 신청할 수 있습니다. 선생님들이 수업리스�
       <td>비용</td>
       <td>수업방식</td>
       <td>커멘트</td>
-      <td>승인여부</td>
+      <td>변경 및 삭제</td>
     </tr>
     {% for student in studentLectureOffers %}
-    <tr class="body">
+    <tr class="lectureBody">
       <td>수학</td>
       <td>{{student.money}}만원</td>
-      <td>{{student.tutorTime}}</td>
-      <td>{{student.comment}}</td>
-      <td><button class="btn">강의실입장</button></td>
+      {% if student.tutorTime == 0 %}
+      <td>주 1회 1시간</td>
+      {% elif student.tutorTime == 1 %}
+      <td>주 1회 2시간</td>
+      {% elif student.tutorTime == 2 %}
+      <td>주 2회 1시간</td>
+      {% elif student.tutorTime == 3 %}
+      <td>주 2회 2시간</td>
+      {% elif student.tutorTime == 4 %}
+      <td>기타</td>
+      {% endif %}
+      <td>
+	{{student.comment}}
+      </td>
+      <td>
+	<!--<button class="btn btn-info">변경</button>-->
+	<button class="btn btn-warning" onClick="javascript:DeleteLectureOffer({{student.id}});">삭제</button>
+      </td>
     </tr>
     {% endfor %}
   </tbody>
@@ -177,6 +221,7 @@ StudyGate에 수업을 신청할 수 있습니다. 선생님들이 수업리스�
 </form>
 <legend></legend>
 {% endif %} 
+
 
 <div class="footer">
   <p>&copy; KnowledgeShare 2013</p>

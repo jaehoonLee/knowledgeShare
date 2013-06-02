@@ -7,7 +7,9 @@ import requests
 #Http Request with BBB
 def create_meeting(request):
     query = 'name=TEST&meetingID=1&attendeePW=1&moderatorPW=1'
-    return HttpResponseRedirect(getBBBURL('create', query))
+    #return HttpResponseRedirect(getBBBURL('create', query))
+    resp = requests.get(getBBBURL('create', query))
+    return join_meeting(request)
 
 def end_meeting(request):
     query = 'meetingID=1&password=1'
@@ -39,13 +41,16 @@ def getMeetings(request):
 def isLectureRunning(meetingIDs):
     runnings = []
     for meetingID in meetingIDs :
-        resp = requests.get(getBBBURL('isMeetingRunning', 'meetingID=' + meetingID))
-        dom = parseString(resp.text)
-        response = dom.getElementsByTagName('response')
-        running = response[0].getElementsByTagName('running')
-        if running[0].firstChild.data  == 'true':
-            runnings.append(True)
-        else : 
+        try : 
+            resp = requests.get(getBBBURL('isMeetingRunning', 'meetingID=' + meetingID))
+            dom = parseString(resp.text)
+            response = dom.getElementsByTagName('response')
+            running = response[0].getElementsByTagName('running')
+            if running[0].firstChild.data  == 'true':
+                runnings.append(True)
+            else : 
+                runnings.append(False)
+        except : 
             runnings.append(False)
     return runnings
 

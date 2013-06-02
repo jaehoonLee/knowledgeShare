@@ -11,6 +11,7 @@ from knowShareWeb.forms import *
 from knowShareWeb.models import *
 from knowShareWeb.utils import *
 from BigBlue.views import *
+from sets import Set
 
 #HTML ACCESS
 def main_page(request):
@@ -30,17 +31,26 @@ def teacher_page(request):
 
     teacherUserRels = []
     idx = 0
-    for teacher in teachers:
-        teacherUserRels.append(False)
-        for teacherrequest in teacher.teacherrequest_set.all():
-            if teacherrequest.student == request.user : 
-                 teacherUserRels[idx] = True
-        idx += 1
+    if isStudent(request) :
+        for teacher in teachers:
+            teacherUserRels.append(False)
+            for teacherrequest in teacher.teacherrequest_set.all():
+                if teacherrequest.student == request.user.student : 
+                    teacherUserRels[idx] = True
+                    idx += 1
         
-    if request.user.is_authenticated() == True : 
-        teacherRequests = request.user.teacherrequest_set.all()
+    if request.user.is_authenticated() == True :
+        teacherRequests = []
+        if isStudent(request):
+            try :
+                teacherRequests = request.user.student.teacherrequest_set.all()
+            except : 
+                teacherRequests = []
+        print teacherRequests
 
-        return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests, 'teacherUserRels' : teacherUserRels, "user" : request.user})))
+        
+        return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests, 'teacherUserRels' : teacherUserRels})))
+        
     else :
         return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'isInGroup' : isInGroup, 'teachers' : teachers})))
 
@@ -103,11 +113,12 @@ def studentSubmit_page(request):
     if request.user.is_authenticated() == False:
         return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'Confirmed' : 0})))
 
+    student = None
     try:
         student = request.user.student;
         studentLectureOffers = request.user.student.studentlectureoffer_set.all()
     except :
-        return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers, 'student' : student})))
+        return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studenetLectureOffers' : studentLectureOffers})))
 
     return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers, 'student' : student})))
 
@@ -120,8 +131,7 @@ def lecture_page(request):
         if isTeacher(request) : 
             lectures = request.user.teacher.lecture_set.all()
         else  : 
-            for student in request.user.student_set.all() : 
-                lectures.extend(student.lecture_set.all())                
+            lectures = request.user.student.lecture_set.all()
         runnings = isLectureRunning(['1'])
         return render_to_response('lecture.html', RequestContext(request, addPerm(request,{'lectures' : lectures, 'runnings' : runnings})))
     except ObjectDoesNotExist :
@@ -144,12 +154,18 @@ def lectureSubmit_page(request):
     for i in range(0, int(count)) :  
         sID = "studentID%02d" % (i+1)
         studentID = request.GET.get(sID, '')
-        student  = Studen.objects.get(id__exact=int(studentID))
+        student  = Student.objects.get(id__exact=int(studentID))
         studentIDs.append(studentID)
         students.append(student)
     
+    allOffer = Set([])
+    for offer in request.user.teacher.studentrequest_set.all():
+        allOffer.add(offer.student)
+    for offer in request.user.teacher.teacherrequest_set.all():
+        allOffer.add(offer.student)
+
     sets = [16, 32, 54, 64]
-    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'sets' : sets, 'students' : students, 'count' : count, 'studentIDs' : studentIDs})))
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'sets' : sets, 'students' : students, 'count' : count, 'studentIDs' : studentIDs, 'allOffer' : allOffer})))
 
 def contact_page(request):
     return render_to_response('contact.html', RequestContext(request, permission(request)))
@@ -171,18 +187,23 @@ def my_profile_page(request):
 
 def submit_list_page(request):
     studentRequests = None
+    teacherRequests = None
     try : 
         studentRequests = request.user.teacher.studentrequest_set.all()
         for studentRequest in studentRequests :
             studentRequest.comment = studentRequest.comment.replace('\r', '</br>').replace('\n','')
     except : 
         studentRequests = []
+    
+    try :
+        teacherRequests = request.user.student.teacherrequest_set.all()
+        for teacherRequest in teacherRequests :
+            teacherRequest.comment = teacherRequest.comment.replace('\r', '</br>').replace('\n','')
+    except : 
+        teacherRequests = []
 
-    teacherRequests = request.user.teacherrequest_set.all()
-    for teacherRequest in teacherRequests :
-        teacherRequest.comment = teacherRequest.comment.replace('\r', '</br>').replace('\n','')
     try : 
-        students = request.user.student_set.all()
+        students = request.user.student.student_set.all()
     except : 
         students = []
     
@@ -328,31 +349,35 @@ def student_register_page(request):
 
 def student_lecture_offer_page(request):
     if request.method == 'POST' :        
-        
-        studentLectureOffer = StudentLectureOffer.objects.create(
-            money = request.POST['money'],
-            tutorTime = request.POST['tutorTimeIdx'],
-            comment = request.POST['comment'],
-            student = request.user.student
+        if int(request.POST['addErase']) == 1 :
+            studentLectureOffer = StudentLectureOffer.objects.create(
+                money = request.POST['money'],
+                tutorTime = request.POST['tutorTimeIdx'],
+                comment = request.POST['comment'],
+                student = request.user.student
             )
+        else :
+            studentLectureOffer = StudentLectureOffer.objects.get(id__exact=request.POST['id'], student=request.user.student)
+            studentLectureOffer.delete()
         
         return HttpResponseRedirect('/studentSubmit')
 
 def lecture_register_page(request):
     sets = [16, 32, 48, 64]
     if request.method == 'POST':
-        student = None
         try : 
-            student =  Student.objects.get(id__exact=request.POST['sid'])
+            students = request.POST.getlist('input[]')
         except : 
             return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request, {'error' : True, 'sets' : sets})))
         
 
         lecture = Lecture.objects.create_lecture(
                      teacher = request.user.teacher,
-                     student = student,
-                     startDate = request.POST['startDate'],
-                     endDate = request.POST['endDate'],
+                     students = students,
+                     #startDate = request.POST['startDate'],
+                     #endDate = request.POST['endDate'],
+                     startDate = "2013-01-01",
+                     endDate = "2013-01-01",
                      totalTime = request.POST['count'],
                      spentTime = 0
                      )
@@ -368,11 +393,11 @@ def teacher_request_page(request):
         if int(request.POST['addErase']) == 1 :
             TeacherRequest.objects.create_teacher_request(
                 teacher = teacher,
-                student = request.user,
+                student = request.user.student,
                 comment = request.POST['comment'],
                 permission = 0)
         else :
-            teacherRequest = TeacherRequest.objects.get(teacher=teacher, student=request.user)
+            teacherRequest = TeacherRequest.objects.get(teacher=teacher, student=request.user.student)
             teacherRequest.delete()
         
         return HttpResponseRedirect('/teacher')

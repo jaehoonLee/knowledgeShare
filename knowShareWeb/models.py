@@ -82,15 +82,16 @@ class StudentLectureOffer(models.Model):
 class StudentLectureOfferAdmin(admin.ModelAdmin):    
     list_display = ('id', 'get_student', 'money', 'tutorTime', 'comment')
     def get_student(self, obj):
-        return obj.studentx.name
+        return obj.student.name
 admin.site.register(StudentLectureOffer, StudentLectureOfferAdmin)
 
 class LectureManager(models.Manager):
-    def create_lecture(self, teacher, student, startDate, endDate, totalTime, spentTime):
+    def create_lecture(self, teacher, students, startDate, endDate, totalTime, spentTime):
         lecture = self.model(startDate=startDate, endDate=endDate, totalTime=totalTime, spentTime=spentTime)
         lecture.teacher = teacher
         lecture.save()
-        lecture.student.add(student)
+        for student in students : 
+            lecture.student.add(student)
         return lecture
 
 class Lecture(models.Model):
@@ -123,7 +124,7 @@ class TeacherRequestManager(models.Manager):
 
 class TeacherRequest(models.Model):
     teacher = models.ForeignKey(Teacher)
-    student = models.ForeignKey(User)
+    student = models.ForeignKey(Student)
     comment = models.TextField()
     permission = models.IntegerField()
     objects = TeacherRequestManager()
@@ -133,7 +134,7 @@ class TeacherRequestAdmin(admin.ModelAdmin):
     def get_teacher(self, obj):
         return obj.teacher.name
     def get_student(self, obj):
-        return obj.student.username
+        return obj.student.name
 admin.site.register(TeacherRequest, TeacherRequestAdmin)
 
 class StudentRequestManager(models.Manager):

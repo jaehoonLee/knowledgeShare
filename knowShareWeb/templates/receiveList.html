@@ -62,7 +62,7 @@ td:last-child {width:9%;}
   <tbody>
     {% for teacherRequest in studentRequestsToMe %}
     <tr class="body">
-      <td>{{teacherRequest.student.username}}계정의 학생이 수업요청</td>
+      <td>{{teacherRequest.student.name}}학생이 수업요청</td>
       <td><button style="float:right;" class="btn" onClick="javascript:showStudentResponse('{{teacherRequest.student.username}}', '{{teacherRequest.comment}}', {{teacherRequest.student.id}})">내용</button></td>
       
       {% if teacherRequest.permission == 0 %}

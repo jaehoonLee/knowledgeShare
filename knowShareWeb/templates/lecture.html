@@ -6,8 +6,7 @@
 .lectureTable {margin:10px 0 0 0; padding:10px 0 0 0;}
 th {font-size:20px;}
 td:first-child {width:20%;}
-td:last-child {width:13%;}
-
+td:last-child {width:20%;}
 {% endblock %}
 {% block javascript %}
 function createMeeting()
@@ -27,11 +26,6 @@ document.joinRoom.submit();
 <div class="lecture">
 <h3>강의실</h3>
 <table class="table lectureTable">
-  <thead>
-    <tr>
-      <th>나의 강의실</th>
-    </tr>
-  </thead>
   <tbody>
     {% for lecture in lectures %}
     <tr class="body">
@@ -42,18 +36,24 @@ document.joinRoom.submit();
       {% endif %}
       <td>{{lecture.teacher.name}} 선생님,
 	{% for student in lecture.student.all %}
-	{{student.name}} 학생  
+	{% if forloop.last %}
+	{{student.name}} 학생
+	{% else %}
+	{{student.name}} 학생,
+	{% endif %}
 	{% endfor %}
 	강의실</td>
       <td>
+	{% if isTeacher %}
 	<form method="POST" class="createRoom" name="createRoom" action="/createMeeting/">{% csrf_token %}
-	<button onClick="javascript:createMeeting();" class="btn">강의실 생성</button></td>
+	<button  class="btn create">강의실 생성 및 입장</button></td>
         </form>
-      <td>
+        {% elif isStudent %}
 	<form method="POST" class="joinRoom" name="joinRoom" action="/joinMeeting/">{% csrf_token %}
-	<button class="btn">강의실 입장</button>
-	</form>
-      </td>
+	<button  class="btn create">강의실 입장</button></td>
+        </form>
+        {% endif %}
+
     </tr>
     {% endfor %}
   </tbody>

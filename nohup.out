@@ -14261,3 +14261,2416 @@ Traceback (most recent call last):
   File "/Library/Python/2.7/site-packages/django/contrib/admin/validation.py", line 38, in validate
     % (cls.__name__, idx, field, cls.__name__, model._meta.object_name))
 django.core.exceptions.ImproperlyConfigured: StudentLectureOfferAdmin.list_display[1], 'get_user' is not a callable or an attribute of 'StudentLectureOfferAdmin' or found in the model 'StudentLectureOffer'.
+[01/Jun/2013 08:56:36] "GET / HTTP/1.1" 200 11279
+[01/Jun/2013 08:56:36] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 08:56:36] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 08:56:39] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 08:56:39] "GET /studentSubmit/ HTTP/1.1" 200 13777
+[01/Jun/2013 08:56:39] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 08:56:39] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 08:56:40] "GET /student HTTP/1.1" 301 0
+[01/Jun/2013 08:56:40] "GET /student/ HTTP/1.1" 200 16697
+[01/Jun/2013 08:56:40] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 08:56:40] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 08:56:44] "GET /teacher HTTP/1.1" 301 0
+[01/Jun/2013 08:56:44] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 08:56:44] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 08:56:44] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 08:56:47] "GET /student/ HTTP/1.1" 200 16697
+[01/Jun/2013 08:56:47] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 08:56:49] "GET /studentSubmit/ HTTP/1.1" 200 13777
+[01/Jun/2013 08:56:50] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 08:56:52] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 08:56:52] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 08:56:52] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 08:56:54] "GET /studentSubmit/ HTTP/1.1" 200 13777
+[01/Jun/2013 08:56:54] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:03:57] "GET /studentSubmit/ HTTP/1.1" 200 13784
+[01/Jun/2013 09:03:57] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:08:46] "GET /studentSubmit/ HTTP/1.1" 200 13807
+[01/Jun/2013 09:08:46] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:10:45] "GET /studentSubmit/ HTTP/1.1" 200 13659
+[01/Jun/2013 09:10:45] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:10:45] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:13:38] "GET /studentSubmit/ HTTP/1.1" 200 13785
+[01/Jun/2013 09:13:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:13:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:14:28] "GET /studentSubmit/ HTTP/1.1" 200 13811
+[01/Jun/2013 09:14:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:14:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:16:02] "GET /studentSubmit/ HTTP/1.1" 200 13833
+[01/Jun/2013 09:16:02] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:16:02] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:16:21] "GET /studentSubmit/ HTTP/1.1" 200 13844
+[01/Jun/2013 09:16:21] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:16:21] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:16:23] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:17:08] "GET /studentSubmit/ HTTP/1.1" 200 13845
+[01/Jun/2013 09:17:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:17:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:20:40] "GET /studentSubmit/ HTTP/1.1" 200 13955
+[01/Jun/2013 09:20:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:20:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:21:20] "GET /studentSubmit/ HTTP/1.1" 200 13978
+[01/Jun/2013 09:21:20] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:21:20] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:21:21] "GET /studentSubmit/ HTTP/1.1" 200 13978
+[01/Jun/2013 09:21:21] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:21:21] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:21:37] "GET /studentSubmit/ HTTP/1.1" 200 13981
+[01/Jun/2013 09:21:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:21:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:21:57] "GET /studentSubmit/ HTTP/1.1" 200 13982
+[01/Jun/2013 09:21:57] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:21:57] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:22:15] "GET /studentSubmit/ HTTP/1.1" 200 13982
+[01/Jun/2013 09:22:15] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:22:15] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:41:16] "GET / HTTP/1.1" 200 11279
+[01/Jun/2013 09:41:17] "GET /static/img/favicon.ico HTTP/1.1" 200 1406
+[01/Jun/2013 09:41:18] "GET /howto HTTP/1.1" 301 0
+[01/Jun/2013 09:41:18] "GET /howto/ HTTP/1.1" 200 13373
+[01/Jun/2013 09:41:18] "GET /static/img/KnowShare02.png HTTP/1.1" 200 73634
+[01/Jun/2013 09:41:18] "GET /static/img/KnowShare01.png HTTP/1.1" 200 80808
+[01/Jun/2013 09:41:18] "GET /static/img/KnowShare03.png HTTP/1.1" 200 156887
+[01/Jun/2013 09:41:18] "GET /static/img/KnowShare04.png HTTP/1.1" 200 305468
+[01/Jun/2013 09:41:18] "GET /static/img/KnowShare05.png HTTP/1.1" 200 363060
+[01/Jun/2013 09:41:18] "GET /static/img/KnowShare06.png HTTP/1.1" 200 273819
+[01/Jun/2013 09:41:18] "GET /howto/favicon.ico HTTP/1.1" 200 13373
+[01/Jun/2013 09:41:19] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 09:41:19] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:22] "GET /studentSubmit/ HTTP/1.1" 200 13982
+[01/Jun/2013 09:41:22] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:41:25] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 09:41:25] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:25] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:26] "GET /student/ HTTP/1.1" 200 16697
+[01/Jun/2013 09:41:26] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:26] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:28] "GET /studentSubmit/ HTTP/1.1" 200 13982
+[01/Jun/2013 09:41:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:41:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:41:32] "GET /lectureSubmit HTTP/1.1" 301 0
+[01/Jun/2013 09:41:32] "GET /lectureSubmit/ HTTP/1.1" 200 15650
+[01/Jun/2013 09:41:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:41:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:41:33] "GET /lecture HTTP/1.1" 301 0
+[01/Jun/2013 09:41:33] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 09:41:33] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:33] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:34] "GET /myProfile HTTP/1.1" 301 0
+[01/Jun/2013 09:41:35] "GET /myProfile/ HTTP/1.1" 200 10711
+[01/Jun/2013 09:41:35] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 09:41:35] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 09:41:36] "GET /submitList HTTP/1.1" 301 0
+[01/Jun/2013 09:41:36] "GET /submitList/ HTTP/1.1" 200 12306
+[01/Jun/2013 09:41:36] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 09:41:36] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 09:41:37] "GET /receiveList HTTP/1.1" 301 0
+[01/Jun/2013 09:41:37] "GET /receiveList/ HTTP/1.1" 200 14228
+[01/Jun/2013 09:41:37] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 09:41:37] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 09:41:40] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 09:41:40] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:40] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:42] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 09:41:42] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:42] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:41:43] "GET /studentSubmit/ HTTP/1.1" 200 13982
+[01/Jun/2013 09:41:43] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:41:43] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:42:28] "GET /studentSubmit/ HTTP/1.1" 200 13980
+[01/Jun/2013 09:42:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:42:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:42:31] "GET /studentSubmit/ HTTP/1.1" 200 13980
+[01/Jun/2013 09:42:32] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:42:32] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:42:40] "GET /studentSubmit/ HTTP/1.1" 200 13980
+[01/Jun/2013 09:42:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:42:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:42:41] "GET /studentSubmit/ HTTP/1.1" 200 13980
+[01/Jun/2013 09:42:41] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:42:42] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:43:05] "GET /studentSubmit/ HTTP/1.1" 200 13980
+[01/Jun/2013 09:43:05] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:43:05] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:45:39] "GET /studentSubmit/ HTTP/1.1" 200 13980
+[01/Jun/2013 09:45:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:45:39] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:45:39] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:45:50] "GET /studentSubmit/ HTTP/1.1" 200 13980
+[01/Jun/2013 09:45:50] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:45:50] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:45:51] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:45:55] "GET /studentSubmit/ HTTP/1.1" 200 13979
+[01/Jun/2013 09:45:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:45:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:45:56] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:45:57] "GET /studentSubmit/ HTTP/1.1" 200 13979
+[01/Jun/2013 09:45:57] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:45:57] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:45:57] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:46:13] "GET /studentSubmit/ HTTP/1.1" 200 14009
+[01/Jun/2013 09:46:13] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:46:13] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:46:14] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:46:15] "GET /studentSubmit/ HTTP/1.1" 200 14009
+[01/Jun/2013 09:46:15] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:46:15] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:46:16] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:46:25] "GET /studentSubmit/ HTTP/1.1" 200 14009
+[01/Jun/2013 09:46:25] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:46:25] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:46:26] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:46:31] "GET /studentSubmit/ HTTP/1.1" 200 14009
+[01/Jun/2013 09:46:31] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:46:31] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:46:32] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:46:54] "GET /studentSubmit/ HTTP/1.1" 200 14010
+[01/Jun/2013 09:46:54] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:46:54] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:46:55] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:47:01] "GET /studentSubmit/ HTTP/1.1" 200 14010
+[01/Jun/2013 09:47:01] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:47:01] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:47:01] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:47:03] "GET /studentSubmit/ HTTP/1.1" 200 14010
+[01/Jun/2013 09:47:03] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:47:03] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:47:03] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:47:05] "GET /studentSubmit/ HTTP/1.1" 200 14010
+[01/Jun/2013 09:47:05] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 09:47:05] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 09:47:05] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:47:36] "GET /studentSubmit/ HTTP/1.1" 200 14010
+[01/Jun/2013 09:47:36] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:47:36] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:47:41] "GET /studentSubmit/ HTTP/1.1" 200 14010
+[01/Jun/2013 09:47:41] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:47:41] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:48:26] "GET /studentSubmit/ HTTP/1.1" 200 14038
+[01/Jun/2013 09:48:26] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:48:26] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:48:28] "GET /studentSubmit/ HTTP/1.1" 200 14038
+[01/Jun/2013 09:48:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:48:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:12] "GET /studentSubmit/ HTTP/1.1" 200 14052
+[01/Jun/2013 09:49:13] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:13] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:23] "GET /studentSubmit/ HTTP/1.1" 200 14051
+[01/Jun/2013 09:49:24] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:24] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:40] "GET /studentSubmit/ HTTP/1.1" 200 14052
+[01/Jun/2013 09:49:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:42] "GET /studentSubmit/ HTTP/1.1" 200 14052
+[01/Jun/2013 09:49:42] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:42] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:45] "GET /studentSubmit/ HTTP/1.1" 200 14052
+[01/Jun/2013 09:49:45] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:45] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:51] "GET /studentSubmit/ HTTP/1.1" 200 14052
+[01/Jun/2013 09:49:51] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:51] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:58] "GET /studentSubmit/ HTTP/1.1" 200 14052
+[01/Jun/2013 09:49:58] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:49:58] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:50:22] "GET /studentSubmit/ HTTP/1.1" 200 14038
+[01/Jun/2013 09:50:22] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:50:22] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:55:37] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 09:55:37] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:55:37] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:55:38] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 09:55:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:55:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:55:39] "GET /studentSubmit/ HTTP/1.1" 200 14038
+[01/Jun/2013 09:55:39] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:55:39] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:03] "POST /studentLectureOffer/ HTTP/1.1" 302 0
+[01/Jun/2013 09:56:03] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 09:56:03] "GET /studentSubmit/ HTTP/1.1" 200 14288
+[01/Jun/2013 09:56:03] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:09] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 09:56:10] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:10] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:11] "GET /lectureSubmit/ HTTP/1.1" 200 15650
+[01/Jun/2013 09:56:11] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:11] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:15] "GET /myProfile/ HTTP/1.1" 200 10711
+[01/Jun/2013 09:56:15] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 09:56:15] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 09:56:17] "GET /submitList/ HTTP/1.1" 200 12306
+[01/Jun/2013 09:56:17] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 09:56:17] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 09:56:20] "GET /receiveList/ HTTP/1.1" 200 14228
+[01/Jun/2013 09:56:20] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 09:56:20] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 09:56:22] "GET /submitList/ HTTP/1.1" 200 12306
+[01/Jun/2013 09:56:22] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 09:56:22] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 09:56:28] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 09:56:29] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:29] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:29] "GET /studentSubmit/ HTTP/1.1" 200 14288
+[01/Jun/2013 09:56:30] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:30] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:31] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 09:56:31] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:31] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:32] "GET /student/ HTTP/1.1" 200 17348
+[01/Jun/2013 09:56:32] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:32] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:37] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 09:56:37] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:37] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:38] "GET /lectureSubmit/ HTTP/1.1" 200 15650
+[01/Jun/2013 09:56:38] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:38] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:40] "GET / HTTP/1.1" 200 11279
+[01/Jun/2013 09:56:41] "GET /howto/ HTTP/1.1" 200 13373
+[01/Jun/2013 09:56:41] "GET /howto/favicon.ico HTTP/1.1" 200 13373
+[01/Jun/2013 09:56:42] "GET /contact HTTP/1.1" 301 0
+[01/Jun/2013 09:56:42] "GET /contact/ HTTP/1.1" 200 10331
+[01/Jun/2013 09:56:43] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:43] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:45] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 09:56:45] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:45] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:46] "GET /myProfile/ HTTP/1.1" 200 10711
+[01/Jun/2013 09:56:47] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 09:56:47] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 09:56:48] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 09:56:48] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:48] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 09:56:49] "GET /lectureSubmit/ HTTP/1.1" 200 15650
+[01/Jun/2013 09:56:49] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:49] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 09:56:55] "GET /myProfile/ HTTP/1.1" 200 10711
+[01/Jun/2013 09:56:55] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 09:56:55] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 09:56:56] "GET /submitList/ HTTP/1.1" 200 12306
+[01/Jun/2013 09:56:56] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 09:56:56] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 09:56:57] "GET /receiveList/ HTTP/1.1" 200 14228
+[01/Jun/2013 09:56:57] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 10:00:46] "GET /studentSubmit/ HTTP/1.1" 200 14285
+[01/Jun/2013 10:00:46] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:00:46] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:01:35] "GET /studentSubmit/ HTTP/1.1" 200 14295
+[01/Jun/2013 10:01:35] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 10:01:35] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 10:01:35] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:02:07] "GET /studentSubmit/ HTTP/1.1" 200 14295
+[01/Jun/2013 10:02:07] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:02:07] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:02:37] "GET /studentSubmit/ HTTP/1.1" 200 14402
+[01/Jun/2013 10:02:37] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 10:02:37] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 10:02:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:02:45] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 10:02:45] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:02:45] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:02:46] "GET /studentSubmit/ HTTP/1.1" 200 14402
+[01/Jun/2013 10:02:46] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:02:46] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:06:10] "GET /submitList/ HTTP/1.1" 200 12306
+[01/Jun/2013 10:06:10] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 10:06:10] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 10:06:15] "GET /receiveList/ HTTP/1.1" 200 14228
+[01/Jun/2013 10:06:15] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 10:06:15] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 10:06:16] "GET /submitList/ HTTP/1.1" 200 12306
+[01/Jun/2013 10:06:16] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 10:06:16] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 10:06:32] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 10:06:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:06:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:06:34] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 10:06:34] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:06:34] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:06:35] "GET /studentSubmit/ HTTP/1.1" 200 14402
+[01/Jun/2013 10:06:35] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:06:35] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:08:30] "GET /studentSubmit/ HTTP/1.1" 200 14581
+[01/Jun/2013 10:08:30] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:08:30] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:09:03] "GET /studentSubmit/ HTTP/1.1" 200 14578
+[01/Jun/2013 10:09:03] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:09:03] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:28:18] "GET /student/ HTTP/1.1" 200 17348
+[01/Jun/2013 10:28:18] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:28:18] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:28:27] "GET /studentSubmit/ HTTP/1.1" 200 14578
+[01/Jun/2013 10:28:27] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:28:27] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 08:56:25
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 10:40:49] "GET /admin HTTP/1.1" 301 0
+[01/Jun/2013 10:40:50] "GET /admin/ HTTP/1.1" 200 7527
+Internal Server Error: /admin/knowShareWeb/studentlectureoffer/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 1185, in render
+    _dict = func(*resolved_args, **resolved_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 286, in result_list
+    'results': list(results(cl))}
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 264, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 256, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 184, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/util.py", line 254, in lookup_field
+    value = attr(obj)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/models.py", line 85, in get_student
+    return obj.studentx.name
+AttributeError: 'StudentLectureOffer' object has no attribute 'studentx'
+[01/Jun/2013 10:40:52] "GET /admin/knowShareWeb/studentlectureoffer/ HTTP/1.1" 500 303120
+Validating models...
+
+0 errors found
+June 01, 2013 - 10:34:54
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 10:41:30] "GET /admin/knowShareWeb/studentlectureoffer/ HTTP/1.1" 200 5315
+[01/Jun/2013 10:41:30] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+Validating models...
+
+0 errors found
+June 01, 2013 - 10:41:28
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /studentLectureOffer/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 331, in student_lecture_offer_page
+    if int(request.POST['addErase']) == 1 :
+  File "/Library/Python/2.7/site-packages/django/utils/datastructures.py", line 295, in __getitem__
+    raise MultiValueDictKeyError("Key %r not found in %r" % (key, self))
+MultiValueDictKeyError: "Key 'addErase' not found in <QueryDict: {u'comment': [u'12'], u'money': [u'200'], u'csrfmiddlewaretoken': [u'0S1ghvm76m8hlqpRky8yjYfJueymhsKG'], u'tutorTimeIdx': [u'0'], u'tutorTime': [u'\\uc8fc 1\\ud68c 1\\uc2dc\\uac04', u'\\uad6d\\uc5b4']}>"
+[01/Jun/2013 10:43:31] "POST /studentLectureOffer/ HTTP/1.1" 500 63989
+[01/Jun/2013 10:43:37] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:43:37] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:49:10] "GET /studentSubmit/ HTTP/1.1" 200 15133
+[01/Jun/2013 10:49:10] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 10:49:10] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 10:49:11] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:49:23] "POST /studentLectureOffer/ HTTP/1.1" 302 0
+[01/Jun/2013 10:49:23] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 10:49:23] "GET /studentSubmit/ HTTP/1.1" 200 15462
+[01/Jun/2013 10:49:23] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:53:31] "GET /studentSubmit/ HTTP/1.1" 200 15297
+[01/Jun/2013 10:53:31] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:53:31] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:55:08] "GET /studentSubmit/ HTTP/1.1" 200 15297
+[01/Jun/2013 10:55:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:55:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+Internal Server Error: /studentLectureOffer/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 339, in student_lecture_offer_page
+    studentLectureOffer = StudentLectureOffer.objects.get(id__exact == request.POST['id'], student=request.user.student)
+NameError: global name 'id__exact' is not defined
+[01/Jun/2013 10:55:10] "POST /studentLectureOffer/ HTTP/1.1" 500 59633
+Validating models...
+
+0 errors found
+June 01, 2013 - 10:42:19
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 10:55:34] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:55:34] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:55:36] "POST /studentLectureOffer/ HTTP/1.1" 302 0
+[01/Jun/2013 10:55:36] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 10:55:36] "GET /studentSubmit/ HTTP/1.1" 200 14967
+[01/Jun/2013 10:55:36] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:55:36] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:55:38] "POST /studentLectureOffer/ HTTP/1.1" 302 0
+[01/Jun/2013 10:55:38] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 10:55:38] "GET /studentSubmit/ HTTP/1.1" 200 14637
+[01/Jun/2013 10:55:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:55:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:56:23] "GET /studentSubmit/ HTTP/1.1" 200 14651
+[01/Jun/2013 10:56:23] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:56:23] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:56:31] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 10:56:31] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:31] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:32] "GET /studentSubmit/ HTTP/1.1" 200 14651
+[01/Jun/2013 10:56:32] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:56:32] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:56:34] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 10:56:34] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:34] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:35] "GET /student/ HTTP/1.1" 200 16699
+[01/Jun/2013 10:56:35] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:35] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:37] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 10:56:37] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:37] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:39] "GET /lectureSubmit/ HTTP/1.1" 200 15650
+[01/Jun/2013 10:56:40] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:56:40] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:56:42] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 10:56:42] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:42] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:43] "GET /myProfile/ HTTP/1.1" 200 10711
+[01/Jun/2013 10:56:43] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 10:56:43] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 10:56:46] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 10:56:46] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:46] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:48] "GET /myProfile/ HTTP/1.1" 200 10711
+[01/Jun/2013 10:56:48] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 10:56:48] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 10:56:49] "GET /submitList/ HTTP/1.1" 200 12306
+[01/Jun/2013 10:56:49] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 10:56:49] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 10:56:56] "GET /receiveList/ HTTP/1.1" 200 14228
+[01/Jun/2013 10:56:56] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 10:56:56] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 10:56:58] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 10:56:58] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:56:58] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:57:00] "GET / HTTP/1.1" 200 11279
+[01/Jun/2013 10:57:03] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 10:57:03] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:57:03] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:57:18] "GET / HTTP/1.1" 200 11279
+[01/Jun/2013 10:57:20] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 10:57:20] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:57:20] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:57:21] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 10:57:21] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:57:21] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:57:22] "GET /lectureSubmit/ HTTP/1.1" 200 15650
+[01/Jun/2013 10:57:22] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:57:22] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:57:24] "GET /myProfile/ HTTP/1.1" 200 10711
+[01/Jun/2013 10:57:24] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 10:57:24] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 10:57:25] "GET /submitList/ HTTP/1.1" 200 12306
+[01/Jun/2013 10:57:25] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 10:57:26] "GET /receiveList/ HTTP/1.1" 200 14228
+[01/Jun/2013 10:57:27] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 10:57:27] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 10:57:29] "GET /lecture/ HTTP/1.1" 200 10510
+[01/Jun/2013 10:57:29] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:57:29] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:58:03] "GET /lecture/ HTTP/1.1" 200 10438
+[01/Jun/2013 10:58:03] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:58:03] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:58:16] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 10:58:16] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:58:16] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:58:18] "GET /studentSubmit/ HTTP/1.1" 200 14651
+[01/Jun/2013 10:58:18] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:58:18] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:58:34] "GET /lecture/ HTTP/1.1" 200 10438
+[01/Jun/2013 10:58:34] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:58:34] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 10:58:36] "GET /lectureSubmit/ HTTP/1.1" 200 15650
+[01/Jun/2013 10:58:36] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:58:36] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:58:47] "GET /lectureSubmit?count=1&studentID01=1 HTTP/1.1" 301 0
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 147, in lectureSubmit_page
+    student  = Studen.objects.get(id__exact=int(studentID))
+NameError: global name 'Studen' is not defined
+[01/Jun/2013 10:58:47] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 500 58979
+[01/Jun/2013 10:58:50] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:58:50] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 147, in lectureSubmit_page
+    student  = Studen.objects.get(id__exact=int(studentID))
+NameError: global name 'Studen' is not defined
+[01/Jun/2013 10:58:57] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 500 58979
+[01/Jun/2013 10:59:07] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:59:07] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 10:55:33
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 10:59:26] "GET /lectureSubmit/ HTTP/1.1" 200 15650
+[01/Jun/2013 10:59:27] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:59:27] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:59:29] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 15907
+[01/Jun/2013 10:59:29] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:59:31] "POST /lectureRegister/ HTTP/1.1" 200 14303
+[01/Jun/2013 10:59:31] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[01/Jun/2013 10:59:31] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[01/Jun/2013 10:59:35] "GET /lectureSubmit?count=1&studentID01=2 HTTP/1.1" 301 0
+[01/Jun/2013 10:59:35] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 15907
+[01/Jun/2013 10:59:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:59:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:59:38] "GET /lectureSubmit?count=2&studentID01=2&studentID02=1 HTTP/1.1" 301 0
+[01/Jun/2013 10:59:38] "GET /lectureSubmit/?count=2&studentID01=2&studentID02=1 HTTP/1.1" 200 16061
+[01/Jun/2013 10:59:38] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 10:59:38] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 10:59:25
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 147, in lectureSubmit_page
+    student  = StudentLectureOffer.objects.get(id__exact=int(studentID))
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 389, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: StudentLectureOffer matching query does not exist. Lookup parameters were {'id__exact': 1}
+[01/Jun/2013 11:06:41] "GET /lectureSubmit/?count=2&studentID01=2&studentID02=1 HTTP/1.1" 500 66649
+[01/Jun/2013 11:07:01] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:07:01] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:07:06] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:07:06] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:07:08] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 15882
+[01/Jun/2013 11:07:08] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:07:08] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 147, in lectureSubmit_page
+    student  = StudentLectureOffer.objects.get(id__exact=int(studentID))
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 389, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: StudentLectureOffer matching query does not exist. Lookup parameters were {'id__exact': 1}
+[01/Jun/2013 11:07:12] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 500 65830
+[01/Jun/2013 11:07:18] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:07:18] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 147, in lectureSubmit_page
+    student  = StudentLectureOffer.objects.get(id__exact=int(studentID))
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 389, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: StudentLectureOffer matching query does not exist. Lookup parameters were {'id__exact': 0}
+[01/Jun/2013 11:07:28] "GET /lectureSubmit/?count=1&studentID01=0 HTTP/1.1" 500 65830
+[01/Jun/2013 11:07:30] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:07:30] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:07:33] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 15882
+[01/Jun/2013 11:07:33] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:07:33] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:09:58] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 15891
+[01/Jun/2013 11:09:59] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:09:59] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:10:15] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 15891
+[01/Jun/2013 11:10:15] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:10:15] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:10:44] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 15925
+[01/Jun/2013 11:10:44] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:10:44] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:13:44] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 15954
+[01/Jun/2013 11:13:44] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:16:00] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16048
+[01/Jun/2013 11:16:00] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:17:53] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16099
+[01/Jun/2013 11:17:54] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:18:38] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16134
+[01/Jun/2013 11:18:39] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:19:53] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16169
+[01/Jun/2013 11:19:53] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:19:53] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:20:03] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16169
+[01/Jun/2013 11:20:03] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:20:03] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:20:15] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16169
+[01/Jun/2013 11:20:15] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:20:15] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:06:30
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 152, in lectureSubmit_page
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'sets' : sets, 'students' : students, 'count' : count, 'studentIDs' : studentIDs, 'allOffer' : request.user.teacher.studentlectureoffer_set.all()})))
+AttributeError: 'Teacher' object has no attribute 'studentlectureoffer_set'
+[01/Jun/2013 11:23:15] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 500 59928
+[01/Jun/2013 11:24:13] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[01/Jun/2013 11:24:13] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 152, in lectureSubmit_page
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'sets' : sets, 'students' : students, 'count' : count, 'studentIDs' : studentIDs, 'allOffer' : request.user.teacher.studentlectureoffer_set.all()})))
+AttributeError: 'Teacher' object has no attribute 'studentlectureoffer_set'
+[01/Jun/2013 11:24:21] "GET /lectureSubmit/ HTTP/1.1" 500 58691
+[01/Jun/2013 11:24:23] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[01/Jun/2013 11:24:23] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[01/Jun/2013 11:24:26] "GET /student/ HTTP/1.1" 200 16699
+[01/Jun/2013 11:24:26] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:24:28] "GET /studentSubmit/ HTTP/1.1" 200 14651
+[01/Jun/2013 11:24:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:24:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:24:57] "GET /admin/knowShareWeb/studentlectureoffer/ HTTP/1.1" 200 5054
+[01/Jun/2013 11:24:57] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:26:06] "GET /admin/knowShareWeb/ HTTP/1.1" 200 4382
+[01/Jun/2013 11:26:07] "GET /admin/knowShareWeb/student/ HTTP/1.1" 200 4902
+[01/Jun/2013 11:26:07] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:26:14] "GET /admin/knowShareWeb/teacher/ HTTP/1.1" 200 5465
+[01/Jun/2013 11:26:14] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:26:18] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 2983
+[01/Jun/2013 11:26:18] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:22:43
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowledgeShare/urls.py", line 3, in <module>
+    from knowShareWeb.views import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 152
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'sets' : sets, 'students' : students, 'count' : count, 'studentIDs' : studentIDs))))
+                                                                                                                                                                                                                       ^
+SyntaxError: invalid syntax
+[01/Jun/2013 11:27:37] "GET /lectureSubmit/ HTTP/1.1" 500 73567
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowledgeShare/urls.py", line 3, in <module>
+    from knowShareWeb.views import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 152
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'sets' : sets, 'students' : students, 'count' : count, 'studentIDs' : studentIDs))))
+                                                                                                                                                                                                                       ^
+SyntaxError: invalid syntax
+[01/Jun/2013 11:27:51] "GET /lectureSubmit/ HTTP/1.1" 500 73525
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowledgeShare/urls.py", line 3, in <module>
+    from knowShareWeb.views import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 152
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'sets' : sets, 'students' : students, 'count' : count, 'studentIDs' : studentIDs}))))
+                                                                                                                                                                                                                           ^
+SyntaxError: invalid syntax
+[01/Jun/2013 11:28:09] "GET /lectureSubmit/ HTTP/1.1" 500 73525
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowledgeShare/urls.py", line 3, in <module>
+    from knowShareWeb.views import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 152
+    return render_to_response('lectureSubmit.html', RequestContext(request, addPerm(request,{'months' : range(1, 13), 'Confirmed' : 2, 'sets' : sets, 'students' : students, 'count' : count, 'studentIDs' : studentIDs}))))
+                                                                                                                                                                                                                           ^
+SyntaxError: invalid syntax
+[01/Jun/2013 11:28:13] "GET /lectureSubmit/ HTTP/1.1" 500 73525
+[01/Jun/2013 11:28:25] "GET /lectureSubmit/ HTTP/1.1" 200 15894
+[01/Jun/2013 11:28:25] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:28:25] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:29:50] "GET /lectureSubmit/ HTTP/1.1" 200 16000
+[01/Jun/2013 11:29:51] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:29:51] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:30:13] "GET /lectureSubmit/ HTTP/1.1" 200 16013
+[01/Jun/2013 11:30:13] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:30:13] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:33:54] "GET /admin/knowShareWeb/studentrequest/ HTTP/1.1" 200 4569
+[01/Jun/2013 11:33:54] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:27:32
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 11:35:20] "GET /lectureSubmit/ HTTP/1.1" 200 16149
+[01/Jun/2013 11:35:20] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:35:20] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:34:35
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 152, in lectureSubmit_page
+    allOffer.append(request.user.teacher.teacherrequest_set.all())
+AttributeError: 'QuerySet' object has no attribute 'append'
+[01/Jun/2013 11:36:02] "GET /lectureSubmit/ HTTP/1.1" 500 58341
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:36:00
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 152, in lectureSubmit_page
+    allOffer.extend(request.user.teacher.teacherrequest_set.all())
+AttributeError: 'QuerySet' object has no attribute 'extend'
+[01/Jun/2013 11:39:29] "GET /lectureSubmit/ HTTP/1.1" 500 58341
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:39:26
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowledgeShare/urls.py", line 3, in <module>
+    from knowShareWeb.views import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 154
+    for offer in request.user.teacher.teacherrequest_set.all()):
+                                                              ^
+SyntaxError: invalid syntax
+[01/Jun/2013 11:41:05] "GET /lectureSubmit/ HTTP/1.1" 500 73525
+[01/Jun/2013 11:41:32] "GET /lectureSubmit/ HTTP/1.1" 200 16149
+[01/Jun/2013 11:41:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:41:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:41:43] "GET /admin/knowShareWeb/ HTTP/1.1" 200 4382
+[01/Jun/2013 11:41:44] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 2983
+[01/Jun/2013 11:41:44] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:41:48] "GET /admin/knowShareWeb/teacherrequest/add/ HTTP/1.1" 200 5446
+[01/Jun/2013 11:41:48] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:42:02] "POST /admin/knowShareWeb/teacherrequest/add/ HTTP/1.1" 302 0
+[01/Jun/2013 11:42:02] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 4731
+[01/Jun/2013 11:42:02] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:40:42
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 11:42:31] "GET /lectureSubmit/ HTTP/1.1" 200 16241
+[01/Jun/2013 11:42:31] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:42:31] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:43:29] "GET /lectureSubmit/ HTTP/1.1" 200 16202
+[01/Jun/2013 11:43:29] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:43:29] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:43:44] "GET /lectureSubmit/ HTTP/1.1" 200 16160
+[01/Jun/2013 11:43:44] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:43:44] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:44:35] "GET /lectureSubmit/ HTTP/1.1" 200 16166
+[01/Jun/2013 11:44:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:44:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:45:13] "GET /lectureSubmit/ HTTP/1.1" 200 16172
+[01/Jun/2013 11:45:14] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:45:14] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:45:22] "GET /lectureSubmit/ HTTP/1.1" 200 16173
+[01/Jun/2013 11:45:23] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:45:23] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:45:50] "GET /lecture/ HTTP/1.1" 200 10438
+[01/Jun/2013 11:45:51] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:45:51] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:45:52] "GET /lectureSubmit/ HTTP/1.1" 200 16173
+[01/Jun/2013 11:45:52] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:45:52] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:45:53] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 11:45:53] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:45:53] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:45:54] "GET /studentSubmit/ HTTP/1.1" 200 14651
+[01/Jun/2013 11:45:54] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:45:54] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:45:57] "GET /teacher/ HTTP/1.1" 200 18628
+[01/Jun/2013 11:45:57] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:45:57] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:45:59] "GET /student/ HTTP/1.1" 200 16699
+[01/Jun/2013 11:45:59] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:45:59] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:46:00] "GET / HTTP/1.1" 200 11279
+[01/Jun/2013 11:46:01] "GET /contact/ HTTP/1.1" 200 10331
+[01/Jun/2013 11:46:01] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:46:01] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:46:02] "GET /howto/ HTTP/1.1" 200 13373
+[01/Jun/2013 11:46:02] "GET /howto/favicon.ico HTTP/1.1" 200 13373
+[01/Jun/2013 11:46:03] "GET /lecture/ HTTP/1.1" 200 10438
+[01/Jun/2013 11:46:03] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:46:03] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:46:04] "GET /lectureSubmit/ HTTP/1.1" 200 16173
+[01/Jun/2013 11:46:04] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:46:04] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:42:21
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 11:47:11] "GET /lectureSubmit/ HTTP/1.1" 200 16173
+[01/Jun/2013 11:47:11] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:47:11] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:47:13] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16387
+[01/Jun/2013 11:47:13] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:47:35] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16430
+[01/Jun/2013 11:47:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:47:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:47:44] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16416
+[01/Jun/2013 11:47:44] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:47:44] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:48:07] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16407
+[01/Jun/2013 11:48:08] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:48:08] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:47:08
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 11:48:50] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16416
+[01/Jun/2013 11:48:51] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:48:51] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:48:49
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 11:50:57] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 11041
+[01/Jun/2013 11:50:58] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:50:58] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:51:06] "GET /admin/ HTTP/1.1" 200 1865
+[01/Jun/2013 11:51:08] "POST /admin/ HTTP/1.1" 302 0
+[01/Jun/2013 11:51:08] "GET /admin/ HTTP/1.1" 200 6158
+[01/Jun/2013 11:51:12] "GET /admin/auth/user/ HTTP/1.1" 200 6144
+[01/Jun/2013 11:51:12] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:51:13] "GET /admin/ HTTP/1.1" 200 6158
+[01/Jun/2013 11:51:30] "GET /admin/auth/group/ HTTP/1.1" 200 3320
+[01/Jun/2013 11:51:30] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:51:46] "GET /admin/auth/group/ HTTP/1.1" 200 3320
+[01/Jun/2013 11:51:46] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:51:48] "GET /admin/auth/group/add/ HTTP/1.1" 200 7060
+[01/Jun/2013 11:51:48] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:51:56] "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+[01/Jun/2013 11:51:56] "GET /admin/auth/group/ HTTP/1.1" 200 4582
+[01/Jun/2013 11:51:56] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:52:00] "GET /admin/auth/group/add/ HTTP/1.1" 200 7060
+[01/Jun/2013 11:52:00] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:52:12] "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+[01/Jun/2013 11:52:12] "GET /admin/auth/group/ HTTP/1.1" 200 4773
+[01/Jun/2013 11:52:12] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:52:15] "GET /admin/ HTTP/1.1" 200 6727
+[01/Jun/2013 11:52:17] "GET /admin/auth/user/ HTTP/1.1" 200 6358
+[01/Jun/2013 11:52:17] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:52:18] "GET /admin/auth/user/1/ HTTP/1.1" 200 14679
+[01/Jun/2013 11:52:18] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:52:23] "POST /admin/auth/user/1/ HTTP/1.1" 302 0
+[01/Jun/2013 11:52:24] "GET /admin/auth/user/ HTTP/1.1" 200 6498
+[01/Jun/2013 11:52:24] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:52:26] "GET /admin/auth/user/add/ HTTP/1.1" 200 4677
+[01/Jun/2013 11:52:26] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:52:33] "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+[01/Jun/2013 11:52:33] "GET /admin/auth/user/2/ HTTP/1.1" 200 14788
+[01/Jun/2013 11:52:33] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:52:39] "POST /admin/auth/user/2/ HTTP/1.1" 302 0
+[01/Jun/2013 11:52:39] "GET /admin/auth/user/ HTTP/1.1" 200 6800
+[01/Jun/2013 11:52:39] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 11:52:42] "GET / HTTP/1.1" 200 11041
+[01/Jun/2013 11:52:45] "GET /teacher HTTP/1.1" 301 0
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 41, in teacher_page
+    teacherRequests = request.user.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'teacherrequest_set'
+[01/Jun/2013 11:52:45] "GET /teacher/ HTTP/1.1" 500 61402
+[01/Jun/2013 11:53:01] "GET /student HTTP/1.1" 301 0
+[01/Jun/2013 11:53:01] "GET /student/ HTTP/1.1" 200 15129
+[01/Jun/2013 11:53:02] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:53:02] "GET /student/favicon.ico HTTP/1.1" 404 5876
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 41, in teacher_page
+    teacherRequests = request.user.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'teacherrequest_set'
+[01/Jun/2013 11:53:03] "GET /teacher/ HTTP/1.1" 500 61426
+[01/Jun/2013 11:53:17] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:53:17] "GET /student/favicon.ico HTTP/1.1" 404 5876
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 41, in teacher_page
+    teacherRequests = request.user.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'teacherrequest_set'
+[01/Jun/2013 11:53:23] "GET /teacher/ HTTP/1.1" 500 61426
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:50:18
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 41, in teacher_page
+    teacherRequests = request.user.student.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[01/Jun/2013 11:54:19] "GET /teacher/ HTTP/1.1" 500 65017
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:54:12
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 41, in teacher_page
+    teacherRequests = request.user.teacher.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[01/Jun/2013 11:54:55] "GET /teacher/ HTTP/1.1" 500 65016
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:54:53
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 319, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 347, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/Library/Python/2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowledgeShare/urls.py", line 3, in <module>
+    from knowShareWeb.views import *
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 42
+    teacherRequests = request.user.student.teacherrequest_set.all()
+                  ^
+IndentationError: expected an indented block
+[01/Jun/2013 11:55:30] "GET /teacher/ HTTP/1.1" 500 73517
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 44, in teacher_page
+    return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests, 'teacherUserRels' : teacherUserRels, "user" : request.user})))
+UnboundLocalError: local variable 'teacherRequests' referenced before assignment
+[01/Jun/2013 11:55:40] "GET /teacher/ HTTP/1.1" 500 58620
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:55:29
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 133, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view knowShareWeb.views.teacher_page didn't return an HttpResponse object.
+[01/Jun/2013 11:55:55] "GET /teacher/ HTTP/1.1" 500 50483
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:55:52
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 11:56:56] "GET /teacher/ HTTP/1.1" 200 17822
+[01/Jun/2013 11:56:56] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:56:56] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:56:59] "GET /teacher/ HTTP/1.1" 200 17822
+[01/Jun/2013 11:56:59] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:56:59] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:57:01] "GET /teacherSubmit HTTP/1.1" 301 0
+[01/Jun/2013 11:57:01] "GET /teacherSubmit/ HTTP/1.1" 200 13680
+[01/Jun/2013 11:57:01] "GET /teacherSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:57:01] "GET /teacherSubmit/favicon.ico HTTP/1.1" 404 5894
+Internal Server Error: /teacherRegister/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 283, in teacher_register_page
+    user = request.user
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/models.py", line 10, in create_teacher
+    teacher.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1661, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 936, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 894, in as_sql
+    for obj in self.query.objs
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 304, in get_db_prep_save
+    prepared=False)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 296, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 991, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[01/Jun/2013 11:57:11] "POST /teacherRegister/ HTTP/1.1" 500 104394
+[01/Jun/2013 11:57:14] "GET /teacherSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:57:14] "GET /teacherSubmit/favicon.ico HTTP/1.1" 404 5894
+Internal Server Error: /teacherRegister/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 283, in teacher_register_page
+    user = request.user
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/models.py", line 10, in create_teacher
+    teacher.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1661, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 936, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 894, in as_sql
+    for obj in self.query.objs
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 304, in get_db_prep_save
+    prepared=False)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 296, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py", line 991, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[01/Jun/2013 11:57:20] "POST /teacherRegister/ HTTP/1.1" 500 104446
+[01/Jun/2013 11:57:22] "GET /teacherSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 11:57:31] "POST /teacherRegister/ HTTP/1.1" 302 0
+[01/Jun/2013 11:57:31] "GET / HTTP/1.1" 200 11041
+[01/Jun/2013 11:57:34] "GET /student/ HTTP/1.1" 200 15129
+[01/Jun/2013 11:57:34] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:57:34] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:57:35] "GET /teacher/ HTTP/1.1" 200 18388
+[01/Jun/2013 11:57:35] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:57:35] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:57:38] "GET /logout/ HTTP/1.1" 302 0
+[01/Jun/2013 11:57:38] "GET / HTTP/1.1" 200 10248
+[01/Jun/2013 11:57:45] "POST /login/ HTTP/1.1" 302 0
+[01/Jun/2013 11:57:45] "GET / HTTP/1.1" 200 10931
+[01/Jun/2013 11:57:47] "GET /teacher HTTP/1.1" 301 0
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 43, in teacher_page
+    teacherRequests = request.user.student.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[01/Jun/2013 11:57:47] "GET /teacher/ HTTP/1.1" 500 65377
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:56:26
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 11:58:18] "GET /teacher/ HTTP/1.1" 200 18183
+[01/Jun/2013 11:58:18] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:58:18] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+Internal Server Error: /teacherRequest/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 386, in teacher_request_page
+    permission = 0)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/models.py", line 120, in create_teacher_request
+    teacherRequest.student = student
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 405, in __set__
+    self.field.name, self.field.rel.to._meta.object_name))
+ValueError: Cannot assign "<django.utils.functional.SimpleLazyObject object at 0x1079dd8d0>": "TeacherRequest.student" must be a "Student" instance.
+[01/Jun/2013 11:58:25] "POST /teacherRequest/ HTTP/1.1" 500 67474
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:58:17
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 11:59:34] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:59:34] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+Internal Server Error: /teacherRequest/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 384, in teacher_request_page
+    student = request.user.student,
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[01/Jun/2013 11:59:38] "POST /teacherRequest/ HTTP/1.1" 500 65935
+[01/Jun/2013 11:59:52] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:59:52] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 11:59:54] "GET /studentSubmit HTTP/1.1" 301 0
+Internal Server Error: /studentSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 114, in studentSubmit_page
+    return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers, 'student' : student})))
+UnboundLocalError: local variable 'student' referenced before assignment
+[01/Jun/2013 11:59:54] "GET /studentSubmit/ HTTP/1.1" 500 57836
+Validating models...
+
+0 errors found
+June 01, 2013 - 11:59:33
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /studentSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 114, in studentSubmit_page
+    return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers, 'student' : student})))
+UnboundLocalError: local variable 'student' referenced before assignment
+[01/Jun/2013 12:00:59] "GET /studentSubmit/ HTTP/1.1" 500 57762
+Validating models...
+
+0 errors found
+June 01, 2013 - 12:00:51
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 12:01:32] "GET /studentSubmit/ HTTP/1.1" 200 13527
+[01/Jun/2013 12:01:32] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 12:01:32] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 12:01:16
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 12:02:59] "GET /studentSubmit/ HTTP/1.1" 200 14461
+[01/Jun/2013 12:03:00] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 12:03:00] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 12:03:11] "POST /studentRegister/ HTTP/1.1" 302 0
+[01/Jun/2013 12:03:11] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 12:03:11] "GET /studentSubmit/ HTTP/1.1" 200 13618
+[01/Jun/2013 12:03:11] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 12:03:11] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 12:03:15] "GET /teacher/ HTTP/1.1" 200 18183
+[01/Jun/2013 12:03:15] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:03:15] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:03:20] "POST /teacherRequest/ HTTP/1.1" 302 0
+[01/Jun/2013 12:03:20] "GET /teacher HTTP/1.1" 301 0
+[01/Jun/2013 12:03:20] "GET /teacher/ HTTP/1.1" 200 18183
+[01/Jun/2013 12:03:20] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:03:26] "GET /teacher/ HTTP/1.1" 200 18183
+[01/Jun/2013 12:03:26] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:03:26] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+Validating models...
+
+0 errors found
+June 01, 2013 - 12:02:47
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 12:03:47] "GET /teacher/ HTTP/1.1" 200 18195
+[01/Jun/2013 12:03:47] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:03:47] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:03:52] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:03:52] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:03:53] "GET /teacher/ HTTP/1.1" 200 18195
+[01/Jun/2013 12:03:54] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:03:54] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:04:13] "GET /studentSubmit/ HTTP/1.1" 200 13618
+[01/Jun/2013 12:04:13] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 12:04:13] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 12:04:14] "GET /teacher/ HTTP/1.1" 200 18195
+[01/Jun/2013 12:04:15] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:04:20] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 1921
+[01/Jun/2013 12:04:22] "POST /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 302 0
+Internal Server Error: /admin/knowShareWeb/teacherrequest/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Library/Python/2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 1185, in render
+    _dict = func(*resolved_args, **resolved_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 286, in result_list
+    'results': list(results(cl))}
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 264, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 256, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 184, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/util.py", line 254, in lookup_field
+    value = attr(obj)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/models.py", line 136, in get_student
+    return obj.student.username
+AttributeError: 'Student' object has no attribute 'username'
+[01/Jun/2013 12:04:22] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 500 302087
+Validating models...
+
+0 errors found
+June 01, 2013 - 12:03:43
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 12:05:27] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 4563
+[01/Jun/2013 12:05:27] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+Validating models...
+
+0 errors found
+June 01, 2013 - 12:05:26
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 12:05:47] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 4565
+[01/Jun/2013 12:05:47] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+Validating models...
+
+0 errors found
+June 01, 2013 - 12:05:45
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 12:06:21] "POST /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 2276
+[01/Jun/2013 12:06:23] "POST /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 302 0
+[01/Jun/2013 12:06:23] "GET /admin/knowShareWeb/teacherrequest/ HTTP/1.1" 200 3111
+[01/Jun/2013 12:06:23] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 12:06:26] "GET /logout/ HTTP/1.1" 302 0
+[01/Jun/2013 12:06:26] "GET / HTTP/1.1" 200 10248
+[01/Jun/2013 12:06:31] "POST /login/ HTTP/1.1" 302 0
+[01/Jun/2013 12:06:31] "GET / HTTP/1.1" 200 10931
+[01/Jun/2013 12:06:32] "GET /teacher HTTP/1.1" 301 0
+[01/Jun/2013 12:06:32] "GET /teacher/ HTTP/1.1" 200 18183
+[01/Jun/2013 12:06:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:06:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:06:36] "POST /teacherRequest/ HTTP/1.1" 302 0
+[01/Jun/2013 12:06:36] "GET /teacher HTTP/1.1" 301 0
+[01/Jun/2013 12:06:36] "GET /teacher/ HTTP/1.1" 200 18195
+[01/Jun/2013 12:06:37] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:06:37] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:06:40] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 12:06:41] "GET /studentSubmit/ HTTP/1.1" 200 13618
+[01/Jun/2013 12:06:41] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 12:06:42] "GET /teacher/ HTTP/1.1" 200 18195
+[01/Jun/2013 12:06:42] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 12:06:42] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+Validating models...
+
+0 errors found
+June 01, 2013 - 12:06:15
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[01/Jun/2013 12:19:13] "GET /admin/ HTTP/1.1" 200 7795
+[01/Jun/2013 12:19:15] "GET /admin/knowShareWeb/lecture/ HTTP/1.1" 200 2936
+[01/Jun/2013 12:19:15] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 12:19:17] "GET /admin/knowShareWeb/lecture/ HTTP/1.1" 200 2936
+[01/Jun/2013 12:19:17] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 12:19:18] "GET /admin/knowShareWeb/lecture/add/ HTTP/1.1" 200 6811
+[01/Jun/2013 12:19:18] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 12:19:22] "GET /admin/knowShareWeb/student/add/?_popup=1 HTTP/1.1" 200 4104
+[01/Jun/2013 12:19:22] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 12:19:30] "GET /admin/knowShareWeb/student/add/?_popup=1 HTTP/1.1" 200 4104
+[01/Jun/2013 12:19:30] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 12:19:47] "POST /admin/knowShareWeb/lecture/add/ HTTP/1.1" 200 7103
+[01/Jun/2013 12:19:47] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 12:19:53] "POST /admin/knowShareWeb/lecture/add/ HTTP/1.1" 302 0
+[01/Jun/2013 12:19:53] "GET /admin/knowShareWeb/lecture/ HTTP/1.1" 200 5034
+[01/Jun/2013 12:19:53] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+Validating models...
+
+0 errors found
+June 01, 2013 - 12:07:40
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <bound method Command.inner_run of <django.contrib.staticfiles.management.commands.runserver.Command object at 0x10a4cc390>>
+Traceback (most recent call last):
+[01/Jun/2013 19:38:23] "GET / HTTP/1.1" 200 10931
+[01/Jun/2013 19:38:23] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[01/Jun/2013 19:38:23] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[01/Jun/2013 19:38:27] "GET /lecture HTTP/1.1" 301 0
+[01/Jun/2013 19:38:27] "GET /lecture/ HTTP/1.1" 200 10538
+[01/Jun/2013 19:38:27] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:27] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:28] "GET /myProfile HTTP/1.1" 301 0
+[01/Jun/2013 19:38:28] "GET /myProfile/ HTTP/1.1" 200 10197
+[01/Jun/2013 19:38:28] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 19:38:28] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 19:38:29] "GET /submitList HTTP/1.1" 301 0
+[01/Jun/2013 19:38:29] "GET /submitList/ HTTP/1.1" 200 11874
+[01/Jun/2013 19:38:29] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 19:38:29] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[01/Jun/2013 19:38:30] "GET /receiveList HTTP/1.1" 301 0
+[01/Jun/2013 19:38:30] "GET /receiveList/ HTTP/1.1" 200 13916
+[01/Jun/2013 19:38:30] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 19:38:30] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[01/Jun/2013 19:38:32] "GET /teacher HTTP/1.1" 301 0
+[01/Jun/2013 19:38:32] "GET /teacher/ HTTP/1.1" 200 18199
+[01/Jun/2013 19:38:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:33] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 19:38:33] "GET /studentSubmit/ HTTP/1.1" 200 13974
+[01/Jun/2013 19:38:33] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 19:38:33] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 19:38:36] "GET /teacher/ HTTP/1.1" 200 18199
+[01/Jun/2013 19:38:36] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:36] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:38] "GET /lecture/ HTTP/1.1" 200 10538
+[01/Jun/2013 19:38:38] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:38] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:43] "GET /logout/ HTTP/1.1" 302 0
+[01/Jun/2013 19:38:43] "GET / HTTP/1.1" 200 10248
+[01/Jun/2013 19:38:52] "POST /login/ HTTP/1.1" 302 0
+[01/Jun/2013 19:38:52] "GET / HTTP/1.1" 200 10931
+[01/Jun/2013 19:38:54] "GET /lecture HTTP/1.1" 301 0
+[01/Jun/2013 19:38:54] "GET /lecture/ HTTP/1.1" 200 10538
+[01/Jun/2013 19:38:54] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:54] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 19:38:56] "GET /logout/ HTTP/1.1" 302 0
+[01/Jun/2013 19:38:56] "GET / HTTP/1.1" 200 10248
+[01/Jun/2013 19:38:59] "POST /login/ HTTP/1.1" 302 0
+[01/Jun/2013 19:38:59] "GET / HTTP/1.1" 200 11041
+[01/Jun/2013 19:39:01] "GET /lectureSubmit HTTP/1.1" 301 0
+[01/Jun/2013 19:39:01] "GET /lectureSubmit/ HTTP/1.1" 200 15866
+[01/Jun/2013 19:39:01] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 19:39:01] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 18:25:36
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[<TeacherRequest: TeacherRequest object>]
+[<TeacherRequest: TeacherRequest object>]
+[01/Jun/2013 20:34:30] "GET / HTTP/1.1" 200 11041
+[01/Jun/2013 20:34:32] "GET /lectureSubmit/ HTTP/1.1" 200 15866
+[01/Jun/2013 20:34:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:34:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 20:10:19
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 160, in lectureSubmit_page
+    allOffer = Set([])
+NameError: global name 'Set' is not defined
+[01/Jun/2013 20:38:45] "GET /lectureSubmit/ HTTP/1.1" 500 57674
+Validating models...
+
+0 errors found
+June 01, 2013 - 20:37:28
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[01/Jun/2013 20:39:29] "GET /lectureSubmit/ HTTP/1.1" 200 15866
+[01/Jun/2013 20:39:29] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:39:29] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:39:38] "GET /teacher HTTP/1.1" 301 0
+[01/Jun/2013 20:39:38] "GET /teacher/ HTTP/1.1" 200 18388
+[01/Jun/2013 20:39:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:39:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:39:41] "GET /student HTTP/1.1" 301 0
+[01/Jun/2013 20:39:41] "GET /student/ HTTP/1.1" 200 15797
+[01/Jun/2013 20:39:42] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:39:42] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:39:49] "POST /studentRequest/ HTTP/1.1" 302 0
+[01/Jun/2013 20:39:49] "GET /student HTTP/1.1" 301 0
+[01/Jun/2013 20:39:49] "GET /student/ HTTP/1.1" 200 15801
+[01/Jun/2013 20:39:49] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:39:49] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:39:52] "GET /lectureSubmit/ HTTP/1.1" 200 15866
+[01/Jun/2013 20:39:52] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:39:52] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:39:54] "GET /logout/ HTTP/1.1" 302 0
+[01/Jun/2013 20:39:54] "GET / HTTP/1.1" 200 10248
+[01/Jun/2013 20:40:04] "POST /register/ HTTP/1.1" 302 0
+[01/Jun/2013 20:40:04] "GET / HTTP/1.1" 200 10693
+[01/Jun/2013 20:40:12] "GET /admin/ HTTP/1.1" 200 1865
+[01/Jun/2013 20:40:15] "POST /admin/ HTTP/1.1" 302 0
+[01/Jun/2013 20:40:15] "GET /admin/ HTTP/1.1" 200 8082
+[01/Jun/2013 20:40:21] "GET /admin/auth/user/ HTTP/1.1" 200 6972
+[01/Jun/2013 20:40:21] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 20:40:23] "GET /admin/auth/user/3/ HTTP/1.1" 200 14651
+[01/Jun/2013 20:40:23] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 20:40:28] "POST /admin/auth/user/3/ HTTP/1.1" 302 0
+[01/Jun/2013 20:40:28] "GET /admin/auth/user/ HTTP/1.1" 200 7116
+[01/Jun/2013 20:40:28] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[01/Jun/2013 20:40:34] "GET / HTTP/1.1" 200 11041
+[01/Jun/2013 20:40:36] "GET /logout/ HTTP/1.1" 302 0
+[01/Jun/2013 20:40:36] "GET / HTTP/1.1" 200 10248
+[01/Jun/2013 20:40:46] "POST /login/ HTTP/1.1" 302 0
+[01/Jun/2013 20:40:46] "GET / HTTP/1.1" 200 10931
+[01/Jun/2013 20:40:47] "GET /lecture HTTP/1.1" 301 0
+[01/Jun/2013 20:40:47] "GET /lecture/ HTTP/1.1" 200 10089
+[01/Jun/2013 20:40:48] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:40:48] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:40:49] "GET /teacher HTTP/1.1" 301 0
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 38, in teacher_page
+    if teacherrequest.student == request.user.student :
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[01/Jun/2013 20:40:49] "GET /teacher/ HTTP/1.1" 500 65079
+[01/Jun/2013 20:41:06] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:41:07] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:41:08] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 20:41:08] "GET /studentSubmit/ HTTP/1.1" 200 14461
+[01/Jun/2013 20:41:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:41:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:41:15] "POST /studentRegister/ HTTP/1.1" 302 0
+[01/Jun/2013 20:41:15] "GET /studentSubmit HTTP/1.1" 301 0
+[01/Jun/2013 20:41:15] "GET /studentSubmit/ HTTP/1.1" 200 13615
+[01/Jun/2013 20:41:15] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:41:15] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:41:17] "GET /teacher/ HTTP/1.1" 200 18183
+[01/Jun/2013 20:41:17] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:41:17] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:41:22] "POST /teacherRequest/ HTTP/1.1" 302 0
+[01/Jun/2013 20:41:22] "GET /teacher HTTP/1.1" 301 0
+[01/Jun/2013 20:41:22] "GET /teacher/ HTTP/1.1" 200 18199
+[01/Jun/2013 20:41:22] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:41:23] "GET /logout/ HTTP/1.1" 302 0
+[01/Jun/2013 20:41:23] "GET / HTTP/1.1" 200 10248
+[01/Jun/2013 20:41:25] "POST /login/ HTTP/1.1" 302 0
+[01/Jun/2013 20:41:25] "GET / HTTP/1.1" 200 11041
+[01/Jun/2013 20:41:27] "GET /lectureSubmit HTTP/1.1" 301 0
+[01/Jun/2013 20:41:27] "GET /lectureSubmit/ HTTP/1.1" 200 15944
+[01/Jun/2013 20:41:27] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:41:27] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:41:30] "GET /lectureSubmit?count=1&studentID01=1 HTTP/1.1" 301 0
+[01/Jun/2013 20:41:30] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16153
+[01/Jun/2013 20:41:30] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:41:31] "GET /lectureSubmit?count=2&studentID01=1&studentID02=2 HTTP/1.1" 301 0
+[01/Jun/2013 20:41:32] "GET /lectureSubmit/?count=2&studentID01=1&studentID02=2 HTTP/1.1" 200 16293
+[01/Jun/2013 20:41:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:41:36] "POST /lectureRegister/ HTTP/1.1" 200 14441
+[01/Jun/2013 20:41:37] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[01/Jun/2013 20:41:37] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[01/Jun/2013 20:41:39] "GET /lecture HTTP/1.1" 301 0
+[01/Jun/2013 20:41:40] "GET /lecture/ HTTP/1.1" 200 10665
+[01/Jun/2013 20:41:40] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:41:40] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:41:47] "GET /myProfile HTTP/1.1" 301 0
+[01/Jun/2013 20:41:47] "GET /myProfile/ HTTP/1.1" 200 10679
+[01/Jun/2013 20:41:47] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 20:41:47] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 20:44:27] "GET /lecture/ HTTP/1.1" 200 10665
+[01/Jun/2013 20:44:27] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:44:27] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:44:28] "GET /lectureSubmit/ HTTP/1.1" 200 15944
+[01/Jun/2013 20:44:28] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:44:28] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:46:36] "GET /lecture/ HTTP/1.1" 200 10665
+[01/Jun/2013 20:46:37] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:46:37] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:46:37] "GET /lectureSubmit/ HTTP/1.1" 200 15944
+[01/Jun/2013 20:46:38] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:46:38] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:46:38] "GET /teacher HTTP/1.1" 301 0
+[01/Jun/2013 20:46:38] "GET /teacher/ HTTP/1.1" 200 18388
+[01/Jun/2013 20:46:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:46:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:46:39] "GET /student HTTP/1.1" 301 0
+[01/Jun/2013 20:46:39] "GET /student/ HTTP/1.1" 200 15801
+[01/Jun/2013 20:46:39] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:46:39] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 20:46:40] "GET /myProfile/ HTTP/1.1" 200 10679
+[01/Jun/2013 20:46:40] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 20:46:40] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 20:46:41] "GET /submitList HTTP/1.1" 301 0
+Internal Server Error: /submitList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 197, in submit_list_page
+    teacherRequests = request.user.student.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[01/Jun/2013 20:46:42] "GET /submitList/ HTTP/1.1" 500 64505
+[01/Jun/2013 20:46:44] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 20:46:44] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 20:46:47] "GET /lectureSubmit/ HTTP/1.1" 200 15944
+[01/Jun/2013 20:46:47] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:46:47] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:46:49] "POST /lectureRegister/ HTTP/1.1" 200 14441
+[01/Jun/2013 20:46:49] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[01/Jun/2013 20:46:49] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[01/Jun/2013 20:46:51] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 20:46:51] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 01, 2013 - 20:39:25
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[]
+[]
+[<TeacherRequest: TeacherRequest object>]
+[]
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[01/Jun/2013 23:57:24] "GET / HTTP/1.1" 200 11041
+[01/Jun/2013 23:57:26] "GET /teacher/ HTTP/1.1" 200 18388
+[01/Jun/2013 23:57:26] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:26] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:27] "GET /student/ HTTP/1.1" 200 15801
+[01/Jun/2013 23:57:28] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:28] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:29] "GET /teacher/ HTTP/1.1" 200 18388
+[01/Jun/2013 23:57:29] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:29] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:30] "GET /student/ HTTP/1.1" 200 15801
+[01/Jun/2013 23:57:30] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:30] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:32] "GET /teacher/ HTTP/1.1" 200 18388
+[01/Jun/2013 23:57:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:37] "GET /teacherInfoChange HTTP/1.1" 301 0
+[01/Jun/2013 23:57:37] "GET /teacherInfoChange/ HTTP/1.1" 200 14035
+[01/Jun/2013 23:57:37] "GET /teacherInfoChange/favicon.ico HTTP/1.1" 404 5906
+[01/Jun/2013 23:57:37] "GET /teacherInfoChange/favicon.ico HTTP/1.1" 404 5906
+[01/Jun/2013 23:57:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:40] "GET /student/ HTTP/1.1" 200 15801
+[01/Jun/2013 23:57:40] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:40] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:42] "GET /lecture/ HTTP/1.1" 200 10665
+[01/Jun/2013 23:57:42] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:42] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:57:44] "GET /lectureSubmit/ HTTP/1.1" 200 15944
+[01/Jun/2013 23:57:44] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 23:57:44] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[01/Jun/2013 23:58:30] "GET /myProfile/ HTTP/1.1" 200 10679
+[01/Jun/2013 23:58:30] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 23:58:30] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+Internal Server Error: /submitList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 197, in submit_list_page
+    teacherRequests = request.user.student.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[01/Jun/2013 23:58:32] "GET /submitList/ HTTP/1.1" 500 64505
+[01/Jun/2013 23:58:34] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 23:58:34] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[01/Jun/2013 23:58:35] "GET /teacher/ HTTP/1.1" 200 18388
+[01/Jun/2013 23:58:35] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:58:35] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:58:36] "GET /student/ HTTP/1.1" 200 15801
+[01/Jun/2013 23:58:36] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:58:36] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[01/Jun/2013 23:58:38] "GET /logout/ HTTP/1.1" 302 0
+[01/Jun/2013 23:58:38] "GET / HTTP/1.1" 200 10248
+[02/Jun/2013 00:13:21] "GET /lecture HTTP/1.1" 301 0
+[02/Jun/2013 00:13:21] "GET /lecture/ HTTP/1.1" 200 9406
+[02/Jun/2013 00:13:22] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:13:22] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:13:23] "GET /teacher HTTP/1.1" 301 0
+[02/Jun/2013 00:13:23] "GET /teacher/ HTTP/1.1" 200 16852
+[02/Jun/2013 00:13:23] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:13:23] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:13:25] "GET /teacher/ HTTP/1.1" 200 16852
+[02/Jun/2013 00:13:25] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:13:25] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:13:26] "GET / HTTP/1.1" 200 10248
+[02/Jun/2013 00:13:28] "GET /howto HTTP/1.1" 301 0
+[02/Jun/2013 00:13:28] "GET /howto/ HTTP/1.1" 200 12342
+[02/Jun/2013 00:13:28] "GET /static/img/KnowShare01.png HTTP/1.1" 304 0
+[02/Jun/2013 00:13:28] "GET /static/img/KnowShare06.png HTTP/1.1" 304 0
+[02/Jun/2013 00:13:28] "GET /static/img/KnowShare03.png HTTP/1.1" 304 0
+[02/Jun/2013 00:13:28] "GET /static/img/KnowShare02.png HTTP/1.1" 304 0
+[02/Jun/2013 00:13:28] "GET /static/img/KnowShare04.png HTTP/1.1" 304 0
+[02/Jun/2013 00:13:28] "GET /static/img/KnowShare05.png HTTP/1.1" 304 0
+[02/Jun/2013 00:13:28] "GET /howto/favicon.ico HTTP/1.1" 200 12342
+[02/Jun/2013 00:13:29] "GET /contact HTTP/1.1" 301 0
+[02/Jun/2013 00:13:29] "GET /contact/ HTTP/1.1" 200 9300
+[02/Jun/2013 00:13:29] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:22:16] "GET /teacher/ HTTP/1.1" 200 16852
+[02/Jun/2013 00:22:16] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:22:36] "GET / HTTP/1.1" 200 10248
+[02/Jun/2013 00:22:37] "GET /howto/ HTTP/1.1" 200 12342
+[02/Jun/2013 00:22:37] "GET /howto/favicon.ico HTTP/1.1" 200 12342
+[02/Jun/2013 00:22:39] "GET / HTTP/1.1" 200 10248
+[02/Jun/2013 00:22:43] "GET / HTTP/1.1" 200 10248
+[02/Jun/2013 00:22:49] "GET /howto/ HTTP/1.1" 200 12342
+[02/Jun/2013 00:22:49] "GET /howto/favicon.ico HTTP/1.1" 200 12342
+[02/Jun/2013 00:22:52] "GET /teacher/ HTTP/1.1" 200 16852
+[02/Jun/2013 00:22:52] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:23:18] "GET /lecture/ HTTP/1.1" 200 9406
+[02/Jun/2013 00:23:19] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:23:19] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:23:23] "GET /teacher/ HTTP/1.1" 200 16852
+[02/Jun/2013 00:23:23] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:23:23] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:23:56] "GET /howto/ HTTP/1.1" 200 12342
+[02/Jun/2013 00:23:57] "GET /howto/favicon.ico HTTP/1.1" 200 12342
+[02/Jun/2013 00:23:57] "GET /howto/favicon.ico HTTP/1.1" 200 12342
+[02/Jun/2013 00:24:05] "GET / HTTP/1.1" 200 10248
+[02/Jun/2013 00:24:23] "GET /teacher/ HTTP/1.1" 200 16852
+[02/Jun/2013 00:24:23] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:37:43] "GET / HTTP/1.1" 200 10248
+[02/Jun/2013 00:37:45] "GET /howto/ HTTP/1.1" 200 12342
+[02/Jun/2013 00:37:45] "GET /howto/favicon.ico HTTP/1.1" 200 12342
+[02/Jun/2013 00:37:47] "GET /contact/ HTTP/1.1" 200 9300
+[02/Jun/2013 00:37:47] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:37:49] "GET /teacher/ HTTP/1.1" 200 16852
+[02/Jun/2013 00:37:49] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:37:49] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:37:54] "GET /lecture/ HTTP/1.1" 200 9406
+[02/Jun/2013 00:37:54] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:37:54] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:37:57] "POST /login/ HTTP/1.1" 302 0
+[02/Jun/2013 00:37:57] "GET / HTTP/1.1" 200 11041
+[02/Jun/2013 00:37:59] "GET /myProfile HTTP/1.1" 301 0
+[02/Jun/2013 00:37:59] "GET /myProfile/ HTTP/1.1" 200 10679
+[02/Jun/2013 00:37:59] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 00:38:00] "GET /submitList HTTP/1.1" 301 0
+Internal Server Error: /submitList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 197, in submit_list_page
+    teacherRequests = request.user.student.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[02/Jun/2013 00:38:00] "GET /submitList/ HTTP/1.1" 500 64505
+[02/Jun/2013 00:38:02] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 00:38:02] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 00:38:03] "GET /lecture HTTP/1.1" 301 0
+Internal Server Error: /lecture/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 135, in lecture_page
+    runnings = isLectureRunning(['1'])
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/views.py", line 45, in isLectureRunning
+    dom = parseString(resp.text)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/dom/minidom.py", line 1924, in parseString
+    return expatbuilder.parseString(string)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/dom/expatbuilder.py", line 940, in parseString
+    return builder.parseString(string)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/dom/expatbuilder.py", line 223, in parseString
+    parser.Parse(string, True)
+ExpatError: not well-formed (invalid token): line 5, column 94
+[02/Jun/2013 00:38:04] "GET /lecture/ HTTP/1.1" 500 73885
+[02/Jun/2013 00:38:06] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 00:38:06] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 00:38:07] "GET /teacher HTTP/1.1" 301 0
+[02/Jun/2013 00:38:07] "GET /teacher/ HTTP/1.1" 200 18388
+[02/Jun/2013 00:38:07] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:38:07] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:38:09] "GET /student HTTP/1.1" 301 0
+[02/Jun/2013 00:38:09] "GET /student/ HTTP/1.1" 200 15801
+[02/Jun/2013 00:38:09] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 00:38:09] "GET /student/favicon.ico HTTP/1.1" 404 5876
+Internal Server Error: /lecture/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 135, in lecture_page
+    runnings = isLectureRunning(['1'])
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/views.py", line 45, in isLectureRunning
+    dom = parseString(resp.text)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/dom/minidom.py", line 1924, in parseString
+    return expatbuilder.parseString(string)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/dom/expatbuilder.py", line 940, in parseString
+    return builder.parseString(string)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/dom/expatbuilder.py", line 223, in parseString
+    parser.Parse(string, True)
+ExpatError: not well-formed (invalid token): line 5, column 94
+[02/Jun/2013 00:38:11] "GET /lecture/ HTTP/1.1" 500 73879
+[02/Jun/2013 01:17:28] "GET /student/favicon.ico HTTP/1.1" 404 5876
+Internal Server Error: /lecture/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 135, in lecture_page
+    runnings = isLectureRunning(['1'])
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/views.py", line 45, in isLectureRunning
+    dom = parseString(resp.text)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/dom/minidom.py", line 1924, in parseString
+    return expatbuilder.parseString(string)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/dom/expatbuilder.py", line 940, in parseString
+    return builder.parseString(string)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/dom/expatbuilder.py", line 223, in parseString
+    parser.Parse(string, True)
+ExpatError: not well-formed (invalid token): line 5, column 94
+[02/Jun/2013 01:17:30] "GET /lecture/ HTTP/1.1" 500 73879
+[02/Jun/2013 01:17:35] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 01:17:35] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 01:17:53] "GET /myProfile/ HTTP/1.1" 200 10679
+[02/Jun/2013 01:17:54] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+Internal Server Error: /submitList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 197, in submit_list_page
+    teacherRequests = request.user.student.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[02/Jun/2013 01:18:00] "GET /submitList/ HTTP/1.1" 500 64505
+[02/Jun/2013 01:18:02] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 01:18:02] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+Internal Server Error: /submitList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 197, in submit_list_page
+    teacherRequests = request.user.student.teacherrequest_set.all()
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[02/Jun/2013 01:18:09] "GET /submitList/ HTTP/1.1" 500 64505
+Validating models...
+
+0 errors found
+June 01, 2013 - 20:47:40
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[]
+[]
+[]
+[]
+[]
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[02/Jun/2013 01:19:20] "GET /submitList/ HTTP/1.1" 200 12092
+[02/Jun/2013 01:19:20] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 01:19:23] "GET /receiveList HTTP/1.1" 301 0
+[02/Jun/2013 01:19:23] "GET /receiveList/ HTTP/1.1" 200 14591
+[02/Jun/2013 01:19:28] "GET /submitList/ HTTP/1.1" 200 12092
+[02/Jun/2013 01:19:29] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 01:19:34] "GET /receiveList/ HTTP/1.1" 200 14591
+[02/Jun/2013 01:19:34] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 01:20:22] "GET /receiveList/ HTTP/1.1" 200 14609
+[02/Jun/2013 01:20:22] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 01:20:31] "GET /receiveList/ HTTP/1.1" 200 14589
+[02/Jun/2013 01:20:31] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 01:20:37] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 01:20:37] "POST /teacherRequestPermission/ HTTP/1.1" 302 0
+[02/Jun/2013 01:20:37] "GET /receiveList HTTP/1.1" 301 0
+[02/Jun/2013 01:20:37] "GET /receiveList/ HTTP/1.1" 200 14591
+[02/Jun/2013 01:20:49] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 01:20:52] "POST /teacherRequestPermission/ HTTP/1.1" 302 0
+[02/Jun/2013 01:20:52] "GET /receiveList HTTP/1.1" 301 0
+[02/Jun/2013 01:20:52] "GET /receiveList/ HTTP/1.1" 200 14588
+[02/Jun/2013 01:20:52] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+Internal Server Error: /lecture/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 135, in lecture_page
+    runnings = isLectureRunning(['1'])
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/views.py", line 44, in isLectureRunning
+    resp = requests.get(getBBBURL('isMeetingRunning', 'meetingID=' + meetingID))
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 335, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 438, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/adapters.py", line 327, in send
+    raise ConnectionError(e)
+ConnectionError: HTTPConnectionPool(host='1.226.82.11', port=80): Max retries exceeded with url: /bigbluebutton/api/isMeetingRunning?meetingID=1&checksum=68a55bddc6bc8016c47f070139413ef33a9adad5 (Caused by <class 'socket.error'>: [Errno 65] No route to host)
+[02/Jun/2013 01:20:57] "GET /lecture/ HTTP/1.1" 500 84743
+[02/Jun/2013 01:21:06] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 01:21:08] "GET /lectureSubmit HTTP/1.1" 301 0
+[02/Jun/2013 01:21:08] "GET /lectureSubmit/ HTTP/1.1" 200 15944
+[02/Jun/2013 01:21:08] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+Internal Server Error: /lecture/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 135, in lecture_page
+    runnings = isLectureRunning(['1'])
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/views.py", line 44, in isLectureRunning
+    resp = requests.get(getBBBURL('isMeetingRunning', 'meetingID=' + meetingID))
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 335, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 438, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/adapters.py", line 327, in send
+    raise ConnectionError(e)
+ConnectionError: HTTPConnectionPool(host='1.226.82.11', port=80): Max retries exceeded with url: /bigbluebutton/api/isMeetingRunning?meetingID=1&checksum=68a55bddc6bc8016c47f070139413ef33a9adad5 (Caused by <class 'socket.error'>: [Errno 65] No route to host)
+[02/Jun/2013 01:21:16] "GET /lecture/ HTTP/1.1" 500 84749
+Validating models...
+
+0 errors found
+June 02, 2013 - 01:19:08
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[02/Jun/2013 01:22:19] "GET /lecture/ HTTP/1.1" 200 10665
+[02/Jun/2013 01:22:32] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 01:22:32] "GET /lectureSubmit/ HTTP/1.1" 200 15944
+[02/Jun/2013 01:22:49] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:24:33] "GET /lectureSubmit/ HTTP/1.1" 200 16063
+[02/Jun/2013 01:25:07] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:25:11] "GET /lectureSubmit/ HTTP/1.1" 200 16062
+[02/Jun/2013 01:25:14] "GET /lectureSubmit?count=1&studentID01=1 HTTP/1.1" 301 0
+[02/Jun/2013 01:25:14] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16271
+[02/Jun/2013 01:25:16] "GET /lectureSubmit?count=1&studentID01=2 HTTP/1.1" 301 0
+[02/Jun/2013 01:25:16] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16305
+[02/Jun/2013 01:25:18] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16271
+[02/Jun/2013 01:26:00] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:26:02] "GET /lectureSubmit?count=2&studentID01=1&studentID02=2 HTTP/1.1" 301 0
+[02/Jun/2013 01:26:02] "GET /lectureSubmit/?count=2&studentID01=1&studentID02=2 HTTP/1.1" 200 16411
+[02/Jun/2013 01:26:06] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16271
+[02/Jun/2013 01:26:09] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16271
+[02/Jun/2013 01:26:09] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:26:10] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16305
+[02/Jun/2013 01:26:12] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16271
+[02/Jun/2013 01:26:14] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16305
+[02/Jun/2013 01:26:16] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16271
+[02/Jun/2013 01:26:17] "GET /lectureSubmit?count=1&studentID01= HTTP/1.1" 301 0
+Internal Server Error: /lectureSubmit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 157, in lectureSubmit_page
+    student  = Student.objects.get(id__exact=int(studentID))
+ValueError: invalid literal for int() with base 10: ''
+[02/Jun/2013 01:26:17] "GET /lectureSubmit/?count=1&studentID01= HTTP/1.1" 500 58902
+[02/Jun/2013 01:26:17] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:26:21] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16305
+[02/Jun/2013 01:26:33] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:27:09] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16351
+[02/Jun/2013 01:27:15] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16351
+[02/Jun/2013 01:27:17] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16317
+[02/Jun/2013 01:27:36] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16369
+[02/Jun/2013 01:27:36] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:27:37] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16403
+[02/Jun/2013 01:27:44] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16369
+[02/Jun/2013 01:27:47] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16403
+[02/Jun/2013 01:27:49] "GET / HTTP/1.1" 200 11041
+[02/Jun/2013 01:27:49] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:27:51] "GET /howto HTTP/1.1" 301 0
+[02/Jun/2013 01:27:51] "GET /howto/ HTTP/1.1" 200 13135
+[02/Jun/2013 01:27:52] "GET /howto/favicon.ico HTTP/1.1" 200 13135
+[02/Jun/2013 01:27:52] "GET /contact HTTP/1.1" 301 0
+[02/Jun/2013 01:27:52] "GET /contact/ HTTP/1.1" 200 10093
+[02/Jun/2013 01:27:54] "GET /teacher/ HTTP/1.1" 200 18388
+[02/Jun/2013 01:27:54] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 01:27:55] "GET /student/ HTTP/1.1" 200 15801
+[02/Jun/2013 01:27:55] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 01:27:57] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 01:28:05] "GET /lectureSubmit/ HTTP/1.1" 200 16160
+[02/Jun/2013 01:28:06] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:28:11] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16369
+[02/Jun/2013 01:28:13] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16403
+[02/Jun/2013 01:28:14] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16369
+[02/Jun/2013 01:28:22] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16369
+[02/Jun/2013 01:28:24] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16369
+[02/Jun/2013 01:28:26] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 16403
+[02/Jun/2013 01:28:49] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:28:57] "GET /lectureSubmit?count=2&studentID01=2&studentID02=1 HTTP/1.1" 301 0
+[02/Jun/2013 01:28:57] "GET /lectureSubmit/?count=2&studentID01=2&studentID02=1 HTTP/1.1" 200 16509
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 210, in write
+    self.send_headers()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 268, in send_headers
+    self.send_preamble()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 192, in send_preamble
+    'Date: %s\r\n' % format_date_time(time.time())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 582, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Python/2.7/site-packages/django/core/servers/basehttp.py", line 150, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 641, in __init__
+    self.finish()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 694, in finish
+    self.wfile.flush()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 210, in write
+    self.send_headers()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 268, in send_headers
+    self.send_preamble()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 192, in send_preamble
+    'Date: %s\r\n' % format_date_time(time.time())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 582, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Python/2.7/site-packages/django/core/servers/basehttp.py", line 150, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 641, in __init__
+    self.finish()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 694, in finish
+    self.wfile.flush()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[02/Jun/2013 01:29:15] "GET /admin HTTP/1.1" 301 0
+[02/Jun/2013 01:29:15] "GET /admin/ HTTP/1.1" 200 8352
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 210, in write
+    self.send_headers()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 268, in send_headers
+    self.send_preamble()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 192, in send_preamble
+    'Date: %s\r\n' % format_date_time(time.time())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 582, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Python/2.7/site-packages/django/core/servers/basehttp.py", line 150, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 641, in __init__
+    self.finish()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 694, in finish
+    self.wfile.flush()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[02/Jun/2013 01:29:23] "GET /admin/knowShareWeb/student/ HTTP/1.1" 200 4907
+[02/Jun/2013 01:29:23] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[02/Jun/2013 01:30:05] "GET /lectureSubmit/?count=2&studentID01=2&studentID02=1 HTTP/1.1" 200 16519
+[02/Jun/2013 01:30:33] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 01:30:45] "GET /lectureSubmit/?count=2&studentID01=2&studentID02=1 HTTP/1.1" 200 16556
+[02/Jun/2013 01:30:49] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 05:48:32] "GET /lectureSubmit/ HTTP/1.1" 200 16160
+[02/Jun/2013 05:48:32] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[02/Jun/2013 05:48:32] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[02/Jun/2013 05:48:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 05:48:35] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16411
+[02/Jun/2013 05:48:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 05:48:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 05:48:36] "GET /lectureSubmit/?count=2&studentID01=1&studentID02=2 HTTP/1.1" 200 16556
+[02/Jun/2013 05:48:36] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 05:48:36] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 06:15:12] "GET /lecture/ HTTP/1.1" 200 10665
+[02/Jun/2013 06:15:12] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[02/Jun/2013 06:15:12] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:15:13] "POST /createMeeting/ HTTP/1.1" 302 0
+[02/Jun/2013 06:15:34] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:15:34] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:15:36] "POST /createMeeting/ HTTP/1.1" 302 0
+[02/Jun/2013 06:21:10] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:21:11] "POST /createMeeting/ HTTP/1.1" 302 0
+[02/Jun/2013 06:21:22] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:21:25] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:21:25] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:21:49] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:21:49] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:21:51] "POST /createMeeting/ HTTP/1.1" 302 0
+[02/Jun/2013 06:21:51] "POST /createMeeting/ HTTP/1.1" 302 0
+[02/Jun/2013 06:25:31] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:25:31] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:39:08] "GET / HTTP/1.1" 200 11041
+[02/Jun/2013 06:39:20] "GET /lecture/ HTTP/1.1" 200 10665
+[02/Jun/2013 06:39:20] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:39:20] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 06:39:22] "GET /lectureSubmit/ HTTP/1.1" 200 16160
+[02/Jun/2013 06:39:23] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 06:39:23] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 06:40:34] "GET /lectureSubmit/ HTTP/1.1" 200 16160
+[02/Jun/2013 06:40:34] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 06:40:34] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:20:23] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16590
+[02/Jun/2013 07:20:23] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:21:21] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16600
+[02/Jun/2013 07:21:21] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:21:21] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:21:23] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16600
+[02/Jun/2013 07:21:23] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:21:23] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:21:24] "POST /lectureRegister/ HTTP/1.1" 200 14851
+[02/Jun/2013 07:21:24] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:21:24] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:22:19] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:22:19] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:22:21] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16614
+[02/Jun/2013 07:22:21] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:22:21] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:22:42] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16619
+[02/Jun/2013 07:22:42] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:22:42] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:22:43] "POST /lectureRegister/ HTTP/1.1" 200 14870
+[02/Jun/2013 07:22:43] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:22:43] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:22:45] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:22:45] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:22:59] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16618
+[02/Jun/2013 07:22:59] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:22:59] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:23:09] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16622
+[02/Jun/2013 07:23:09] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:23:11] "POST /lectureRegister/ HTTP/1.1" 200 14873
+[02/Jun/2013 07:23:11] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:23:17] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:23:17] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:23:18] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16620
+[02/Jun/2013 07:23:18] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:23:18] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:23:59] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16617
+[02/Jun/2013 07:23:59] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:23:59] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:25:32] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16617
+[02/Jun/2013 07:25:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:25:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:26:28] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16625
+[02/Jun/2013 07:26:28] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:26:28] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:27:09] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16628
+[02/Jun/2013 07:27:09] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:27:09] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:27:18] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16630
+[02/Jun/2013 07:27:18] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:27:18] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:27:20] "POST /lectureRegister/ HTTP/1.1" 200 14881
+[02/Jun/2013 07:27:20] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:42:16] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:42:16] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:42:16] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16694
+[02/Jun/2013 07:42:17] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:42:17] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:42:24] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16696
+[02/Jun/2013 07:42:24] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:42:24] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:42:39] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16710
+[02/Jun/2013 07:42:39] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:42:39] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:43:45] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16725
+[02/Jun/2013 07:43:45] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:43:45] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:43:47] "POST /lectureRegister/ HTTP/1.1" 200 14976
+[02/Jun/2013 07:43:48] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:43:54] "GET /lectureRegister/ HTTP/1.1" 200 14876
+[02/Jun/2013 07:43:54] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:43:54] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:43:55] "POST /lectureRegister/ HTTP/1.1" 200 14974
+[02/Jun/2013 07:43:56] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:44:58] "GET /lectureRegister/ HTTP/1.1" 200 14890
+[02/Jun/2013 07:44:58] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:44:58] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:44:59] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:44:59] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:45:00] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:45:00] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:45:00] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16737
+[02/Jun/2013 07:45:00] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:45:03] "POST /lectureRegister/ HTTP/1.1" 200 14988
+[02/Jun/2013 07:45:03] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:47:42] "GET /lectureRegister/ HTTP/1.1" 200 14900
+[02/Jun/2013 07:47:42] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:47:42] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+[02/Jun/2013 07:47:43] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:47:43] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:47:43] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:47:43] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:47:46] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:47:46] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:47:47] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16747
+[02/Jun/2013 07:47:47] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 07:47:50] "POST /lectureRegister/ HTTP/1.1" 200 14998
+[02/Jun/2013 07:47:50] "GET /lectureRegister/favicon.ico HTTP/1.1" 404 5900
+Validating models...
+
+0 errors found
+June 02, 2013 - 01:22:19
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[]
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 60771)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 60779)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 60782)
+----------------------------------------
+Validating models...
+
+0 errors found
+June 02, 2013 - 09:48:05
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+June 02, 2013 - 09:57:09
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
