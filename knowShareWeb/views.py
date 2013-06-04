@@ -132,8 +132,13 @@ def lecture_page(request):
             lectures = request.user.teacher.lecture_set.all()
         else  : 
             lectures = request.user.student.lecture_set.all()
-        runnings = isLectureRunning(['1'])
-        return render_to_response('lecture.html', RequestContext(request, addPerm(request,{'lectures' : lectures, 'runnings' : runnings})))
+        
+        lectureIDs = []
+        for lecture in lectures : 
+            lectureIDs.append(lecture.id)
+        runnings = isLectureRunning(lectureIDs)
+        print runnings
+        return render_to_response('lecture.html', RequestContext(request, addPerm(request,{'lectures' : lectures, 'runnings' : runnings, 'user' : request.user})))
     except ObjectDoesNotExist :
         return render_to_response('lecture.html', RequestContext(request, permission(request)))
 

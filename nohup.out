@@ -16674,3 +16674,690 @@ June 02, 2013 - 09:57:09
 Django version 1.5.1, using settings 'knowledgeShare.settings'
 Development server is running at http://0.0.0.0:9000/
 Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[02/Jun/2013 10:28:16] "GET /contact/ HTTP/1.1" 200 10093
+[02/Jun/2013 10:28:16] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:28:16] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:31:30] "GET /lecture/ HTTP/1.1" 200 11161
+[02/Jun/2013 10:31:30] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:31:31] "GET /lectureSubmit/ HTTP/1.1" 200 16837
+[02/Jun/2013 10:31:31] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 10:31:31] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 10:31:55] "GET /myProfile/ HTTP/1.1" 200 10679
+[02/Jun/2013 10:31:55] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 10:31:55] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 10:31:56] "GET /submitList/ HTTP/1.1" 200 12092
+[02/Jun/2013 10:31:56] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 10:31:57] "GET /receiveList/ HTTP/1.1" 200 14588
+[02/Jun/2013 10:31:58] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 10:32:00] "GET /student/ HTTP/1.1" 200 15801
+[02/Jun/2013 10:32:00] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:32:00] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:32:01] "GET /teacher/ HTTP/1.1" 200 18388
+[02/Jun/2013 10:32:01] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:32:02] "GET / HTTP/1.1" 200 11041
+[02/Jun/2013 10:32:03] "GET /howto/ HTTP/1.1" 200 13135
+[02/Jun/2013 10:32:03] "GET /static/img/KnowShare04.png HTTP/1.1" 304 0
+[02/Jun/2013 10:32:03] "GET /static/img/KnowShare01.png HTTP/1.1" 304 0
+[02/Jun/2013 10:32:03] "GET /static/img/KnowShare03.png HTTP/1.1" 304 0
+[02/Jun/2013 10:32:03] "GET /static/img/KnowShare05.png HTTP/1.1" 304 0
+[02/Jun/2013 10:32:03] "GET /static/img/KnowShare02.png HTTP/1.1" 304 0
+[02/Jun/2013 10:32:03] "GET /static/img/KnowShare06.png HTTP/1.1" 304 0
+[02/Jun/2013 10:32:04] "GET /howto/favicon.ico HTTP/1.1" 200 13135
+[02/Jun/2013 10:32:05] "GET /contact/ HTTP/1.1" 200 10093
+[02/Jun/2013 10:32:05] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:32:05] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:32:27] "GET /myProfile/ HTTP/1.1" 200 10679
+[02/Jun/2013 10:32:27] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 10:32:27] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 10:32:34] "GET /submitList/ HTTP/1.1" 200 12092
+[02/Jun/2013 10:32:34] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 10:32:37] "GET /receiveList/ HTTP/1.1" 200 14588
+[02/Jun/2013 10:32:38] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 10:32:38] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 10:33:18] "GET / HTTP/1.1" 200 11041
+[02/Jun/2013 10:33:36] "GET / HTTP/1.1" 200 11041
+[02/Jun/2013 10:33:40] "GET /student/ HTTP/1.1" 200 15801
+[02/Jun/2013 10:33:40] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:33:40] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:33:41] "GET /teacher/ HTTP/1.1" 200 18388
+[02/Jun/2013 10:33:41] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:33:41] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:33:48] "GET /student/ HTTP/1.1" 200 15801
+[02/Jun/2013 10:33:49] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:33:51] "GET /lecture/ HTTP/1.1" 200 11161
+[02/Jun/2013 10:33:51] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:33:53] "GET /lectureSubmit/ HTTP/1.1" 200 16837
+[02/Jun/2013 10:33:53] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 10:33:53] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[02/Jun/2013 10:36:29] "GET / HTTP/1.1" 200 11041
+[02/Jun/2013 10:36:29] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 105906
+[02/Jun/2013 10:36:29] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28538
+[02/Jun/2013 10:36:33] "GET /lecture HTTP/1.1" 301 0
+[02/Jun/2013 10:36:34] "GET /lecture/ HTTP/1.1" 200 11161
+[02/Jun/2013 10:36:34] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:36:34] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:36:56] "GET /myProfile HTTP/1.1" 301 0
+[02/Jun/2013 10:36:56] "GET /myProfile/ HTTP/1.1" 200 10679
+[02/Jun/2013 10:36:56] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 10:36:56] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 10:36:57] "GET /submitList HTTP/1.1" 301 0
+[02/Jun/2013 10:36:57] "GET /submitList/ HTTP/1.1" 200 12092
+[02/Jun/2013 10:36:57] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 10:36:57] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 10:36:58] "GET /receiveList HTTP/1.1" 301 0
+[02/Jun/2013 10:36:58] "GET /receiveList/ HTTP/1.1" 200 14588
+[02/Jun/2013 10:36:58] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 10:36:58] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 10:36:59] "GET /teacher HTTP/1.1" 301 0
+[02/Jun/2013 10:36:59] "GET /teacher/ HTTP/1.1" 200 18388
+[02/Jun/2013 10:36:59] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:36:59] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:37:00] "GET /student HTTP/1.1" 301 0
+[02/Jun/2013 10:37:00] "GET /student/ HTTP/1.1" 200 15801
+[02/Jun/2013 10:37:00] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:37:00] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 10:37:01] "GET / HTTP/1.1" 200 11041
+[02/Jun/2013 10:37:02] "GET /howto HTTP/1.1" 301 0
+[02/Jun/2013 10:37:02] "GET /howto/ HTTP/1.1" 200 13135
+[02/Jun/2013 10:37:02] "GET /static/img/KnowShare02.png HTTP/1.1" 200 73634
+[02/Jun/2013 10:37:02] "GET /static/img/KnowShare03.png HTTP/1.1" 200 156887
+[02/Jun/2013 10:37:02] "GET /static/img/KnowShare01.png HTTP/1.1" 200 80808
+[02/Jun/2013 10:37:02] "GET /static/img/KnowShare04.png HTTP/1.1" 200 305468
+[02/Jun/2013 10:37:02] "GET /static/img/KnowShare06.png HTTP/1.1" 200 273819
+[02/Jun/2013 10:37:02] "GET /static/img/KnowShare05.png HTTP/1.1" 200 363060
+[02/Jun/2013 10:37:02] "GET /howto/favicon.ico HTTP/1.1" 200 13135
+[02/Jun/2013 10:37:06] "GET /contact HTTP/1.1" 301 0
+[02/Jun/2013 10:37:06] "GET /contact/ HTTP/1.1" 200 10093
+[02/Jun/2013 10:37:06] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 20:52:19] "GET / HTTP/1.1" 200 11041
+[02/Jun/2013 20:52:19] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[02/Jun/2013 20:52:19] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[02/Jun/2013 21:18:05] "GET / HTTP/1.1" 200 11060
+[02/Jun/2013 21:18:19] "GET / HTTP/1.1" 200 11064
+[02/Jun/2013 21:19:21] "GET / HTTP/1.1" 200 11056
+[02/Jun/2013 21:19:39] "GET / HTTP/1.1" 200 11059
+[02/Jun/2013 21:20:22] "GET / HTTP/1.1" 200 11073
+[02/Jun/2013 21:21:20] "GET / HTTP/1.1" 200 11076
+[02/Jun/2013 21:22:59] "GET / HTTP/1.1" 200 11111
+[02/Jun/2013 21:22:59] "GET /static/img/logo.png HTTP/1.1" 200 150307
+[02/Jun/2013 21:23:51] "GET / HTTP/1.1" 200 11078
+[02/Jun/2013 21:26:53] "GET / HTTP/1.1" 200 11122
+[02/Jun/2013 21:27:32] "GET / HTTP/1.1" 200 11149
+[02/Jun/2013 21:28:51] "GET / HTTP/1.1" 200 11149
+[02/Jun/2013 21:28:59] "GET / HTTP/1.1" 200 11149
+[02/Jun/2013 21:29:15] "GET / HTTP/1.1" 200 11121
+[02/Jun/2013 21:29:55] "GET / HTTP/1.1" 200 11121
+[02/Jun/2013 21:30:04] "GET / HTTP/1.1" 200 11121
+[02/Jun/2013 21:30:04] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[02/Jun/2013 21:30:04] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[02/Jun/2013 21:30:04] "GET /static/img/logo.png HTTP/1.1" 200 65440
+[02/Jun/2013 21:30:05] "GET /static/img/favicon.ico HTTP/1.1" 200 1406
+[02/Jun/2013 21:30:06] "GET / HTTP/1.1" 200 11121
+[02/Jun/2013 21:30:06] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[02/Jun/2013 21:30:06] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[02/Jun/2013 21:30:06] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:31:51] "GET / HTTP/1.1" 200 11121
+[02/Jun/2013 21:31:51] "GET /static/img/logo.png HTTP/1.1" 200 27785
+[02/Jun/2013 21:32:16] "GET / HTTP/1.1" 200 11137
+[02/Jun/2013 21:32:16] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:33:22] "GET / HTTP/1.1" 200 11155
+[02/Jun/2013 21:33:22] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:34:01] "GET / HTTP/1.1" 200 11180
+[02/Jun/2013 21:34:01] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:34:23] "GET / HTTP/1.1" 200 11182
+[02/Jun/2013 21:34:23] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:34:31] "GET / HTTP/1.1" 200 11155
+[02/Jun/2013 21:35:07] "GET / HTTP/1.1" 200 11155
+[02/Jun/2013 21:35:07] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:35:47] "GET / HTTP/1.1" 200 11155
+[02/Jun/2013 21:35:47] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:37:46] "GET / HTTP/1.1" 200 11155
+[02/Jun/2013 21:37:46] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:38:13] "GET / HTTP/1.1" 200 11155
+[02/Jun/2013 21:38:28] "GET / HTTP/1.1" 200 11155
+[02/Jun/2013 21:38:28] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:41:27] "GET / HTTP/1.1" 200 11143
+[02/Jun/2013 21:41:27] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:41:51] "GET / HTTP/1.1" 200 11181
+[02/Jun/2013 21:42:20] "GET / HTTP/1.1" 200 11188
+[02/Jun/2013 21:42:36] "GET / HTTP/1.1" 200 11188
+[02/Jun/2013 21:42:36] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:42:44] "GET / HTTP/1.1" 200 11221
+[02/Jun/2013 21:43:12] "GET / HTTP/1.1" 200 11167
+[02/Jun/2013 21:44:04] "GET / HTTP/1.1" 200 11155
+[02/Jun/2013 21:44:05] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:47:45] "GET / HTTP/1.1" 200 11161
+[02/Jun/2013 21:47:45] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 200 105908
+[02/Jun/2013 21:47:45] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:49:26] "GET / HTTP/1.1" 200 11161
+[02/Jun/2013 21:49:27] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 200 105912
+[02/Jun/2013 21:49:27] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 21:49:28] "GET /teacher/ HTTP/1.1" 200 18508
+[02/Jun/2013 21:49:28] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 21:49:28] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 21:49:29] "GET /lecture/ HTTP/1.1" 200 11281
+[02/Jun/2013 21:49:29] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 21:49:29] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 21:49:31] "GET /myProfile/ HTTP/1.1" 200 10799
+[02/Jun/2013 21:49:31] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[02/Jun/2013 21:49:31] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 21:49:32] "GET /submitList/ HTTP/1.1" 200 12212
+[02/Jun/2013 21:49:32] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 21:49:32] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 21:49:34] "GET /receiveList/ HTTP/1.1" 200 14708
+[02/Jun/2013 21:49:34] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[02/Jun/2013 21:49:34] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 21:49:35] "GET /lectureSubmit HTTP/1.1" 301 0
+[02/Jun/2013 21:49:35] "GET /lectureSubmit/ HTTP/1.1" 200 16957
+[02/Jun/2013 21:49:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 21:49:35] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 21:49:37] "GET /student/ HTTP/1.1" 200 15921
+[02/Jun/2013 21:49:37] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 21:49:37] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 21:49:38] "GET /howto/ HTTP/1.1" 200 13255
+[02/Jun/2013 21:49:38] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[02/Jun/2013 21:49:38] "GET /static/img/KnowShare02.png HTTP/1.1" 304 0
+[02/Jun/2013 21:49:38] "GET /static/img/KnowShare01.png HTTP/1.1" 304 0
+[02/Jun/2013 21:49:38] "GET /static/img/KnowShare03.png HTTP/1.1" 304 0
+[02/Jun/2013 21:49:38] "GET /static/img/KnowShare06.png HTTP/1.1" 304 0
+[02/Jun/2013 21:49:38] "GET /static/img/KnowShare04.png HTTP/1.1" 304 0
+[02/Jun/2013 21:49:38] "GET /static/img/KnowShare05.png HTTP/1.1" 304 0
+[02/Jun/2013 21:49:38] "GET /howto/favicon.ico HTTP/1.1" 200 13255
+[02/Jun/2013 21:49:39] "GET /contact/ HTTP/1.1" 200 10213
+[02/Jun/2013 21:49:40] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 21:49:40] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:06:59] "GET / HTTP/1.1" 200 11161
+[02/Jun/2013 22:06:59] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[02/Jun/2013 22:06:59] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 22:07:01] "GET /teacher/ HTTP/1.1" 200 18508
+[02/Jun/2013 22:07:01] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:01] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:03] "GET /myProfile/ HTTP/1.1" 200 10799
+[02/Jun/2013 22:07:03] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 22:07:03] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 22:07:04] "GET /howto/ HTTP/1.1" 200 13255
+[02/Jun/2013 22:07:05] "GET /howto/favicon.ico HTTP/1.1" 200 13255
+[02/Jun/2013 22:07:30] "GET / HTTP/1.1" 200 11161
+[02/Jun/2013 22:07:31] "GET /teacher/ HTTP/1.1" 200 18508
+[02/Jun/2013 22:07:31] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:31] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:33] "GET /lecture/ HTTP/1.1" 200 11281
+[02/Jun/2013 22:07:33] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:33] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:34] "GET /myProfile/ HTTP/1.1" 200 10799
+[02/Jun/2013 22:07:34] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 22:07:34] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 22:07:38] "GET / HTTP/1.1" 200 11161
+[02/Jun/2013 22:07:48] "GET /teacher/ HTTP/1.1" 200 18508
+[02/Jun/2013 22:07:48] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:48] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:50] "GET /lecture/ HTTP/1.1" 200 11281
+[02/Jun/2013 22:07:50] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:50] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:07:51] "GET /lectureSubmit/ HTTP/1.1" 200 16957
+[02/Jun/2013 22:07:51] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:07:51] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:08:07] "GET /lectureSubmit?count=1&studentID01=1 HTTP/1.1" 301 0
+[02/Jun/2013 22:08:07] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 17241
+[02/Jun/2013 22:08:07] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:08:07] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-01-01 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+[02/Jun/2013 22:08:08] "POST /lectureRegister/ HTTP/1.1" 302 0
+[02/Jun/2013 22:08:08] "GET / HTTP/1.1" 200 11161
+[02/Jun/2013 22:08:11] "GET /lecture/ HTTP/1.1" 200 11750
+[02/Jun/2013 22:08:11] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:08:11] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:08:12] "GET /lectureSubmit/ HTTP/1.1" 200 16957
+[02/Jun/2013 22:08:12] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:08:12] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:09:35] "GET /myProfile/ HTTP/1.1" 200 10799
+[02/Jun/2013 22:09:35] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[02/Jun/2013 22:09:36] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[02/Jun/2013 22:09:36] "GET /submitList/ HTTP/1.1" 200 12212
+[02/Jun/2013 22:09:37] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 22:09:37] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[02/Jun/2013 22:09:38] "GET /receiveList/ HTTP/1.1" 200 14708
+[02/Jun/2013 22:09:38] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 22:09:38] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[02/Jun/2013 22:09:39] "GET / HTTP/1.1" 200 11161
+[02/Jun/2013 22:12:20] "GET /teacher/ HTTP/1.1" 200 18508
+[02/Jun/2013 22:12:20] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[02/Jun/2013 22:12:20] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 22:12:20] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:12:22] "GET /student/ HTTP/1.1" 200 15921
+[02/Jun/2013 22:12:22] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:12:22] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:12:24] "GET /lecture/ HTTP/1.1" 200 11750
+[02/Jun/2013 22:12:24] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:12:24] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:12:25] "GET /lectureSubmit/ HTTP/1.1" 200 16957
+[02/Jun/2013 22:12:25] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:12:25] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:14:07] "GET /lectureSubmit/ HTTP/1.1" 200 16991
+[02/Jun/2013 22:14:07] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:14:07] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:14:13] "GET /lectureSubmit?count=1&studentID01=2 HTTP/1.1" 301 0
+[02/Jun/2013 22:14:13] "GET /lectureSubmit/?count=1&studentID01=2 HTTP/1.1" 200 17272
+[02/Jun/2013 22:14:13] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:14:13] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:14:20] "POST /lectureRegister/ HTTP/1.1" 302 0
+[02/Jun/2013 22:14:20] "GET / HTTP/1.1" 200 11161
+[02/Jun/2013 22:14:22] "GET /lecture/ HTTP/1.1" 200 12219
+[02/Jun/2013 22:14:22] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:14:22] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[02/Jun/2013 22:14:24] "GET /lectureSubmit/ HTTP/1.1" 200 16991
+[02/Jun/2013 22:14:24] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:14:24] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:14:40] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[02/Jun/2013 22:14:40] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:14:40] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[02/Jun/2013 22:29:20] "GET / HTTP/1.1" 200 11161
+[02/Jun/2013 22:29:20] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[02/Jun/2013 22:29:20] "GET /static/img/logo.png HTTP/1.1" 304 0
+[02/Jun/2013 22:31:08] "GET /howto/ HTTP/1.1" 200 13255
+[02/Jun/2013 22:31:08] "GET /howto/favicon.ico HTTP/1.1" 200 13255
+[03/Jun/2013 02:07:03] "GET /howto/ HTTP/1.1" 200 13255
+[03/Jun/2013 02:07:03] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[03/Jun/2013 02:07:03] "GET /static/img/logo.png HTTP/1.1" 304 0
+[03/Jun/2013 02:07:03] "GET /howto/favicon.ico HTTP/1.1" 200 13255
+[03/Jun/2013 02:07:05] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 08:50:22] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 08:50:22] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[03/Jun/2013 08:50:22] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[03/Jun/2013 08:50:22] "GET /static/img/logo.png HTTP/1.1" 304 0
+[03/Jun/2013 08:50:26] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 08:50:27] "GET /teacher/ HTTP/1.1" 200 18508
+[03/Jun/2013 08:50:27] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 08:50:27] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 08:50:28] "GET /lecture/ HTTP/1.1" 200 12219
+[03/Jun/2013 08:50:28] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 08:50:28] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 08:50:29] "GET /submitList/ HTTP/1.1" 200 12212
+[03/Jun/2013 08:50:29] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 08:50:29] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 08:50:30] "GET /receiveList/ HTTP/1.1" 200 14708
+[03/Jun/2013 08:50:30] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[03/Jun/2013 08:50:30] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[03/Jun/2013 08:50:32] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 08:50:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 08:50:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 08:50:34] "GET /howto/ HTTP/1.1" 200 13255
+[03/Jun/2013 08:50:34] "GET /static/img/KnowShare01.png HTTP/1.1" 304 0
+[03/Jun/2013 08:50:34] "GET /static/img/KnowShare02.png HTTP/1.1" 304 0
+[03/Jun/2013 08:50:34] "GET /static/img/KnowShare03.png HTTP/1.1" 304 0
+[03/Jun/2013 08:50:34] "GET /static/img/KnowShare04.png HTTP/1.1" 304 0
+[03/Jun/2013 08:50:34] "GET /static/img/KnowShare05.png HTTP/1.1" 304 0
+[03/Jun/2013 08:50:34] "GET /static/img/KnowShare06.png HTTP/1.1" 304 0
+[03/Jun/2013 08:50:34] "GET /howto/favicon.ico HTTP/1.1" 200 13255
+[03/Jun/2013 08:50:35] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 09:18:07] "GET /teacher/ HTTP/1.1" 200 18508
+[03/Jun/2013 09:18:07] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:18:11] "GET /student/ HTTP/1.1" 200 15921
+[03/Jun/2013 09:18:11] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:18:11] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:18:12] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 09:18:13] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 09:18:13] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 09:18:16] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 09:18:16] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 09:18:16] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 09:18:17] "GET /myProfile/ HTTP/1.1" 200 10799
+[03/Jun/2013 09:18:17] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 09:18:17] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 09:18:18] "GET /submitList/ HTTP/1.1" 200 12212
+[03/Jun/2013 09:18:18] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 09:18:18] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 09:18:20] "GET /receiveList/ HTTP/1.1" 200 14708
+[03/Jun/2013 09:18:20] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[03/Jun/2013 09:18:20] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[03/Jun/2013 09:18:22] "GET /teacher/ HTTP/1.1" 200 18508
+[03/Jun/2013 09:18:22] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:18:22] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:22:53] "GET /lecture/ HTTP/1.1" 200 12323
+[03/Jun/2013 09:22:53] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:22:53] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:22:58] "GET /teacher/ HTTP/1.1" 200 18508
+[03/Jun/2013 09:22:58] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:22:58] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:23:15] "GET /lecture/ HTTP/1.1" 200 12379
+[03/Jun/2013 09:23:15] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:23:15] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:23:21] "GET /teacher/ HTTP/1.1" 200 18508
+[03/Jun/2013 09:23:21] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:23:21] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:23:24] "GET /student/ HTTP/1.1" 200 15921
+[03/Jun/2013 09:23:24] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:23:24] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:23:25] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 09:23:25] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 09:23:25] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 09:24:28] "GET /lecture/ HTTP/1.1" 200 12411
+[03/Jun/2013 09:24:28] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:24:28] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:24:30] "GET /lecture/ HTTP/1.1" 200 12411
+[03/Jun/2013 09:24:30] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:24:30] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:25:20] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 09:25:20] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 09:25:20] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 09:25:21] "GET /teacher/ HTTP/1.1" 200 18508
+[03/Jun/2013 09:25:21] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:25:21] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:25:23] "GET /student/ HTTP/1.1" 200 15921
+[03/Jun/2013 09:25:23] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:25:23] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 09:25:24] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 09:25:25] "GET /howto/ HTTP/1.1" 200 13255
+[03/Jun/2013 09:25:25] "GET /howto/favicon.ico HTTP/1.1" 200 13255
+[03/Jun/2013 09:25:57] "GET / HTTP/1.1" 200 11161
+Validating models...
+
+0 errors found
+June 02, 2013 - 10:36:15
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[03/Jun/2013 22:40:11] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 22:40:12] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[03/Jun/2013 22:40:12] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[03/Jun/2013 22:40:12] "GET /static/img/logo.png HTTP/1.1" 304 0
+[03/Jun/2013 22:41:48] "GET /lecture/ HTTP/1.1" 200 12663
+[03/Jun/2013 22:41:48] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+Validating models...
+
+0 errors found
+June 03, 2013 - 09:28:01
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[03/Jun/2013 22:46:17] "GET /lecture/ HTTP/1.1" 200 12660
+[03/Jun/2013 22:46:17] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 22:46:17] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 22:46:23] "POST /createMeeting/ HTTP/1.1" 302 0
+[03/Jun/2013 22:46:41] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 22:46:43] "GET /lecture/ HTTP/1.1" 200 12660
+[03/Jun/2013 22:46:43] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+Validating models...
+
+0 errors found
+June 03, 2013 - 22:46:01
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[03/Jun/2013 23:41:26] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 23:41:28] "GET /lecture/ HTTP/1.1" 200 12762
+[03/Jun/2013 23:41:29] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:41:29] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:41:31] "POST /endMeeting/ HTTP/1.1" 302 0
+[03/Jun/2013 23:41:33] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:41:33] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:41:35] "GET /lecture/ HTTP/1.1" 200 12823
+[03/Jun/2013 23:41:35] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:41:35] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:42:57] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 23:42:57] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:42:57] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:43:01] "GET /myProfile/ HTTP/1.1" 200 10799
+[03/Jun/2013 23:43:01] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 23:43:01] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 23:43:02] "GET /submitList/ HTTP/1.1" 200 12212
+[03/Jun/2013 23:43:02] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 23:43:02] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 23:43:03] "GET /receiveList/ HTTP/1.1" 200 14708
+[03/Jun/2013 23:43:04] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[03/Jun/2013 23:43:04] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[03/Jun/2013 23:43:11] "GET /teacher/ HTTP/1.1" 200 18508
+[03/Jun/2013 23:43:12] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:43:12] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:43:13] "GET /student/ HTTP/1.1" 200 15921
+[03/Jun/2013 23:43:13] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:43:13] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:43:14] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 23:43:15] "GET /howto/ HTTP/1.1" 200 13255
+[03/Jun/2013 23:43:15] "GET /static/img/KnowShare02.png HTTP/1.1" 304 0
+[03/Jun/2013 23:43:16] "GET /static/img/KnowShare01.png HTTP/1.1" 304 0
+[03/Jun/2013 23:43:16] "GET /static/img/KnowShare06.png HTTP/1.1" 304 0
+[03/Jun/2013 23:43:16] "GET /static/img/KnowShare05.png HTTP/1.1" 304 0
+[03/Jun/2013 23:43:16] "GET /static/img/KnowShare04.png HTTP/1.1" 304 0
+[03/Jun/2013 23:43:16] "GET /static/img/KnowShare03.png HTTP/1.1" 304 0
+[03/Jun/2013 23:43:16] "GET /howto/favicon.ico HTTP/1.1" 200 13255
+[03/Jun/2013 23:43:17] "GET /contact/ HTTP/1.1" 200 10213
+[03/Jun/2013 23:43:17] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:43:19] "GET /lecture/ HTTP/1.1" 200 12823
+[03/Jun/2013 23:43:19] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:43:19] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:43:40] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 23:43:40] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:43:40] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:43:42] "GET /lecture/ HTTP/1.1" 200 12823
+[03/Jun/2013 23:43:42] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:43:42] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:43:43] "GET /myProfile/ HTTP/1.1" 200 10799
+[03/Jun/2013 23:43:43] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 23:43:43] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 23:43:43] "GET /submitList/ HTTP/1.1" 200 12212
+[03/Jun/2013 23:43:44] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 23:43:44] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 23:43:44] "GET /receiveList/ HTTP/1.1" 200 14708
+[03/Jun/2013 23:43:44] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[03/Jun/2013 23:43:45] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[03/Jun/2013 23:44:22] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 23:44:23] "GET /howto/ HTTP/1.1" 200 13255
+[03/Jun/2013 23:44:24] "GET /howto/favicon.ico HTTP/1.1" 200 13255
+[03/Jun/2013 23:44:25] "GET /contact/ HTTP/1.1" 200 10213
+[03/Jun/2013 23:44:25] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:27] "GET /myProfile/ HTTP/1.1" 200 10799
+[03/Jun/2013 23:44:27] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 23:44:27] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 23:44:32] "GET /lecture/ HTTP/1.1" 200 12823
+[03/Jun/2013 23:44:32] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:32] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:37] "GET /teacher/ HTTP/1.1" 200 18508
+[03/Jun/2013 23:44:37] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:37] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:39] "GET /student/ HTTP/1.1" 200 15921
+[03/Jun/2013 23:44:39] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:39] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:40] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 23:44:40] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:44:40] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:44:43] "GET /lecture/ HTTP/1.1" 200 12823
+[03/Jun/2013 23:44:43] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:43] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:44] "GET /myProfile/ HTTP/1.1" 200 10799
+[03/Jun/2013 23:44:44] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 23:44:44] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[03/Jun/2013 23:44:46] "GET /submitList/ HTTP/1.1" 200 12212
+[03/Jun/2013 23:44:46] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 23:44:46] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[03/Jun/2013 23:44:53] "GET /lecture/ HTTP/1.1" 200 12823
+[03/Jun/2013 23:44:53] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:54] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:56] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 23:44:56] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:44:56] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:44:59] "GET /lecture/ HTTP/1.1" 200 12823
+[03/Jun/2013 23:44:59] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:44:59] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+Validating models...
+
+0 errors found
+June 03, 2013 - 22:47:03
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[False, True, False, False]
+[False, False, False, False]
+[]
+[False, False, False, False]
+[False, False, False, False]
+[False, False, False, False]
+[]
+[False, False, False, False]
+[False, False, False, False]
+[False, False, False, False]
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[03/Jun/2013 23:46:45] "GET /lecture/ HTTP/1.1" 200 12823
+[03/Jun/2013 23:46:45] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:46:49] "POST /createMeeting/ HTTP/1.1" 302 0
+[03/Jun/2013 23:46:57] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 23:47:00] "GET /lecture/ HTTP/1.1" 200 12762
+[03/Jun/2013 23:47:00] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:47:00] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+Internal Server Error: /endMeeting/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/BigBlue/views.py", line 34, in end_meeting
+    resp = requests.get(getBBBURL('end', paramteres))
+NameError: global name 'paramteres' is not defined
+[03/Jun/2013 23:47:02] "POST /endMeeting/ HTTP/1.1" 500 58839
+Validating models...
+
+0 errors found
+June 03, 2013 - 23:45:39
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[False, False, False, False]
+[True, False, False, False]
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[03/Jun/2013 23:47:14] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:47:14] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:47:15] "POST /endMeeting/ HTTP/1.1" 302 0
+[03/Jun/2013 23:47:15] "GET /lecture HTTP/1.1" 301 0
+[03/Jun/2013 23:47:15] "GET /lecture/ HTTP/1.1" 200 12823
+[03/Jun/2013 23:47:15] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:47:15] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:47:28] "GET /lectureSubmit/ HTTP/1.1" 200 17001
+[03/Jun/2013 23:47:28] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:47:28] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[03/Jun/2013 23:47:40] "GET /teacher/ HTTP/1.1" 200 18508
+[03/Jun/2013 23:47:40] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:47:40] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:47:42] "GET /student/ HTTP/1.1" 200 15921
+[03/Jun/2013 23:47:42] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:47:42] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[03/Jun/2013 23:47:43] "GET / HTTP/1.1" 200 11161
+[03/Jun/2013 23:49:51] "GET / HTTP/1.1" 200 11126
+[03/Jun/2013 23:51:15] "GET / HTTP/1.1" 200 11160
+[03/Jun/2013 23:52:40] "GET / HTTP/1.1" 200 11160
+[03/Jun/2013 23:53:56] "GET / HTTP/1.1" 200 11176
+[03/Jun/2013 23:54:08] "GET / HTTP/1.1" 200 11175
+[03/Jun/2013 23:54:47] "GET / HTTP/1.1" 200 11186
+[03/Jun/2013 23:55:04] "GET / HTTP/1.1" 200 11172
+[04/Jun/2013 00:04:14] "GET / HTTP/1.1" 200 11206
+[04/Jun/2013 00:04:42] "GET / HTTP/1.1" 200 11207
+[04/Jun/2013 00:05:26] "GET / HTTP/1.1" 200 11224
+[04/Jun/2013 00:06:16] "GET / HTTP/1.1" 200 11225
+[04/Jun/2013 00:06:33] "GET / HTTP/1.1" 200 11216
+[04/Jun/2013 00:07:02] "GET / HTTP/1.1" 200 11232
+[04/Jun/2013 00:07:17] "GET / HTTP/1.1" 200 11232
+[04/Jun/2013 00:07:27] "GET / HTTP/1.1" 200 11232
+[04/Jun/2013 00:09:04] "GET / HTTP/1.1" 200 11251
+[04/Jun/2013 00:09:11] "GET / HTTP/1.1" 200 11252
+[04/Jun/2013 00:09:11] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[04/Jun/2013 00:09:11] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[04/Jun/2013 00:09:11] "GET /static/img/logo.png HTTP/1.1" 304 0
+[04/Jun/2013 00:09:12] "GET /static/img/favicon.ico HTTP/1.1" 304 0
+[04/Jun/2013 00:09:49] "GET / HTTP/1.1" 200 11272
+[04/Jun/2013 00:09:58] "GET / HTTP/1.1" 200 11273
+[04/Jun/2013 00:09:58] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[04/Jun/2013 00:09:58] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[04/Jun/2013 00:09:58] "GET /static/img/logo.png HTTP/1.1" 304 0
+[04/Jun/2013 00:10:09] "GET / HTTP/1.1" 200 11273
+[04/Jun/2013 00:10:09] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[04/Jun/2013 00:10:09] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[04/Jun/2013 00:10:09] "GET /static/img/logo.png HTTP/1.1" 304 0
+[04/Jun/2013 00:10:29] "GET / HTTP/1.1" 200 11294
+[04/Jun/2013 00:10:29] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[04/Jun/2013 00:10:29] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[04/Jun/2013 00:10:29] "GET /static/img/logo.png HTTP/1.1" 304 0
+[04/Jun/2013 00:11:38] "GET / HTTP/1.1" 200 11338
+[04/Jun/2013 00:11:55] "GET / HTTP/1.1" 200 11333
+[04/Jun/2013 00:11:55] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[04/Jun/2013 00:11:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[04/Jun/2013 00:11:55] "GET /static/img/logo.png HTTP/1.1" 304 0
+[04/Jun/2013 00:12:35] "GET / HTTP/1.1" 200 11334
+[04/Jun/2013 00:13:25] "GET / HTTP/1.1" 200 11333
+[04/Jun/2013 00:13:34] "GET / HTTP/1.1" 200 11333
+[04/Jun/2013 00:15:26] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 00:15:40] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 00:15:41] "GET /teacher/ HTTP/1.1" 200 18779
+[04/Jun/2013 00:15:41] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:15:41] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:15:44] "GET /howto/ HTTP/1.1" 200 13526
+[04/Jun/2013 00:15:45] "GET /howto/favicon.ico HTTP/1.1" 200 13526
+[04/Jun/2013 00:15:49] "GET /contact/ HTTP/1.1" 200 10484
+[04/Jun/2013 00:15:49] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:26:17] "GET /contact/ HTTP/1.1" 200 10397
+[04/Jun/2013 00:26:17] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:26:17] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:26:19] "GET /howto/ HTTP/1.1" 200 13463
+[04/Jun/2013 00:26:19] "GET /howto/favicon.ico HTTP/1.1" 200 13463
+[04/Jun/2013 00:26:19] "GET /howto/favicon.ico HTTP/1.1" 200 13463
+[04/Jun/2013 00:26:24] "GET /teacher/ HTTP/1.1" 200 18714
+[04/Jun/2013 00:26:24] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:26:28] "GET /student/ HTTP/1.1" 200 16129
+[04/Jun/2013 00:26:28] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:26:28] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:26:30] "GET /lecture/ HTTP/1.1" 200 13031
+[04/Jun/2013 00:26:30] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:26:30] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:26:32] "GET /lectureSubmit/ HTTP/1.1" 200 17272
+[04/Jun/2013 00:26:33] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[04/Jun/2013 00:26:33] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[04/Jun/2013 00:27:01] "GET /myProfile/ HTTP/1.1" 200 11070
+[04/Jun/2013 00:27:01] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[04/Jun/2013 00:27:01] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[04/Jun/2013 00:28:14] "GET /myProfile/ HTTP/1.1" 200 11007
+[04/Jun/2013 00:28:14] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[04/Jun/2013 00:28:14] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[04/Jun/2013 00:28:15] "GET /receiveList/ HTTP/1.1" 200 14979
+[04/Jun/2013 00:28:16] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:28:16] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:28:17] "GET /submitList/ HTTP/1.1" 200 12483
+[04/Jun/2013 00:28:17] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[04/Jun/2013 00:28:17] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[04/Jun/2013 00:28:19] "GET /receiveList/ HTTP/1.1" 200 14979
+[04/Jun/2013 00:28:19] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:28:19] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:28:37] "GET /receiveList/ HTTP/1.1" 200 14915
+[04/Jun/2013 00:28:37] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:28:37] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:28:47] "GET /receiveList/ HTTP/1.1" 200 14915
+[04/Jun/2013 00:28:47] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:28:47] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888

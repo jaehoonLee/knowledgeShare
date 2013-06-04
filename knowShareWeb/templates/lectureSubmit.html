@@ -55,6 +55,9 @@ function LectureSubmit()
 {
 
 var studentTable = document.getElementById("studentTable");
+alert(1);
+alert(studentTable.rows.length);
+
 for(var i = 0, row; row = studentTable.rows[i]; i++)
 {
 var SID = $("<input>").attr("type", "hidden").attr("type", "text").attr("name", "input[]").val(row.cells[0].innerHTML);
@@ -276,7 +279,5 @@ window.onload = function()
 <legend></legend>
 {% endif %}
  
-<div class="footer">
-  <p>&copy; KnowledgeShare 2013</p>
-</div>
+
 {% endblock %}    

@@ -33,4 +33,7 @@
     <p>쉽고 빠르게 단어를 외울 수 있는 솔루션입니다.
     </p>  
 -->
+    <div class="footer">
+        <p>&copy; KnowledgeShare 2013</p>
+    </div>
 {% endblock %}    
