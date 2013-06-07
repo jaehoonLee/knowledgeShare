@@ -17361,3 +17361,763 @@ Quit the server with CONTROL-C.
 [04/Jun/2013 00:28:47] "GET /receiveList/ HTTP/1.1" 200 14915
 [04/Jun/2013 00:28:47] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
 [04/Jun/2013 00:28:47] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:31:07] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[04/Jun/2013 00:31:07] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[04/Jun/2013 00:31:32] "GET /lecture/ HTTP/1.1" 200 13031
+[04/Jun/2013 00:31:32] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:32] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:33] "GET /receiveList/ HTTP/1.1" 200 14915
+[04/Jun/2013 00:31:33] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:31:33] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:31:34] "GET /submitList/ HTTP/1.1" 200 12483
+[04/Jun/2013 00:31:34] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[04/Jun/2013 00:31:35] "GET /lecture/ HTTP/1.1" 200 13031
+[04/Jun/2013 00:31:35] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:35] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:37] "GET /teacher/ HTTP/1.1" 200 18714
+[04/Jun/2013 00:31:37] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:37] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:38] "GET /student/ HTTP/1.1" 200 16129
+[04/Jun/2013 00:31:38] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:38] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:40] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 00:31:41] "GET /howto/ HTTP/1.1" 200 13463
+[04/Jun/2013 00:31:41] "GET /howto/favicon.ico HTTP/1.1" 200 13463
+[04/Jun/2013 00:31:48] "GET /contact/ HTTP/1.1" 200 10397
+[04/Jun/2013 00:31:48] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:49] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 00:31:50] "GET /teacher/ HTTP/1.1" 200 18714
+[04/Jun/2013 00:31:50] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:50] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:31:52] "GET /student/ HTTP/1.1" 200 16129
+[04/Jun/2013 00:31:52] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:32:03] "GET /student/ HTTP/1.1" 200 16129
+[04/Jun/2013 00:32:03] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:32:03] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:32:04] "GET /teacher/ HTTP/1.1" 200 18714
+[04/Jun/2013 00:32:05] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:32:05] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:32:06] "GET /lecture/ HTTP/1.1" 200 13031
+[04/Jun/2013 00:32:06] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:32:06] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:32:10] "GET /lectureSubmit/ HTTP/1.1" 200 17209
+[04/Jun/2013 00:32:10] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[04/Jun/2013 00:32:10] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[04/Jun/2013 00:32:11] "GET /lecture/ HTTP/1.1" 200 13031
+[04/Jun/2013 00:32:11] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:32:11] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:32:16] "GET /lectureSubmit/ HTTP/1.1" 200 17209
+[04/Jun/2013 00:32:16] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[04/Jun/2013 00:32:16] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[04/Jun/2013 00:32:21] "GET /myProfile/ HTTP/1.1" 200 11007
+[04/Jun/2013 00:32:21] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[04/Jun/2013 00:32:21] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[04/Jun/2013 00:32:23] "GET /submitList/ HTTP/1.1" 200 12483
+[04/Jun/2013 00:32:23] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[04/Jun/2013 00:32:23] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[04/Jun/2013 00:32:30] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 00:33:17] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 00:33:23] "GET /teacher/ HTTP/1.1" 200 18714
+[04/Jun/2013 00:33:23] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:33:23] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 00:33:25] "GET /myProfile/ HTTP/1.1" 200 11007
+[04/Jun/2013 00:33:25] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[04/Jun/2013 00:33:25] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[04/Jun/2013 00:33:27] "GET /receiveList/ HTTP/1.1" 200 14915
+[04/Jun/2013 00:33:27] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:33:27] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[04/Jun/2013 00:33:28] "GET /submitList/ HTTP/1.1" 200 12483
+[04/Jun/2013 00:33:28] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[04/Jun/2013 00:33:28] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[04/Jun/2013 10:24:24] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 10:24:24] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[04/Jun/2013 10:24:24] "GET /static/img/logo.png HTTP/1.1" 304 0
+[04/Jun/2013 10:24:29] "GET /logout/ HTTP/1.1" 302 0
+[04/Jun/2013 10:24:29] "GET / HTTP/1.1" 200 10561
+[04/Jun/2013 10:24:35] "POST /login/ HTTP/1.1" 302 0
+[04/Jun/2013 10:24:35] "GET / HTTP/1.1" 200 11244
+[04/Jun/2013 10:24:57] "GET /teacher HTTP/1.1" 301 0
+[04/Jun/2013 10:24:57] "GET /teacher/ HTTP/1.1" 200 18525
+[04/Jun/2013 10:24:57] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 10:24:58] "GET /logout/ HTTP/1.1" 302 0
+[04/Jun/2013 10:24:58] "GET / HTTP/1.1" 200 10561
+[04/Jun/2013 10:25:17] "POST /register/ HTTP/1.1" 302 0
+[04/Jun/2013 10:25:17] "GET / HTTP/1.1" 200 11006
+[04/Jun/2013 10:25:20] "GET /admin/ HTTP/1.1" 200 1865
+[04/Jun/2013 10:25:22] "POST /admin/ HTTP/1.1" 302 0
+[04/Jun/2013 10:25:22] "GET /admin/ HTTP/1.1" 200 8352
+[04/Jun/2013 10:25:23] "GET /admin/auth/user/ HTTP/1.1" 200 7285
+[04/Jun/2013 10:25:24] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[04/Jun/2013 10:25:26] "GET /admin/auth/user/4/ HTTP/1.1" 200 14647
+[04/Jun/2013 10:25:26] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[04/Jun/2013 10:25:32] "POST /admin/auth/user/4/ HTTP/1.1" 302 0
+[04/Jun/2013 10:25:32] "GET /admin/auth/user/ HTTP/1.1" 200 7427
+[04/Jun/2013 10:25:32] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[04/Jun/2013 10:25:36] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 10:25:38] "GET /howto HTTP/1.1" 301 0
+[04/Jun/2013 10:25:38] "GET /howto/ HTTP/1.1" 200 13463
+[04/Jun/2013 10:25:38] "GET /howto/favicon.ico HTTP/1.1" 200 13463
+[04/Jun/2013 10:25:39] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 10:25:41] "GET /contact HTTP/1.1" 301 0
+[04/Jun/2013 10:25:41] "GET /contact/ HTTP/1.1" 200 10397
+[04/Jun/2013 10:25:41] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 10:25:42] "GET /teacher HTTP/1.1" 301 0
+[04/Jun/2013 10:25:42] "GET /teacher/ HTTP/1.1" 200 18714
+[04/Jun/2013 10:25:42] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 10:25:48] "GET /student HTTP/1.1" 301 0
+[04/Jun/2013 10:25:48] "GET /student/ HTTP/1.1" 200 16129
+[04/Jun/2013 10:25:48] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 10:25:50] "GET /logout/ HTTP/1.1" 302 0
+[04/Jun/2013 10:25:50] "GET / HTTP/1.1" 200 10561
+[04/Jun/2013 10:26:01] "POST /login/ HTTP/1.1" 302 0
+[04/Jun/2013 10:26:01] "GET / HTTP/1.1" 200 11244
+[04/Jun/2013 10:26:03] "GET /teacher HTTP/1.1" 301 0
+Internal Server Error: /teacher/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 38, in teacher_page
+    if teacherrequest.student == request.user.student :
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 203, in inner
+    return func(self._wrapped, *args)
+  File "/Library/Python/2.7/site-packages/django/db/models/fields/related.py", line 279, in __get__
+    raise self.related.model.DoesNotExist
+DoesNotExist
+[04/Jun/2013 10:26:03] "GET /teacher/ HTTP/1.1" 500 65053
+[04/Jun/2013 10:26:09] "GET / HTTP/1.1" 200 11244
+[04/Jun/2013 10:26:10] "GET /studentSubmit HTTP/1.1" 301 0
+[04/Jun/2013 10:26:10] "GET /studentSubmit/ HTTP/1.1" 200 14787
+[04/Jun/2013 10:26:10] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[04/Jun/2013 10:26:28] "POST /studentRegister/ HTTP/1.1" 302 0
+[04/Jun/2013 10:26:28] "GET /studentSubmit HTTP/1.1" 301 0
+[04/Jun/2013 10:26:28] "GET /studentSubmit/ HTTP/1.1" 200 13862
+[04/Jun/2013 10:26:29] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[04/Jun/2013 10:26:31] "GET /teacher/ HTTP/1.1" 200 18509
+[04/Jun/2013 10:26:31] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 10:26:59] "POST /teacherRequest/ HTTP/1.1" 302 0
+[04/Jun/2013 10:26:59] "GET /teacher HTTP/1.1" 301 0
+[04/Jun/2013 10:26:59] "GET /teacher/ HTTP/1.1" 200 18525
+[04/Jun/2013 10:26:59] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[04/Jun/2013 10:27:02] "GET /logout/ HTTP/1.1" 302 0
+[04/Jun/2013 10:27:02] "GET / HTTP/1.1" 200 10561
+[04/Jun/2013 10:27:05] "POST /login/ HTTP/1.1" 302 0
+[04/Jun/2013 10:27:05] "GET / HTTP/1.1" 200 11354
+[04/Jun/2013 10:27:07] "GET /lectureSubmit HTTP/1.1" 301 0
+[04/Jun/2013 10:27:07] "GET /lectureSubmit/ HTTP/1.1" 200 17287
+[04/Jun/2013 10:27:07] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[04/Jun/2013 10:30:12] "GET /howto HTTP/1.1" 301 0
+[04/Jun/2013 10:30:12] "GET /howto/ HTTP/1.1" 200 13463
+[04/Jun/2013 10:30:12] "GET /howto/favicon.ico HTTP/1.1" 200 13463
+[04/Jun/2013 10:31:14] "GET /lecture HTTP/1.1" 301 0
+[04/Jun/2013 10:31:14] "GET /lecture/ HTTP/1.1" 200 13031
+[04/Jun/2013 10:31:14] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:02:12] "GET / HTTP/1.1" 200 11383
+[05/Jun/2013 09:02:12] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:02:12] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:02:12] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:02:28] "GET / HTTP/1.1" 200 11386
+[05/Jun/2013 09:02:49] "GET / HTTP/1.1" 200 11411
+[05/Jun/2013 09:03:15] "GET / HTTP/1.1" 200 11377
+[05/Jun/2013 09:03:29] "GET / HTTP/1.1" 200 11375
+[05/Jun/2013 09:03:59] "GET / HTTP/1.1" 200 11410
+[05/Jun/2013 09:05:27] "GET / HTTP/1.1" 200 11427
+[05/Jun/2013 09:05:41] "GET / HTTP/1.1" 200 11425
+[05/Jun/2013 09:07:45] "GET / HTTP/1.1" 200 11373
+[05/Jun/2013 09:08:08] "GET / HTTP/1.1" 200 11415
+[05/Jun/2013 09:08:46] "GET / HTTP/1.1" 200 11421
+[05/Jun/2013 09:09:36] "GET / HTTP/1.1" 200 11420
+[05/Jun/2013 09:09:44] "GET / HTTP/1.1" 200 11420
+[05/Jun/2013 09:09:54] "GET / HTTP/1.1" 200 11422
+[05/Jun/2013 09:10:01] "GET / HTTP/1.1" 200 11422
+[05/Jun/2013 09:10:06] "GET /howto/ HTTP/1.1" 200 13531
+[05/Jun/2013 09:10:06] "GET /static/img/KnowShare01.png HTTP/1.1" 200 80808
+[05/Jun/2013 09:10:06] "GET /static/img/KnowShare02.png HTTP/1.1" 200 73634
+[05/Jun/2013 09:10:06] "GET /static/img/KnowShare03.png HTTP/1.1" 200 156887
+[05/Jun/2013 09:10:06] "GET /static/img/KnowShare04.png HTTP/1.1" 200 305468
+[05/Jun/2013 09:10:06] "GET /static/img/KnowShare05.png HTTP/1.1" 200 363060
+[05/Jun/2013 09:10:06] "GET /static/img/KnowShare06.png HTTP/1.1" 200 273819
+[05/Jun/2013 09:10:07] "GET /howto/favicon.ico HTTP/1.1" 200 13531
+[05/Jun/2013 09:10:11] "GET /contact HTTP/1.1" 301 0
+[05/Jun/2013 09:10:11] "GET /contact/ HTTP/1.1" 200 10465
+[05/Jun/2013 09:10:11] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:10:14] "GET /teacher HTTP/1.1" 301 0
+[05/Jun/2013 09:10:14] "GET /teacher/ HTTP/1.1" 200 18782
+[05/Jun/2013 09:10:14] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:10:14] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:10:16] "GET /student HTTP/1.1" 301 0
+[05/Jun/2013 09:10:16] "GET /student/ HTTP/1.1" 200 16197
+[05/Jun/2013 09:10:16] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:10:16] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:10:27] "GET / HTTP/1.1" 200 11422
+[05/Jun/2013 09:11:51] "GET / HTTP/1.1" 200 11464
+[05/Jun/2013 09:12:08] "GET /teacher/ HTTP/1.1" 200 18824
+[05/Jun/2013 09:12:09] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:12:09] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:12:32] "GET /teacher/ HTTP/1.1" 200 18822
+[05/Jun/2013 09:12:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:12:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:13:38] "GET /teacher/ HTTP/1.1" 200 18824
+[05/Jun/2013 09:13:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:13:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:14:04] "GET /teacher/ HTTP/1.1" 200 18822
+[05/Jun/2013 09:14:05] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:14:05] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:14:08] "GET / HTTP/1.1" 200 11462
+[05/Jun/2013 09:14:53] "GET / HTTP/1.1" 200 11496
+[05/Jun/2013 09:16:56] "GET / HTTP/1.1" 200 11496
+[05/Jun/2013 09:17:13] "GET / HTTP/1.1" 200 11496
+[05/Jun/2013 09:17:36] "GET / HTTP/1.1" 200 11496
+[05/Jun/2013 09:17:55] "GET / HTTP/1.1" 200 11462
+[05/Jun/2013 09:17:55] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:17:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:17:55] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:17:56] "GET /static/img/favicon.ico HTTP/1.1" 200 1406
+[05/Jun/2013 09:21:15] "GET / HTTP/1.1" 200 11462
+[05/Jun/2013 09:21:30] "GET / HTTP/1.1" 200 11462
+[05/Jun/2013 09:21:30] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:21:30] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:21:30] "GET /static/img/logo.png HTTP/1.1" 304 0
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 18, in main_page
+    return render_to_response('index.html', RequestContext(request, permission(request)))
+  File "/Library/Python/2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 172, in render_to_string
+    return t.render(Context(dictionary))
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 102, in render
+    compiled_parent = self.get_parent(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 99, in get_parent
+    return get_template(parent)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 186, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+TemplateSyntaxError: 'block' tag with name 'mainnav' appears more than once
+[05/Jun/2013 09:21:35] "GET / HTTP/1.1" 500 251343
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 18, in main_page
+    return render_to_response('index.html', RequestContext(request, permission(request)))
+  File "/Library/Python/2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 172, in render_to_string
+    return t.render(Context(dictionary))
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 102, in render
+    compiled_parent = self.get_parent(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 99, in get_parent
+    return get_template(parent)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 186, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+TemplateSyntaxError: 'block' tag with name 'mainnav' appears more than once
+[05/Jun/2013 09:22:12] "GET / HTTP/1.1" 500 251377
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 18, in main_page
+    return render_to_response('index.html', RequestContext(request, permission(request)))
+  File "/Library/Python/2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 172, in render_to_string
+    return t.render(Context(dictionary))
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 102, in render
+    compiled_parent = self.get_parent(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 99, in get_parent
+    return get_template(parent)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 186, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+TemplateSyntaxError: 'block' tag with name 'mainnav' appears more than once
+[05/Jun/2013 09:22:28] "GET / HTTP/1.1" 500 251377
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 18, in main_page
+    return render_to_response('index.html', RequestContext(request, permission(request)))
+  File "/Library/Python/2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 172, in render_to_string
+    return t.render(Context(dictionary))
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 102, in render
+    compiled_parent = self.get_parent(context)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 99, in get_parent
+    return get_template(parent)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/django/template/loader_tags.py", line 186, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+TemplateSyntaxError: 'block' tag with name 'mainnav' appears more than once
+[05/Jun/2013 09:22:45] "GET / HTTP/1.1" 500 251462
+[05/Jun/2013 09:22:53] "GET / HTTP/1.1" 200 15046
+[05/Jun/2013 09:23:21] "GET / HTTP/1.1" 200 11463
+[05/Jun/2013 09:23:21] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:23:21] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:23:21] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:23:51] "GET / HTTP/1.1" 200 10564
+[05/Jun/2013 09:23:57] "GET /logout/ HTTP/1.1" 302 0
+[05/Jun/2013 09:23:58] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:24:44] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:24:46] "GET /howto HTTP/1.1" 301 0
+[05/Jun/2013 09:24:46] "GET /howto/ HTTP/1.1" 200 11880
+[05/Jun/2013 09:24:46] "GET /howto/favicon.ico HTTP/1.1" 200 11880
+[05/Jun/2013 09:24:50] "GET /contact HTTP/1.1" 301 0
+[05/Jun/2013 09:24:50] "GET /contact/ HTTP/1.1" 200 8814
+[05/Jun/2013 09:24:50] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:24:52] "GET /teacher HTTP/1.1" 301 0
+[05/Jun/2013 09:24:52] "GET /teacher/ HTTP/1.1" 200 16388
+[05/Jun/2013 09:24:52] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:24:53] "GET /lecture HTTP/1.1" 301 0
+[05/Jun/2013 09:24:53] "GET /lecture/ HTTP/1.1" 200 8999
+[05/Jun/2013 09:24:53] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:24:53] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[05/Jun/2013 09:25:32] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:27:13] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:27:30] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:27:30] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:27:30] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:27:30] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:27:45] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:27:45] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:27:45] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:27:45] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:28:03] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:28:03] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28538
+[05/Jun/2013 09:28:03] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 200 105912
+[05/Jun/2013 09:28:04] "GET /static/img/logo.png HTTP/1.1" 200 27785
+[05/Jun/2013 09:52:07] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:52:07] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:52:07] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:52:08] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:52:09] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:52:09] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:52:09] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:52:10] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:52:36] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:52:37] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:52:37] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:52:37] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:52:40] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:52:40] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:52:40] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:52:40] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:52:43] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:52:43] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:52:43] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:52:43] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:55:37] "GET / HTTP/1.1" 200 9771
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[05/Jun/2013 09:57:25] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:58:08] "GET /static/img HTTP/1.1" 404 1620
+[05/Jun/2013 09:58:12] "GET /static/img/ HTTP/1.1" 404 1622
+[05/Jun/2013 09:58:23] "GET /static/bootstrap/ HTTP/1.1" 404 1634
+[05/Jun/2013 09:58:27] "GET /static HTTP/1.1" 301 0
+[05/Jun/2013 09:58:27] "GET /static/ HTTP/1.1" 404 1614
+[05/Jun/2013 09:58:56] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:58:59] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:59:02] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:59:02] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:59:02] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:59:02] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:59:04] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:59:04] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[05/Jun/2013 09:59:04] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[05/Jun/2013 09:59:04] "GET /static/img/logo.png HTTP/1.1" 304 0
+[05/Jun/2013 09:59:24] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:59:24] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28538
+[05/Jun/2013 09:59:24] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 200 105912
+[05/Jun/2013 09:59:25] "GET /static/img/logo.png HTTP/1.1" 200 27785
+[05/Jun/2013 09:59:45] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 09:59:45] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 200 105912
+[05/Jun/2013 09:59:45] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28538
+[05/Jun/2013 09:59:46] "GET /static/img/logo.png HTTP/1.1" 200 27785
+[05/Jun/2013 10:00:32] "GET / HTTP/1.1" 200 9771
+Validating models...
+
+0 errors found
+June 05, 2013 - 09:57:23
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[05/Jun/2013 10:01:29] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 10:01:29] "GET /static/img/favicon.ico HTTP/1.1" 200 1150
+[05/Jun/2013 10:02:01] "GET / HTTP/1.1" 200 9771
+[05/Jun/2013 10:02:11] "GET / HTTP/1.1" 200 9771
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[07/Jun/2013 05:37:13] "GET / HTTP/1.1" 200 9771
+[07/Jun/2013 05:37:13] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28538
+[07/Jun/2013 05:37:13] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 200 105912
+[07/Jun/2013 05:37:13] "GET /static/img/logo.png HTTP/1.1" 200 27785
+[07/Jun/2013 05:37:27] "GET / HTTP/1.1" 200 9771
+[07/Jun/2013 05:41:41] "GET /howto HTTP/1.1" 301 0
+[07/Jun/2013 05:41:41] "GET /howto/ HTTP/1.1" 200 11880
+[07/Jun/2013 05:41:42] "GET /static/img/KnowShare01.png HTTP/1.1" 200 80808
+[07/Jun/2013 05:41:42] "GET /static/img/KnowShare02.png HTTP/1.1" 200 73634
+[07/Jun/2013 05:41:42] "GET /static/img/KnowShare03.png HTTP/1.1" 200 156887
+[07/Jun/2013 05:41:42] "GET /static/img/KnowShare04.png HTTP/1.1" 200 305468
+[07/Jun/2013 05:41:42] "GET /static/img/KnowShare06.png HTTP/1.1" 200 273819
+[07/Jun/2013 05:41:42] "GET /static/img/KnowShare05.png HTTP/1.1" 200 363060
+[07/Jun/2013 05:41:42] "GET /howto/favicon.ico HTTP/1.1" 200 11880
+[07/Jun/2013 05:41:44] "GET /contact HTTP/1.1" 301 0
+[07/Jun/2013 05:41:44] "GET /contact/ HTTP/1.1" 200 8814
+[07/Jun/2013 05:41:44] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:41:46] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 05:41:46] "GET /teacher/ HTTP/1.1" 200 16388
+[07/Jun/2013 05:41:46] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:41:46] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:41:48] "GET /lecture HTTP/1.1" 301 0
+[07/Jun/2013 05:41:48] "GET /lecture/ HTTP/1.1" 200 8999
+[07/Jun/2013 05:41:48] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:41:50] "GET / HTTP/1.1" 200 9771
+[07/Jun/2013 05:41:59] "POST /login/ HTTP/1.1" 302 0
+[07/Jun/2013 05:41:59] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 05:42:02] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 05:42:04] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 05:42:04] "GET /teacher/ HTTP/1.1" 200 17924
+[07/Jun/2013 05:42:04] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:42:04] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:42:08] "GET /student HTTP/1.1" 301 0
+[07/Jun/2013 05:42:08] "GET /student/ HTTP/1.1" 200 15339
+[07/Jun/2013 05:42:08] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:42:11] "GET /lecture HTTP/1.1" 301 0
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 210, in write
+    self.send_headers()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 269, in send_headers
+    self._write(str(self.headers))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 582, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Python/2.7/site-packages/django/core/servers/basehttp.py", line 150, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 641, in __init__
+    self.finish()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 694, in finish
+    self.wfile.flush()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[07/Jun/2013 05:42:14] "GET /lecture/ HTTP/1.1" 200 12241
+[07/Jun/2013 05:42:14] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:42:14] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:42:32] "GET /lectureSubmit HTTP/1.1" 301 0
+[07/Jun/2013 05:42:32] "GET /lectureSubmit/ HTTP/1.1" 200 16497
+[07/Jun/2013 05:42:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 05:42:32] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 05:42:39] "GET /lecture/ HTTP/1.1" 200 12241
+[07/Jun/2013 05:42:39] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:42:39] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:43:12] "POST /createMeeting/ HTTP/1.1" 302 0
+[07/Jun/2013 05:44:09] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:44:09] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:44:16] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 05:53:02] "GET /teacher/ HTTP/1.1" 200 17924
+[07/Jun/2013 05:53:02] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:53:02] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:53:14] "GET /lecture/ HTTP/1.1" 200 12241
+[07/Jun/2013 05:53:14] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 05:53:14] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:12:35] "GET /logout/ HTTP/1.1" 302 0
+[07/Jun/2013 06:12:35] "GET / HTTP/1.1" 200 9771
+[07/Jun/2013 06:13:29] "POST /register/ HTTP/1.1" 302 0
+[07/Jun/2013 06:13:29] "GET / HTTP/1.1" 200 10216
+[07/Jun/2013 06:13:41] "GET /admin/ HTTP/1.1" 200 1865
+[07/Jun/2013 06:13:44] "POST /admin/ HTTP/1.1" 302 0
+[07/Jun/2013 06:13:44] "GET /admin/ HTTP/1.1" 200 8620
+[07/Jun/2013 06:13:45] "GET /admin/auth/user/ HTTP/1.1" 200 7594
+[07/Jun/2013 06:13:45] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[07/Jun/2013 06:13:49] "GET /admin/auth/user/5/ HTTP/1.1" 200 14644
+[07/Jun/2013 06:13:49] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[07/Jun/2013 06:13:55] "POST /admin/auth/user/5/ HTTP/1.1" 302 0
+[07/Jun/2013 06:13:55] "GET /admin/auth/user/ HTTP/1.1" 200 7737
+[07/Jun/2013 06:13:55] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[07/Jun/2013 06:13:59] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 06:14:01] "GET /logout/ HTTP/1.1" 302 0
+[07/Jun/2013 06:14:01] "GET / HTTP/1.1" 200 9771
+[07/Jun/2013 06:14:09] "POST /login/ HTTP/1.1" 302 0
+[07/Jun/2013 06:14:09] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 06:14:13] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 06:14:13] "GET /teacher/ HTTP/1.1" 200 17956
+[07/Jun/2013 06:14:13] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:14:13] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:14:15] "GET /teacherSubmit HTTP/1.1" 301 0
+[07/Jun/2013 06:14:15] "GET /teacherSubmit/ HTTP/1.1" 200 13218
+[07/Jun/2013 06:14:15] "GET /teacherSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 06:14:15] "GET /teacherSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 06:14:43] "POST /teacherRegister/ HTTP/1.1" 302 0
+[07/Jun/2013 06:14:43] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 06:14:46] "GET /teacher/ HTTP/1.1" 200 18493
+[07/Jun/2013 06:14:46] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:14:46] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:14:54] "GET /logout/ HTTP/1.1" 302 0
+[07/Jun/2013 06:14:54] "GET / HTTP/1.1" 200 9771
+[07/Jun/2013 06:15:03] "POST /login/ HTTP/1.1" 302 0
+[07/Jun/2013 06:15:03] "GET / HTTP/1.1" 200 10454
+[07/Jun/2013 06:15:04] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 06:15:04] "GET /teacher/ HTTP/1.1" 200 18429
+[07/Jun/2013 06:15:05] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:15:05] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:15:17] "POST /teacherRequest/ HTTP/1.1" 302 0
+[07/Jun/2013 06:15:17] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 06:15:17] "GET /teacher/ HTTP/1.1" 200 18433
+[07/Jun/2013 06:15:17] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:15:20] "GET /receiveList HTTP/1.1" 301 0
+[07/Jun/2013 06:15:20] "GET /receiveList/ HTTP/1.1" 200 13453
+[07/Jun/2013 06:15:20] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 06:15:20] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 06:15:21] "GET /submitList HTTP/1.1" 301 0
+[07/Jun/2013 06:15:21] "GET /submitList/ HTTP/1.1" 200 11797
+[07/Jun/2013 06:15:21] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[07/Jun/2013 06:15:21] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[07/Jun/2013 06:15:30] "GET /logout/ HTTP/1.1" 302 0
+[07/Jun/2013 06:15:30] "GET / HTTP/1.1" 200 9771
+[07/Jun/2013 06:15:39] "POST /login/ HTTP/1.1" 302 0
+[07/Jun/2013 06:15:39] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 06:15:41] "GET /receiveList HTTP/1.1" 301 0
+[07/Jun/2013 06:15:41] "GET /receiveList/ HTTP/1.1" 200 13840
+[07/Jun/2013 06:15:41] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 06:15:41] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 06:15:43] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 06:15:43] "GET /teacher/ HTTP/1.1" 200 18493
+[07/Jun/2013 06:15:43] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:15:43] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:15:46] "GET /lectureSubmit HTTP/1.1" 301 0
+[07/Jun/2013 06:15:46] "GET /lectureSubmit/ HTTP/1.1" 200 16341
+[07/Jun/2013 06:15:46] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 06:15:46] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 06:15:53] "GET /lectureSubmit?count=1&studentID01=1 HTTP/1.1" 301 0
+[07/Jun/2013 06:15:53] "GET /lectureSubmit/?count=1&studentID01=1 HTTP/1.1" 200 16625
+[07/Jun/2013 06:15:53] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+/Library/Python/2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-01-01 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+[07/Jun/2013 06:15:56] "POST /lectureRegister/ HTTP/1.1" 302 0
+[07/Jun/2013 06:15:56] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 06:15:58] "GET /lecture HTTP/1.1" 301 0
+[07/Jun/2013 06:15:58] "GET /lecture/ HTTP/1.1" 200 10398
+[07/Jun/2013 06:15:58] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:15:58] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:16:10] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 06:16:16] "GET /howto HTTP/1.1" 301 0
+[07/Jun/2013 06:16:16] "GET /howto/ HTTP/1.1" 200 12673
+[07/Jun/2013 06:16:16] "GET /howto/favicon.ico HTTP/1.1" 200 12673
+[07/Jun/2013 06:16:22] "GET /contact HTTP/1.1" 301 0
+[07/Jun/2013 06:16:22] "GET /contact/ HTTP/1.1" 200 9607
+[07/Jun/2013 06:16:22] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:16:22] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:16:27] "GET /teacher/ HTTP/1.1" 200 18493
+[07/Jun/2013 06:16:28] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:16:28] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:16:32] "GET /student HTTP/1.1" 301 0
+[07/Jun/2013 06:16:32] "GET /student/ HTTP/1.1" 200 15335
+[07/Jun/2013 06:16:32] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:16:32] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:16:36] "GET /lecture/ HTTP/1.1" 200 10398
+[07/Jun/2013 06:16:36] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:16:36] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:16:43] "GET /lectureSubmit/ HTTP/1.1" 200 16341
+[07/Jun/2013 06:16:43] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 06:16:43] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 06:16:47] "GET /myProfile HTTP/1.1" 301 0
+[07/Jun/2013 06:16:47] "GET /myProfile/ HTTP/1.1" 200 10198
+[07/Jun/2013 06:16:47] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[07/Jun/2013 06:16:47] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[07/Jun/2013 06:16:54] "GET /submitList HTTP/1.1" 301 0
+[07/Jun/2013 06:16:54] "GET /submitList/ HTTP/1.1" 200 11276
+[07/Jun/2013 06:16:54] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[07/Jun/2013 06:16:54] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[07/Jun/2013 06:16:58] "GET /receiveList/ HTTP/1.1" 200 13840
+[07/Jun/2013 06:16:58] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 06:16:58] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 06:17:06] "GET /teacher/ HTTP/1.1" 200 18493
+[07/Jun/2013 06:17:06] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:17:06] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:17:09] "GET /student/ HTTP/1.1" 200 15335
+[07/Jun/2013 06:17:09] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:17:09] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:17:15] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 06:17:56] "GET /howto/ HTTP/1.1" 200 12673
+[07/Jun/2013 06:17:56] "GET /howto/favicon.ico HTTP/1.1" 200 12673
+[07/Jun/2013 06:17:57] "GET /howto/favicon.ico HTTP/1.1" 200 12673
+[07/Jun/2013 06:18:02] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 06:18:04] "GET /contact/ HTTP/1.1" 200 9607
+[07/Jun/2013 06:18:04] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:18:04] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:18:08] "GET /teacher/ HTTP/1.1" 200 18493
+[07/Jun/2013 06:18:08] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:18:08] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 06:18:10] "GET /myProfile/ HTTP/1.1" 200 10198
+[07/Jun/2013 06:18:10] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[07/Jun/2013 06:18:10] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[07/Jun/2013 06:18:13] "GET /submitList/ HTTP/1.1" 200 11276
+[07/Jun/2013 06:18:13] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[07/Jun/2013 06:18:13] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[07/Jun/2013 06:18:16] "GET /receiveList/ HTTP/1.1" 200 13840
+[07/Jun/2013 06:18:16] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 06:18:16] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 08:45:13] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 08:45:15] "GET /teacher/ HTTP/1.1" 200 18493
+[07/Jun/2013 08:45:15] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:45:15] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:45:19] "GET /logout/ HTTP/1.1" 302 0
+[07/Jun/2013 08:45:19] "GET / HTTP/1.1" 200 9771
+[07/Jun/2013 08:45:23] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 08:45:23] "GET /teacher/ HTTP/1.1" 200 16919
+[07/Jun/2013 08:45:23] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:45:23] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:50:01] "POST /register/ HTTP/1.1" 302 0
+[07/Jun/2013 08:50:01] "GET / HTTP/1.1" 200 10216
+[07/Jun/2013 08:50:06] "GET /admin HTTP/1.1" 301 0
+[07/Jun/2013 08:50:07] "GET /admin/ HTTP/1.1" 200 1865
+[07/Jun/2013 08:50:08] "POST /admin/ HTTP/1.1" 302 0
+[07/Jun/2013 08:50:08] "GET /admin/ HTTP/1.1" 200 8889
+[07/Jun/2013 08:50:10] "GET /admin/auth/user/ HTTP/1.1" 200 7909
+[07/Jun/2013 08:50:10] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[07/Jun/2013 08:50:12] "GET /admin/auth/user/6/ HTTP/1.1" 200 14651
+[07/Jun/2013 08:50:12] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[07/Jun/2013 08:50:18] "POST /admin/auth/user/6/ HTTP/1.1" 302 0
+[07/Jun/2013 08:50:18] "GET /admin/auth/user/ HTTP/1.1" 200 8053
+[07/Jun/2013 08:50:18] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[07/Jun/2013 08:50:21] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 08:50:25] "GET /logout/ HTTP/1.1" 302 0
+[07/Jun/2013 08:50:25] "GET / HTTP/1.1" 200 9771
+[07/Jun/2013 08:50:31] "POST /login/ HTTP/1.1" 302 0
+[07/Jun/2013 08:50:31] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 08:50:32] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 08:50:32] "GET /teacher/ HTTP/1.1" 200 18525
+[07/Jun/2013 08:50:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:50:32] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:50:34] "GET /teacherSubmit HTTP/1.1" 301 0
+[07/Jun/2013 08:50:34] "GET /teacherSubmit/ HTTP/1.1" 200 13218
+[07/Jun/2013 08:50:34] "GET /teacherSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 08:50:34] "GET /teacherSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 08:50:59] "POST /teacherRegister/ HTTP/1.1" 302 0
+[07/Jun/2013 08:50:59] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 08:51:01] "GET /teacher/ HTTP/1.1" 200 19073
+[07/Jun/2013 08:51:01] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:51:01] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:51:12] "GET /teacherInfoChange HTTP/1.1" 301 0
+[07/Jun/2013 08:51:12] "GET /teacherInfoChange/ HTTP/1.1" 200 13625
+[07/Jun/2013 08:51:12] "GET /teacherInfoChange/favicon.ico HTTP/1.1" 404 5906
+[07/Jun/2013 08:51:12] "GET /teacherInfoChange/favicon.ico HTTP/1.1" 404 5906
+[07/Jun/2013 08:51:16] "POST /teacherProfileChange/ HTTP/1.1" 302 0
+[07/Jun/2013 08:51:16] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 08:51:16] "GET /teacher/ HTTP/1.1" 200 19061
+[07/Jun/2013 08:51:16] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:51:16] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 08:51:37] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 09:05:04] "GET / HTTP/1.1" 200 10564

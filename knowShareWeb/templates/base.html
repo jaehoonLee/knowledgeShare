@@ -8,9 +8,16 @@
     <link href="{{STATIC_URL}}bootstrap/css/bootstrap.studygate.css" rel="stylesheet" media="screen">
     <link rel="SHORTCUT ICON" href="favicon.ico">
     <style type="text/css">
+        html, body {
+	height:100%;
+	}
+      
         .container {
         margin: 0 auto;
         max-width: 1000px;
+	min-height : 80%;
+	height : auto !important;
+	height : 80%;
         }
         
         .form-signin input[type="text"],
@@ -50,6 +57,8 @@
 	{
 	color : #FFFFFF;
 	}
+
+
     {% block css %}{% endblock %}
     </style>
     <script>
@@ -167,12 +176,10 @@
 	<div class="logo">
 	  <img src="{{STATIC_URL}}img/logo.png"/>
 	</div>
-    </div>
-
-    <div class="container">
-    <div class="masthead">
-        <div class="navbar">
-          <div class="navbar-inner">
+  </div>
+  <div class="masthead">
+    <div class="navbar">
+      <div class="navbar-inner">
             <div class="container">
               <ul class="nav" style="width:700px;">
 		<li id="Home" class="dropdown">
@@ -200,22 +207,6 @@
 		    {% endif %} 
 		  </ul>
 		</li>
-		<!--
-		<li id="Teacher" class="dropdown">
-		  <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">선생님</a>
-		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacher">선생님 소개</a></li>
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/teacherSubmit">선생님 등록</a></li>
-		  </ul>
-		</li>
-		<li id="Student" class="dropdown">
-		  <a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">학생</a>
-		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/student">수업 리스트</a></li>
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/studentSubmit">수업 신청</a></li>
-		  </ul>
-		</li>
-		-->
 		<li id="Lecture" class="dropdown">
 		  <a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">강의실</a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
@@ -248,10 +239,14 @@
                 <li id="LoginNavBtn"><a href="javascript:Login();" data-toggle="modal">로그인</a></li>
 		{% endif %}
               </ul>
-            </div>
+             </div>
           </div>
-        </div><!-- /.navbar -->
-      </div>
+    </div><!-- /.navbar -->
+  </div>
+
+      
+
+    <div class="container">
 
     {% block content %}{% endblock %}
    
