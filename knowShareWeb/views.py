@@ -1,4 +1,4 @@
-# Create your views here.
+# -*- coding: utf-8 -*-
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import Context, RequestContext 
 from django.shortcuts import render_to_response
@@ -21,24 +21,29 @@ def howto_page(request):
     return render_to_response('howto.html', RequestContext(request, permission(request)))
 
 def teacher_page(request):
-    isInGroup = False
-    for group in request.user.groups.all():
-        if group.name == 'Teacher' or group.name == 'Student':
-            isInGroup = True 
+    isStuRegistered = True;
+
+    # HTML부분 변경 
     teachers =  Teacher.objects.all()
     for teacher in teachers:
         teacher.career =  teacher.career.replace('\r', '</br>')
 
     teacherUserRels = []
     idx = 0
-    if isStudent(request) :
-        for teacher in teachers:
-            teacherUserRels.append(False)
-            for teacherrequest in teacher.teacherrequest_set.all():
-                if teacherrequest.student == request.user.student : 
-                    teacherUserRels[idx] = True
-                    idx += 1
+
+    # 선생님께 신청한 부분 구별
+    try : 
+        if isStudent(request) :
+            for teacher in teachers:
+                teacherUserRels.append(False)
+                for teacherrequest in teacher.teacherrequest_set.all():
+                    if teacherrequest.student == request.user.student : 
+                        teacherUserRels[idx] = True
+                        idx += 1
+    except : 
+        isStuRegistered = False;
         
+    # 로그인 되어있는 경우 선생님
     if request.user.is_authenticated() == True :
         teacherRequests = []
         if isStudent(request):
@@ -46,13 +51,12 @@ def teacher_page(request):
                 teacherRequests = request.user.student.teacherrequest_set.all()
             except : 
                 teacherRequests = []
-        print teacherRequests
 
         
-        return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'isInGroup' : isInGroup, 'teachers' : teachers, 'user' : request.user, 'teacherRequests' : teacherRequests, 'teacherUserRels' : teacherUserRels})))
+        return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'teachers' : teachers, 'user' : request.user, 'teacherUserRels' : teacherUserRels, 'isStuRegistered' : isStuRegistered})))
         
     else :
-        return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'isInGroup' : isInGroup, 'teachers' : teachers})))
+        return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'teachers' : teachers})))
 
 def teacherSubmit_page(request):
     if request.user.is_authenticated() == False:
@@ -243,7 +247,11 @@ def login_page(request):
         if user is not None:
             if user.is_active:
                 auth.login(request, user)
+                if request.POST.has_key('remember') == False:
+                    request.session.set_expiry(0)
+
             return HttpResponseRedirect('/')
+
         else:
             return render_to_response('index.html', RequestContext(request, addPerm(request,{'loginerror' : True, 'login' : True})))
     else:
@@ -256,21 +264,26 @@ def logout_page(request):
 
 def register_page(request):
     if request.method == 'POST' :
-       form = RegistrationForm(request.POST)
-       if form.is_valid() :
-          user = User.objects.create_user(
-                  username=request.POST['username'],
-                  password=request.POST['password'],
-                  email=request.POST['email']
-                 )
-          if user is not None: 
-              user = auth.authenticate(username=request.POST['username'], password=request.POST['password'])
-              if user.is_active:
-                  auth.login(request, user)
-
-          return HttpResponseRedirect('/')
-       else :
-          return render_to_response('index.html', RequestContext(request, addPerm(request,{'signuperror' : True, 'signup' : True})))
+        form = RegistrationForm(request.POST)
+        if form.is_valid() :
+            user = User.objects.create_user(
+                username=request.POST['username'],
+                password=request.POST['password'],
+                email=request.POST['email']
+            )
+            if int(request.POST['signupType']) == 0 :
+                addTeacherType(user)
+            else : 
+                addStudentType(user)
+            
+        if user is not None: 
+            user = auth.authenticate(username=request.POST['username'], password=request.POST['password'])
+            if user.is_active:
+                auth.login(request, user)
+            
+                return HttpResponseRedirect('/')
+        else :
+            return render_to_response('index.html', RequestContext(request, addPerm(request,{'signuperror' : True, 'signup' : True})))
     else :
         return HttpResponseRedirect('/studentSubmit')
     

@@ -1,3 +1,5 @@
+from knowShareWeb.models import * 
+
 #Permission
 def isTeacher(request):
     isTeacher = False
@@ -15,6 +17,17 @@ def isStudent(request):
 
 def permission(request):
     return {'isTeacher' : isTeacher(request), 'isStudent' : isStudent(request)}
+
+def addTeacherType(user):
+    g = Group.objects.get_or_create(name='Teacher')[0]
+    user.groups.add(g)
+    g.save()
+
+def addStudentType(user):
+    g = Group.objects.get_or_create(name='Student')[0]
+    user.groups.add(g)
+    g.save()
+
 
 #dict add
 def addDict(dict1, dict2):

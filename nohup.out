@@ -18121,3 +18121,171 @@ error: [Errno 32] Broken pipe
 [07/Jun/2013 08:51:16] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
 [07/Jun/2013 08:51:37] "GET / HTTP/1.1" 200 10564
 [07/Jun/2013 09:05:04] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 09:34:08] "GET /receiveList/ HTTP/1.1" 200 13527
+[07/Jun/2013 09:34:08] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 09:34:13] "GET /receiveList/ HTTP/1.1" 200 13527
+[07/Jun/2013 09:34:13] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 09:37:44] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 09:37:47] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 09:39:51] "GET / HTTP/1.1" 200 10564
+[07/Jun/2013 09:41:51] "GET / HTTP/1.1" 200 10573
+[07/Jun/2013 09:56:05] "GET /lecture HTTP/1.1" 301 0
+[07/Jun/2013 09:56:05] "GET /lecture/ HTTP/1.1" 200 9792
+[07/Jun/2013 09:56:06] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 09:56:07] "GET /logout/ HTTP/1.1" 302 0
+[07/Jun/2013 09:56:07] "GET / HTTP/1.1" 200 9780
+[07/Jun/2013 09:56:09] "POST /login/ HTTP/1.1" 302 0
+[07/Jun/2013 09:56:09] "GET / HTTP/1.1" 200 10573
+[07/Jun/2013 09:56:11] "GET /lecture HTTP/1.1" 301 0
+[07/Jun/2013 09:56:12] "GET /lecture/ HTTP/1.1" 200 12241
+[07/Jun/2013 09:56:12] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 09:56:12] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 09:56:13] "POST /createMeeting/ HTTP/1.1" 302 0
+[07/Jun/2013 10:03:18] "GET / HTTP/1.1" 200 10573
+[07/Jun/2013 10:03:27] "GET /teacher HTTP/1.1" 301 0
+[07/Jun/2013 10:03:27] "GET /teacher/ HTTP/1.1" 200 19061
+[07/Jun/2013 10:03:27] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 10:03:27] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 10:03:31] "GET / HTTP/1.1" 200 10573
+[07/Jun/2013 10:07:46] "GET / HTTP/1.1" 200 10573
+[07/Jun/2013 10:29:35] "GET / HTTP/1.1" 200 10573
+[07/Jun/2013 10:29:37] "GET /submitList HTTP/1.1" 301 0
+[07/Jun/2013 10:29:37] "GET /submitList/ HTTP/1.1" 200 11693
+[07/Jun/2013 10:29:38] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[07/Jun/2013 10:29:38] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[07/Jun/2013 10:29:39] "GET /receiveList HTTP/1.1" 301 0
+[07/Jun/2013 10:29:39] "GET /receiveList/ HTTP/1.1" 200 14458
+[07/Jun/2013 10:29:40] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 10:29:40] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[07/Jun/2013 10:29:41] "GET /myProfile HTTP/1.1" 301 0
+[07/Jun/2013 10:29:41] "GET /myProfile/ HTTP/1.1" 200 10217
+[07/Jun/2013 10:29:41] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[07/Jun/2013 10:29:41] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[07/Jun/2013 10:29:44] "GET /lecture/ HTTP/1.1" 200 12241
+[07/Jun/2013 10:29:44] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 10:29:44] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 10:29:46] "GET /lectureSubmit HTTP/1.1" 301 0
+[07/Jun/2013 10:29:46] "GET /lectureSubmit/ HTTP/1.1" 200 16497
+[07/Jun/2013 10:29:46] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 10:29:46] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[07/Jun/2013 10:29:49] "GET /teacher/ HTTP/1.1" 200 19061
+[07/Jun/2013 10:29:49] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 10:29:49] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 10:29:50] "GET /student HTTP/1.1" 301 0
+[07/Jun/2013 10:29:50] "GET /student/ HTTP/1.1" 200 15339
+[07/Jun/2013 10:29:50] "GET /student/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 10:29:52] "GET / HTTP/1.1" 200 10573
+[07/Jun/2013 10:31:59] "GET / HTTP/1.1" 200 10573
+[07/Jun/2013 10:41:25] "GET /lecture/ HTTP/1.1" 200 12241
+[07/Jun/2013 10:41:25] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 10:41:25] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[07/Jun/2013 10:41:26] "POST /createMeeting/ HTTP/1.1" 302 0
+[07/Jun/2013 23:17:12] "GET /admin/auth/user/ HTTP/1.1" 200 7909
+[07/Jun/2013 23:17:12] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[08/Jun/2013 01:24:01] "GET / HTTP/1.1" 200 10573
+[08/Jun/2013 01:24:01] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[08/Jun/2013 01:24:01] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[08/Jun/2013 01:24:01] "GET /static/img/logo.png HTTP/1.1" 304 0
+[08/Jun/2013 01:24:07] "GET / HTTP/1.1" 200 10573
+[08/Jun/2013 01:24:08] "GET / HTTP/1.1" 200 10573
+[08/Jun/2013 01:24:17] "GET / HTTP/1.1" 200 10573
+[08/Jun/2013 01:24:19] "GET /howto HTTP/1.1" 301 0
+[08/Jun/2013 01:24:19] "GET /howto/ HTTP/1.1" 200 12673
+[08/Jun/2013 01:24:19] "GET /static/img/KnowShare01.png HTTP/1.1" 304 0
+[08/Jun/2013 01:24:19] "GET /static/img/KnowShare03.png HTTP/1.1" 304 0
+[08/Jun/2013 01:24:19] "GET /static/img/KnowShare05.png HTTP/1.1" 304 0
+[08/Jun/2013 01:24:19] "GET /static/img/KnowShare02.png HTTP/1.1" 304 0
+[08/Jun/2013 01:24:19] "GET /static/img/KnowShare04.png HTTP/1.1" 304 0
+[08/Jun/2013 01:24:19] "GET /static/img/KnowShare06.png HTTP/1.1" 304 0
+[08/Jun/2013 01:24:19] "GET /howto/favicon.ico HTTP/1.1" 200 12673
+[08/Jun/2013 01:24:24] "GET / HTTP/1.1" 200 10573
+[08/Jun/2013 01:24:28] "GET /contact HTTP/1.1" 301 0
+[08/Jun/2013 01:24:28] "GET /contact/ HTTP/1.1" 200 9607
+[08/Jun/2013 01:24:28] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:24:28] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:24:30] "GET / HTTP/1.1" 200 10573
+[08/Jun/2013 01:24:32] "GET /myProfile/ HTTP/1.1" 200 10217
+[08/Jun/2013 01:24:32] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[08/Jun/2013 01:24:32] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[08/Jun/2013 01:24:35] "GET /submitList/ HTTP/1.1" 200 11693
+[08/Jun/2013 01:24:35] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[08/Jun/2013 01:24:35] "GET /submitList/favicon.ico HTTP/1.1" 404 5885
+[08/Jun/2013 01:24:37] "GET /receiveList/ HTTP/1.1" 200 14458
+[08/Jun/2013 01:24:37] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[08/Jun/2013 01:24:37] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[08/Jun/2013 01:24:38] "GET /lectureSubmit/ HTTP/1.1" 200 16497
+[08/Jun/2013 01:24:38] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[08/Jun/2013 01:24:38] "GET /lectureSubmit/favicon.ico HTTP/1.1" 404 5894
+[08/Jun/2013 01:30:41] "GET /logout/ HTTP/1.1" 302 0
+[08/Jun/2013 01:30:41] "GET / HTTP/1.1" 200 9780
+[08/Jun/2013 01:31:14] "GET / HTTP/1.1" 200 9901
+[08/Jun/2013 01:32:35] "GET / HTTP/1.1" 200 9905
+[08/Jun/2013 01:33:23] "GET / HTTP/1.1" 200 9921
+[08/Jun/2013 01:36:21] "GET / HTTP/1.1" 200 10073
+[08/Jun/2013 01:36:24] "GET / HTTP/1.1" 200 10073
+[08/Jun/2013 01:36:25] "GET /teacher HTTP/1.1" 301 0
+[08/Jun/2013 01:36:25] "GET /teacher/ HTTP/1.1" 200 17742
+[08/Jun/2013 01:36:25] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:36:25] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:36:37] "GET /lecture HTTP/1.1" 301 0
+[08/Jun/2013 01:36:37] "GET /lecture/ HTTP/1.1" 200 9292
+[08/Jun/2013 01:36:37] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:36:38] "GET /teacher/ HTTP/1.1" 200 17742
+[08/Jun/2013 01:36:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:36:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:36:42] "GET / HTTP/1.1" 200 10073
+[08/Jun/2013 01:36:48] "GET /howto HTTP/1.1" 301 0
+[08/Jun/2013 01:36:48] "GET /howto/ HTTP/1.1" 200 12173
+[08/Jun/2013 01:36:49] "GET /howto/favicon.ico HTTP/1.1" 200 12173
+[08/Jun/2013 01:36:51] "GET /contact HTTP/1.1" 301 0
+[08/Jun/2013 01:36:51] "GET /contact/ HTTP/1.1" 200 9107
+[08/Jun/2013 01:36:51] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:36:52] "GET / HTTP/1.1" 200 10073
+[08/Jun/2013 01:42:00] "GET / HTTP/1.1" 200 10073
+[08/Jun/2013 01:42:11] "GET / HTTP/1.1" 200 10073
+[08/Jun/2013 01:42:12] "GET /howto/ HTTP/1.1" 200 12173
+[08/Jun/2013 01:42:12] "GET /howto/favicon.ico HTTP/1.1" 200 12173
+[08/Jun/2013 01:42:17] "GET /teacher/ HTTP/1.1" 200 17742
+[08/Jun/2013 01:42:17] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:42:19] "GET /lecture/ HTTP/1.1" 200 9292
+[08/Jun/2013 01:42:19] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:42:19] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[08/Jun/2013 01:42:21] "GET / HTTP/1.1" 200 10073
+[08/Jun/2013 01:42:22] "GET /howto/ HTTP/1.1" 200 12173
+[08/Jun/2013 01:42:22] "GET /howto/favicon.ico HTTP/1.1" 200 12173
+[08/Jun/2013 01:42:22] "GET /howto/favicon.ico HTTP/1.1" 200 12173
+[08/Jun/2013 01:42:25] "GET / HTTP/1.1" 200 10073
+Validating models...
+
+0 errors found
+June 08, 2013 - 01:24:00
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 259, in register_page
+    print "print" + request.POST['signupType']
+  File "/Library/Python/2.7/site-packages/django/utils/datastructures.py", line 295, in __getitem__
+    raise MultiValueDictKeyError("Key %r not found in %r" % (key, self))
+MultiValueDictKeyError: "Key 'signupType' not found in <QueryDict: {u'username': [u'1'], u'csrfmiddlewaretoken': [u'fuZAEZoCsm285TsPQm5SmJcXC3psRfq5'], u'password': [u'1'], u'email': [u'jaehoonlee88@gmail.com'], u'passwordConfirm': [u'1']}>"
+[08/Jun/2013 01:48:50] "POST /register/ HTTP/1.1" 500 62322
+[08/Jun/2013 01:52:06] "GET / HTTP/1.1" 200 10053
+[08/Jun/2013 01:52:12] "POST /register/ HTTP/1.1" 302 0
+[08/Jun/2013 01:52:12] "GET / HTTP/1.1" 200 10498
+Validating models...
+
+0 errors found
+June 08, 2013 - 01:43:06
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+print0

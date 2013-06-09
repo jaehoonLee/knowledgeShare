@@ -103,6 +103,11 @@
 {% endblock %}
 {% block content %}    
 <div class="row-fluid">
+  {% if isStuRegistered == False %}
+  <p>
+    선생님께 수강신청을 하기 위해서는 수업신청->수업신청올리기에서 학생프로필을 등록하시기 바랍니다.
+  </p>
+  {% endif %}
   {% if isTeacher %}
   <div style="width:940px; height:40px;">
     {% if user.teacher %}
@@ -130,9 +135,8 @@
           <p>
 	    <a href="javascript:showProfile('{{teacher.name}}', '{{teacher.highschool}}', '{{teacher.university}}', '{{teacher.age}}', '{{teacher.sex}}', '{{teacher.career}}', '{{teacher.money}}', '{{teacher.tutorTime}}', '{{teacher.tutorType}}')" class="btn">상세 프로필</a>
 	    {% if user.username %}
-	    <!--{% if teacher.user.id != user.id %}-->
+	    {% if isStuRegistered %}
 	    {% if isTeacher == False %}
-	    {% if teacherRequests|length != 0 %}
 	    {% if teacherUserRels|lookupfor:forloop.counter == False %}
 	    <a href="javascript:showRequest('{{teacher.name}}', '{{teacher.id}}')" class="btn btn-info">수강 신청</a>
 	    {% else %}
@@ -142,7 +146,6 @@
 	    <a href="javascript:showRequest('{{teacher.name}}', '{{teacher.id}}')" class="btn btn-info">수강 신청</a>
 	    {% endif %}
 	    {% endif %}
-	    <!--{% endif %}-->
 	    {% endif %}
 	  </p>
         </div>
@@ -172,37 +175,6 @@
     <label id="profileTutorType"></label>
   </div>
   <div class="modal-footer">
-  </div>    
-</div>
-
-<!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">이재훈 선생님 강의실 입장</h3>
-  </div>
-  <div class="modal-body">
-    {% if user.username %}
-    {% if isInGroup %}
-    <p class="enter">강의실에서 쓰실 닉네임을 쓰시고 입장해주세요</p>
-    <FORM NAME="LectureRoom" METHOD="GET" onSubmit="return checkform(this);" action="http://1.226.82.11/demo/demo1.jsp">
-      <input type="text" id="username" required autofocus name="username" size="29" class="field" />
-      <input TYPE="hidden" NAME="action" VALUE="create">
-    </form>
-	{% else %}
-    <p class="enter"> 강의실에 입장할 수 있는 권한이 없습니다. </p>
-    {% endif %}
-    {% else %}
-    <p class="enter">먼저 로그인을 해주시기 바랍니다.</p>
-    {% endif %}
-  </div>
-  <div class="modal-footer">
-    {% if user.username %}
-    <button class="btn" data-dismiss="modal" aria-hidden="true">닫기</button>
-    <button class="btn btn-primary" onClick="javascript:enterLectureRoom();">강의실 입장</button>  
-    {% else %}
-	  
-    {% endif %}
   </div>    
 </div>
 
