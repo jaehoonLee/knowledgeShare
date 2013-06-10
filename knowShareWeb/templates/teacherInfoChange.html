@@ -131,9 +131,13 @@ window.onload = function()
 	<input type="radio" name="sex" id="female" value="female" style="float:left;"><label>&nbsp;&nbsp;여자</label>
       </div>
     </div>
-    <div>
+    <div style="float:left;">
       <label class="control-label title leftTitle">대학교</label>
       <input type="text" id="college" name="university" placeholder="University" value="{{university}}">
+    </div>
+    <div class="leftFloat">
+      <label class="control-label title">전화번호</label>
+      <input type="text" id="phoneNumber" name="phoneNumber" placeholder="PhoneNumber" value="{{phoneNumber}}">
     </div>
     </div>
   </div>
@@ -169,7 +173,5 @@ window.onload = function()
 </form>
 <legend></legend>
 {% endif %}
-<div class="footer">
-  <p>&copy; KnowledgeShare 2013</p>
-</div>
+
 {% endblock %}    

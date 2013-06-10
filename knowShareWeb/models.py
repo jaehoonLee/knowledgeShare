@@ -4,13 +4,13 @@ from django.contrib.auth.models import *
 
 # Create your models here.
 class TeacherManager(models.Manager):
-    def create_teacher(self, name, highschool, university, age, sex, career, money, tutorTime, tutorType, user):
-        teacher = self.model(name=name, highschool=highschool, university=university, age=age, sex=sex, career=career, money=money, tutorTime=tutorTime, tutorType=tutorType)
+    def create_teacher(self, name, highschool, university, age, sex, career, money, tutorTime, tutorType, phoneNumber, user):
+        teacher = self.model(name=name, highschool=highschool, university=university, age=age, sex=sex, career=career, money=money, tutorTime=tutorTime, tutorType=tutorType, phoneNumber=phoneNumber)
         teacher.user = user
         teacher.save()
         return teacher 
 
-    def change_teacher(self, id, name, highschool, university, age, sex, career, money, tutorTime, tutorType):
+    def change_teacher(self, id, name, highschool, university, age, sex, career, money, tutorTime, phoneNumber, tutorType):
         teacher =  self.get(id=id)
         teacher.name = name
         teacher.highschool = highschool
@@ -21,6 +21,7 @@ class TeacherManager(models.Manager):
         teacher.money = money
         teacher.tutorTime = tutorTime
         teacher.tutorType = tutorType
+        teacher.phoneNumber = phoneNumber
         teacher.save()
         return teacher
 
@@ -34,19 +35,20 @@ class Teacher(models.Model):
     money = models.IntegerField()
     tutorTime = models.IntegerField()
     tutorType = models.IntegerField()
+    phoneNumber = models.IntegerField()
     user = models.OneToOneField(User, null=True)
     objects = TeacherManager()
 
 class TeacherAdmin(admin.ModelAdmin):
-    list_display = ('name', 'highschool', 'university', 'age', 'sex', 'career', 'money', 'tutorTime', 'tutorType', 'get_user')
+    list_display = ('name', 'highschool', 'university', 'age', 'sex', 'career', 'money', 'tutorTime', 'tutorType', 'phoneNumber',  'get_user')
     def get_user(self, obj):
         return obj.user.username
 admin.site.register(Teacher, TeacherAdmin)
 
 
 class StudentManager(models.Manager):
-    def create_student(self, name, grade, sex, user):
-        student = self.model(name=name, grade=grade, sex=sex)
+    def create_student(self, name, grade, sex, phoneNumber, user):
+        student = self.model(name=name, grade=grade, sex=sex, phoneNumber=phoneNumber)
         student.user = user
         student.save()
         return student
@@ -55,11 +57,12 @@ class Student(models.Model):
     name = models.CharField(max_length = 30)
     grade = models.IntegerField()
     sex = models.IntegerField()
+    phoneNumber = models.IntegerField()
     user = models.OneToOneField(User, null=True)
     objects = StudentManager()
 
 class StudentAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'grade', 'sex', 'get_user')
+    list_display = ('id', 'name', 'grade', 'sex', 'phoneNumber', 'get_user')
     def get_user(self, obj):
         return obj.user.username
 admin.site.register(Student, StudentAdmin)

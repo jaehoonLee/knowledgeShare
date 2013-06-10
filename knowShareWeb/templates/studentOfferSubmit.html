@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+{% block title %}선생님 소개{% endblock %}>
+{% block css %}
+.studentChangeForm, .studentForm
+{
+width : 800px;
+margin : 0 auto;
+}
+
+.studentChangeForm .title, .studentForm .title
+{
+padding:5px 0 0 0;
+width:80px;
+float:left;
+}
+
+.studentChangeForm .leftFloat label, .studentForm .leftFloat label
+{
+padding-left:20px;
+}
+
+.comment textarea
+{
+width:785px;
+}
+
+.studentReqTable tr
+{
+background-color : #DFDFDF;
+
+}
+
+.head
+{
+height:10px;
+}
+
+.head td
+{
+font-size:16px;
+}
+
+.lectureBody 
+{
+height:10px;
+}
+
+.lectureBody td
+{
+font-size:12px;
+}
+
+td:last-child {width:15%}
+
+{% endblock %}
+
+
+{% block javascript %}
+
+function StudentSubmit()
+{
+var gradeIdx = $("#grade option").index($("#grade option:selected"));
+var gradeInput = $("<input>").attr("type", "hidden").attr("name", "gradeIdx").val(gradeIdx);
+
+$(".studentChangeForm").append($(gradeInput));
+document.StudentChangeForm.submit();
+}
+
+function StudentChange()
+{
+$(".studentChange").hide();
+$(".studentChangeForm").show();
+
+$("input[name=name]").val("{{student.name}}");
+$("input:radio[name=sex]")[{{student.sex}}].checked = true;
+$("input[name=phoneNumber]").val("{{student.phoneNumber}}");
+$(".grade").val("{{student.grade}}");
+}
+
+function StudentLectureOffer()
+{
+var tutorTimeIdx = $("#tutorTime option").index($("#tutorTime option:selected"));
+var tutorTimeInput = $("<input>").attr("type", "hidden").attr("name", "tutorTimeIdx").val(tutorTimeIdx);
+var addErase = $("<input>").attr("type", "hidden").attr("name", "addErase").val(1);
+
+$(".studentForm").append($(tutorTimeInput));
+$(".studentForm").append($(addErase));
+document.StudentLectureOfferForm.submit();
+}
+
+function DeleteLectureOffer(id)
+{
+var id = $("<input>").attr("type", "hidden").attr("name", "id").val(id);
+var addErase = $("<input>").attr("type", "hidden").attr("name", "addErase").val(0);
+$(".studentForm").append($(id));
+$(".studentForm").append($(addErase));
+document.StudentLectureOfferForm.submit();
+}
+
+{% endblock %}        
+{% block content %}
+{% if Confirmed == 0 %}
+<p>
+  로그인을 하셔야 신청이 가능하십니다.
+</p>
+{% else %}
+<h3>학생 프로필 등록</h3>
+<p>
+선생님이 알아야 할 학생 정보 입력을 부탁드립니다.
+</p>
+v<legend></legend>
+<div class="studentChange" style="width : 800px; margin : 0 auto;">
+    <label class="control-label title">이름 : {{student.name}}</label>
+    {% if student.sex == 0 %}
+    <label class="control-label title">성별 : 남성</label>
+    {% else %}
+    <label class="control-label title">성별 : 여성</label>
+    {% endif %}
+    {% if student.grade == 0 %}
+    <label class="control-label title">학년 : 중학생 1학년</label>
+    {% elif student.grade == 1 %}
+    <label class="control-label title">학년 : 중학생 2학년</label>
+    {% elif student.grade == 2 %}
+    <label class="control-label title">학년 : 중학생 3학년</label>
+    {% elif student.grade == 3 %}
+    <label class="control-label title">학년 : 고등학생 1학년</label>
+    {% elif student.grade == 4 %}
+    <label class="control-label title">학년 : 고등학생 2학년</label>
+    {% endif %}
+  <button style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentChange();">변경하기</button>
+</div>
+<form style="display:none;" method="POST" class="studentChangeForm" name="StudentChangeForm" action="/studentRegister/"> {% csrf_token %}
+  <div style="float:left">
+    <label class="control-label title leftTitle">이름</label>
+    <input type="text" id="name" name="name" placeholder="Name"> 
+  </div>
+  <div class="leftFloat">
+    <label class="control-label title">성별</label>
+    <div class="sexRadio">
+      <input type="radio" name="sex" id="male" value="male" checked style="float:left"><label>&nbsp;&nbsp;남자</label>
+      <input type="radio" name="sex" id="female" value="female" style="float:left;"><label>&nbsp;&nbsp;여자</label>
+    </div>
+  </div>
+  <div style="float:left">
+    <label class="control-label title">학년</label>
+    <select id="grade" name="grade" class="grade">
+      <option value="0"> 중학생 1학년</option>
+      <option value="1"> 중학생 2학년</option>
+      <option value="2"> 중학생 3학년</option>
+      <option value="3"> 고등학생 1학년</option>
+      <option value="4"> 고등학생 2학년</option>
+      <option value="5"> 고등학생 3학년</option>
+    </select>
+  </div>
+  <div class="leftFloat">
+    <label class="control-label title leftTitle">전화번호</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="PhoneNumber">
+  </div>
+  <input type="hidden" name="registerType" value="1">
+  <button type="button" style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentSubmit();">신청하기</button>
+</form>
+<legend></legend>
+<h3>수업 신청</h3>
+<p>
+StudyGate에 수업을 신청할 수 있습니다. 선생님들이 수업리스트를 보고 수업에 참여할 것입니다.
+</p>
+<legend></legend>
+<table class="table studentReqTable">
+  <tbody>
+    <tr class="head">
+      <td>과목</td>
+      <td>비용</td>
+      <td>수업방식</td>
+      <td>커멘트</td>
+      <td>변경 및 삭제</td>
+    </tr>
+    {% for student in studentLectureOffers %}
+    <tr class="lectureBody">
+      <td>수학</td>
+      <td>{{student.money}}만원</td>
+      {% if student.tutorTime == 0 %}
+      <td>주 1회 1시간</td>
+      {% elif student.tutorTime == 1 %}
+      <td>주 1회 2시간</td>
+      {% elif student.tutorTime == 2 %}
+      <td>주 2회 1시간</td>
+      {% elif student.tutorTime == 3 %}
+      <td>주 2회 2시간</td>
+      {% elif student.tutorTime == 4 %}
+      <td>기타</td>
+      {% endif %}
+      <td>
+	{{student.comment}}
+      </td>
+      <td>
+	<!--<button class="btn btn-info">변경</button>-->
+	<button class="btn btn-warning" onClick="javascript:DeleteLectureOffer({{student.id}});">삭제</button>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<legend></legend>
+<form method="POST" class="studentForm" name="StudentLectureOfferForm" action="/studentLectureOffer/"> {% csrf_token %}
+  <div>
+    <div style="float:left;">
+      <label class="control-label title leftTitle">과외비용</label>
+      <input style="width:100px;" name="money" class="tutorMethod" type="text" id="money" placeholder="Price">
+    </div>
+    <label style="margin-left:20px;" class="control-label title">과외횟수</label>
+    <select style="float:left; width:150px;"id="tutorTime" name="tutorTime" class="tutorMethod">
+      <option> 주 1회 1시간</option>
+      <option> 주 2회 1시간</option>
+      <option> 주 1회 2시간</option>
+      <option> 주 2회 2시간</option>
+      <option> 기타</option>
+    </select>
+    <label style="margin-left:20px;"class="control-label title">과목</label>
+    <select style="width:100px" id="tutorTime" name="tutorTime" class="tutorMethod">
+      <option> 국어</option>
+      <option> 영어</option>
+      <option> 수학</option>
+      <option> 과학</option>
+      <option> 사회</option>
+    </select>
+    <div class="comment">
+      <label class="control-label">학생관련 코멘트</label>
+      <textarea name="comment" rows="7"></textarea>
+    </div>
+    <button style="margin : 10px 0 10px 0; height : 40px;" class="btn btn-primary btn-block" onClick="javascript:StudentLectureOffer();">신청하기</button>
+  </div>
+</form>
+<legend></legend>
+{% endif %}
+{% endblock %}    

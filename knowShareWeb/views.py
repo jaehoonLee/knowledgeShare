@@ -39,7 +39,8 @@ def teacher_page(request):
                 for teacherrequest in teacher.teacherrequest_set.all():
                     if teacherrequest.student == request.user.student : 
                         teacherUserRels[idx] = True
-                        idx += 1
+                idx += 1
+                print teacher.name 
     except : 
         isStuRegistered = False;
         
@@ -59,9 +60,11 @@ def teacher_page(request):
         return render_to_response('teacher.html', RequestContext(request, addPerm(request, {'teachers' : teachers})))
 
 def teacherSubmit_page(request):
+    # 로그인이 되어 있지 않은 경우
     if request.user.is_authenticated() == False:
         return render_to_response('teacherSubmit.html', RequestContext(request, addPerm(request, {'Confirmed' : 0})))
 
+    # 선생님 정보가 있는지 여부 확인
     try :
         request.user.teacher
     except ObjectDoesNotExist :
@@ -78,8 +81,8 @@ def teacherInfoChange_page(request):
         Teacher = request.user.teacher
     except ObjectDoesNotExist :
         return render_to_response('teacherInfoChange.html', RequestContext(request, permission(request)))
-
-    return render_to_response('teacherInfoChange.html', RequestContext(request, addPerm(request, {'name' : Teacher.name, 'age' : Teacher.age, 'highschool' : Teacher.highschool, 'university' : Teacher.university, 'age' : Teacher.age, 'sex' : Teacher.sex, 'career' : Teacher.career, 'money' : Teacher.money, 'tutorTime' : Teacher.tutorTime, 'tutorType' : Teacher.tutorType})))
+    
+    return render_to_response('teacherInfoChange.html', RequestContext(request, addPerm(request, {'name' : Teacher.name, 'age' : Teacher.age, 'highschool' : Teacher.highschool, 'university' : Teacher.university, 'age' : Teacher.age, 'sex' : Teacher.sex, 'career' : Teacher.career, 'money' : Teacher.money, 'tutorTime' : Teacher.tutorTime, 'tutorType' : Teacher.tutorType, 'phoneNumber' : Teacher.phoneNumber })))
 
 def student_page(request):
     students = Student.objects.all()
@@ -113,18 +116,20 @@ def student_page(request):
 
 def studentSubmit_page(request):
     studentLectureOffers = []
-
+    
+    #Login을 안했다면 
     if request.user.is_authenticated() == False:
         return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'Confirmed' : 0})))
 
+    #학생 프로필이 있는지 여부 확인
     student = None
     try:
         student = request.user.student;
         studentLectureOffers = request.user.student.studentlectureoffer_set.all()
     except :
-        return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studenetLectureOffers' : studentLectureOffers})))
-
-    return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers, 'student' : student})))
+        return render_to_response('studentSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers})))
+    
+    return render_to_response('studentOfferSubmit.html', RequestContext(request, addPerm(request, {'studentLectureOffers' : studentLectureOffers, 'student' : student})))
 
 def lecture_page(request):
     #lectures = None
@@ -187,12 +192,15 @@ def my_profile_page(request):
     for group in request.user.groups.all():
         if isTeacher(request) :
             isTeacherBool = True
-            careers =  request.user.teacher.career.split('\r')
+            try : 
+                careers =  request.user.teacher.career.split('\r')
+            except : 
+                isTeacherBool = False
         elif isStudent(request):
             isStudentBool = True
 
 
-    return render_to_response('myProfile.html', RequestContext(request, addPerm(request,{'user' : request.user, 'isTeacher' : isTeacherBool, 'isStudent' : isStudentBool, 'careers' : careers })))
+    return render_to_response('myProfile.html', RequestContext(request, addPerm(request,{'user' : request.user, 'isTeacherBool' : isTeacherBool, 'isStudentBool' : isStudentBool, 'careers' : careers })))
 
 def submit_list_page(request):
     studentRequests = None
@@ -309,6 +317,7 @@ def teacher_register_page(request):
             money = request.POST['money'],
             tutorTime = request.POST['tutorTimeIdx'],
             tutorType = request.POST['tutorTypeIdx'],
+            phoneNumber = request.POST['phoneNumber'],
             user = request.user
             )
         
@@ -320,6 +329,7 @@ def teacher_register_page(request):
         return HttpResponseRedirect('/')
 
 def teacher_profile_change_page(request):
+    print request.POST['phoneNumber']
     if request.method == 'POST' : 
         sex = 0
         if request.POST['sex'] == 'male':
@@ -337,7 +347,8 @@ def teacher_profile_change_page(request):
             career = request.POST['career'],
             money = request.POST['money'],
             tutorTime = request.POST['tutorTimeIdx'],
-            tutorType = request.POST['tutorTypeIdx']
+            tutorType = request.POST['tutorTypeIdx'],
+            phoneNumber = request.POST['phoneNumber']
         )
         return HttpResponseRedirect('/teacher')
 
@@ -350,20 +361,24 @@ def student_register_page(request):
             sex = 0
         else: 
             sex = 1
-        
-        student = Student.objects.create_student(
+
+        if request.POST['registerType'] == "0" :        
+            student = Student.objects.create_student(
             name = request.POST['name'],
             grade = request.POST['gradeIdx'],
             sex = sex,
+            phoneNumber = request.POST['phoneNumber'],
             user = request.user
             )
-
-        # add in StudentGroup 
-        g = Group.objects.get_or_create(name='Student')[0]
-        request.user.groups.add(g)
-        g.save()
+        else :
+            student = request.user.student
+            student.name = request.POST['name']
+            student.grade = request.POST['gradeIdx']
+            student.sex = sex
+            student.phoneNumber = request.POST['phoneNumber']
+            student.save()
         
-        return HttpResponseRedirect('/studentSubmit')
+    return HttpResponseRedirect('/studentSubmit')
 
 def student_lecture_offer_page(request):
     if request.method == 'POST' :        

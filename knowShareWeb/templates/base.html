@@ -68,7 +68,7 @@
 	color : #FFFFFF;
 	}
 
-	body,table/*,input,textarea,select,button*/{font-family:'NanumGothic';}
+	body,table/*,input,textarea,select,button*/{font-family:'NanumGothic'; font-weight:bold;}
     {% block css %}{% endblock %}
     </style>
     <script>
@@ -81,6 +81,17 @@
       ga('send', 'pageview');
     </script>
     <script type="text/javascript">
+
+
+    function checkHangul(str)
+    {
+        check = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+        if(check.test(str)) 
+        { 
+            alert('ID는 영어, 숫자만 가능합니다.');
+        }
+    }
+
     function RegistrationSubmit(type)
     {
         var signupType = $('<input>').attr("type", "hidden").attr("name", "signupType").val(type);
@@ -95,10 +106,24 @@
              alert('아이디를 입력하지 않으셨습니다.');
              return;
         }
+        else if(checkHangul($(".username").val()))
+        {
+             return; 
+        }
         else if(document.RegistrationForm.password.value =="")
         {
              alert('패스워드를 입력하지 않으셨습니다.');
              return;
+        }
+        else if($(".password").val().length < 8)
+        {
+             alert('패스워드를 8자 이상 입력해주세요');
+	     return;
+        }
+        else if($(".passwordConfirm").val().length < 8)
+        {
+             alert('패스워드 확인을 8자 이상 입력해주세요');
+	     return;
         }
         else if(document.RegistrationForm.passwordConfirm.value =="")
         {
@@ -116,6 +141,7 @@
     }
     function LoginSubmit()
     {
+        
         if(document.LoginForm.username.value == "")
         {
              alert('아이디를 입력하지 않으셨습니다.');
@@ -199,7 +225,7 @@
 		  <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">StudyGate</a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/">소개</a></li>
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/howto">서비스 이용 방법</a></li>
+		    <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="/howto">서비스 이용 방법</a></li>-->
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/contact">고객센터</a></li>
 		  </ul>
 		</li>
@@ -274,10 +300,10 @@
 	  {% if signuperror %}
 	  <label style="color:red; margin: 0 0 10px 0;">가입 형식이 맞지 않습니다.</label>
 	  {% endif %}
-        <input type="text" class="input-block-level" placeholder="Email address" name="email">
-        <input type="text" class="input-block-level" placeholder="ID" name="username">
-        <input type="password" class="input-block-level" placeholder="Password" name="password">
-        <input type="password" class="input-block-level" placeholder="Password Confirm" name="passwordConfirm">
+        <input type="text" class="email input-block-level" placeholder="Email address" name="email">
+        <input type="text" class="username input-block-level" placeholder="ID" name="username">
+        <input type="password" class="password input-block-level" placeholder="Password" name="password">
+        <input type="password" class="passwordConfirm input-block-level" placeholder="Password Confirm" name="passwordConfirm">
         </form>
     </div>
         <div class="modal-footer">

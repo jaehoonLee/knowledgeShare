@@ -18289,3 +18289,291 @@ Django version 1.5.1, using settings 'knowledgeShare.settings'
 Development server is running at http://0.0.0.0:9000/
 Quit the server with CONTROL-C.
 print0
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[09/Jun/2013 00:11:02] "GET /teacher/ HTTP/1.1" 200 18703
+[09/Jun/2013 00:11:02] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 304 0
+[09/Jun/2013 00:11:02] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[09/Jun/2013 00:11:02] "GET /static/img/logo.png HTTP/1.1" 304 0
+[09/Jun/2013 00:11:03] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:03] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:21] "GET /teacher HTTP/1.1" 301 0
+[09/Jun/2013 00:11:21] "GET /teacher/ HTTP/1.1" 200 18703
+[09/Jun/2013 00:11:21] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:21] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:22] "GET /studentSubmit HTTP/1.1" 301 0
+[09/Jun/2013 00:11:22] "GET /studentSubmit/ HTTP/1.1" 200 14175
+[09/Jun/2013 00:11:23] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:11:28] "GET /lecture HTTP/1.1" 301 0
+[09/Jun/2013 00:11:28] "GET /lecture/ HTTP/1.1" 200 12668
+[09/Jun/2013 00:11:28] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:28] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:30] "GET / HTTP/1.1" 200 11128
+[09/Jun/2013 00:11:31] "GET /howto HTTP/1.1" 301 0
+[09/Jun/2013 00:11:31] "GET /howto/ HTTP/1.1" 200 13228
+[09/Jun/2013 00:11:31] "GET /static/img/KnowShare01.png HTTP/1.1" 304 0
+[09/Jun/2013 00:11:31] "GET /static/img/KnowShare03.png HTTP/1.1" 304 0
+[09/Jun/2013 00:11:31] "GET /static/img/KnowShare02.png HTTP/1.1" 304 0
+[09/Jun/2013 00:11:31] "GET /static/img/KnowShare05.png HTTP/1.1" 304 0
+[09/Jun/2013 00:11:31] "GET /static/img/KnowShare04.png HTTP/1.1" 304 0
+[09/Jun/2013 00:11:31] "GET /static/img/KnowShare06.png HTTP/1.1" 304 0
+[09/Jun/2013 00:11:31] "GET /howto/favicon.ico HTTP/1.1" 200 13228
+[09/Jun/2013 00:11:35] "GET /contact HTTP/1.1" 301 0
+[09/Jun/2013 00:11:35] "GET /contact/ HTTP/1.1" 200 10162
+[09/Jun/2013 00:11:35] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:40] "GET /lecture/ HTTP/1.1" 200 12668
+[09/Jun/2013 00:11:40] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:45] "GET /teacher/ HTTP/1.1" 200 18703
+[09/Jun/2013 00:11:45] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:45] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:11:58] "GET /studentSubmit/ HTTP/1.1" 200 14175
+[09/Jun/2013 00:11:58] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:11:58] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:12:05] "GET /myProfile HTTP/1.1" 301 0
+[09/Jun/2013 00:12:05] "GET /myProfile/ HTTP/1.1" 200 10400
+[09/Jun/2013 00:12:05] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[09/Jun/2013 00:12:05] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[09/Jun/2013 00:12:15] "GET /receiveList HTTP/1.1" 301 0
+[09/Jun/2013 00:12:15] "GET /receiveList/ HTTP/1.1" 200 14118
+[09/Jun/2013 00:12:15] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[09/Jun/2013 00:12:15] "GET /receiveList/favicon.ico HTTP/1.1" 404 5888
+[09/Jun/2013 00:12:16] "GET /lecture/ HTTP/1.1" 200 12668
+[09/Jun/2013 00:12:17] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:12:17] "GET /lecture/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:12:18] "GET /teacher/ HTTP/1.1" 200 18703
+[09/Jun/2013 00:12:18] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:12:18] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:12:45] "GET / HTTP/1.1" 200 11128
+[09/Jun/2013 00:12:46] "GET /howto/ HTTP/1.1" 200 13228
+[09/Jun/2013 00:12:47] "GET /howto/favicon.ico HTTP/1.1" 200 13228
+[09/Jun/2013 00:12:47] "GET /howto/favicon.ico HTTP/1.1" 200 13228
+[09/Jun/2013 00:12:49] "GET /contact/ HTTP/1.1" 200 10162
+[09/Jun/2013 00:12:49] "GET /contact/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:12:53] "GET /myProfile/ HTTP/1.1" 200 10400
+[09/Jun/2013 00:12:53] "GET /myProfile/favicon.ico HTTP/1.1" 404 5882
+[09/Jun/2013 00:13:24] "GET /studentSubmit/ HTTP/1.1" 200 14175
+[09/Jun/2013 00:13:24] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:16:58] "GET /admin HTTP/1.1" 301 0
+[09/Jun/2013 00:16:58] "GET /admin/ HTTP/1.1" 200 1865
+[09/Jun/2013 00:16:59] "POST /admin/ HTTP/1.1" 302 0
+[09/Jun/2013 00:16:59] "GET /admin/ HTTP/1.1" 200 8650
+[09/Jun/2013 00:17:01] "GET /admin/auth/user/ HTTP/1.1" 200 9146
+[09/Jun/2013 00:17:01] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[09/Jun/2013 00:17:02] "GET /admin/ HTTP/1.1" 200 8650
+[09/Jun/2013 00:17:03] "GET /admin/knowShareWeb/student/ HTTP/1.1" 200 5154
+[09/Jun/2013 00:17:03] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[09/Jun/2013 00:19:21] "GET /studentSubmit/ HTTP/1.1" 200 14830
+[09/Jun/2013 00:19:21] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:19:25] "GET /logout/ HTTP/1.1" 302 0
+[09/Jun/2013 00:19:25] "GET / HTTP/1.1" 200 10445
+[09/Jun/2013 00:19:30] "POST /login/ HTTP/1.1" 302 0
+[09/Jun/2013 00:19:30] "GET / HTTP/1.1" 200 11128
+[09/Jun/2013 00:19:32] "GET /studentSubmit HTTP/1.1" 301 0
+[09/Jun/2013 00:19:32] "GET /studentSubmit/ HTTP/1.1" 200 14255
+[09/Jun/2013 00:19:33] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:19:33] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:21:43] "GET /studentSubmit/ HTTP/1.1" 200 15554
+[09/Jun/2013 00:21:43] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:21:43] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:24:32] "GET /studentSubmit/ HTTP/1.1" 200 15605
+[09/Jun/2013 00:24:32] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:24:33] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:24:49] "GET /studentSubmit/ HTTP/1.1" 200 15637
+[09/Jun/2013 00:24:49] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:24:49] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:25:26] "GET /studentSubmit/ HTTP/1.1" 200 15656
+[09/Jun/2013 00:25:26] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:25:26] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:25:44] "GET /studentSubmit/ HTTP/1.1" 200 15656
+[09/Jun/2013 00:25:44] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:25:44] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:27:05] "GET /studentSubmit/ HTTP/1.1" 200 15657
+[09/Jun/2013 00:27:06] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:27:06] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:27:40] "GET /studentSubmit/ HTTP/1.1" 200 15721
+[09/Jun/2013 00:27:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:27:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:28:40] "GET /studentSubmit/ HTTP/1.1" 200 15721
+[09/Jun/2013 00:28:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:28:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:30:07] "GET /studentSubmit/ HTTP/1.1" 200 15755
+[09/Jun/2013 00:30:07] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:30:54] "GET /studentSubmit/ HTTP/1.1" 200 15766
+[09/Jun/2013 00:30:54] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:30:54] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:31:04] "GET /studentSubmit/ HTTP/1.1" 200 15760
+[09/Jun/2013 00:31:04] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:31:04] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:31:13] "GET /studentSubmit/ HTTP/1.1" 200 15762
+[09/Jun/2013 00:31:13] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:31:13] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:31:18] "GET / HTTP/1.1" 200 11128
+[09/Jun/2013 00:31:20] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:31:20] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:31] "GET /studentSubmit/ HTTP/1.1" 200 15847
+[09/Jun/2013 00:32:31] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:31] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:36] "GET / HTTP/1.1" 200 11128
+[09/Jun/2013 00:32:38] "GET /teacher HTTP/1.1" 301 0
+[09/Jun/2013 00:32:38] "GET /teacher/ HTTP/1.1" 200 18703
+[09/Jun/2013 00:32:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:32:38] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:32:40] "GET /studentSubmit/ HTTP/1.1" 200 15847
+[09/Jun/2013 00:32:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:43] "GET /studentSubmit/ HTTP/1.1" 200 15847
+[09/Jun/2013 00:32:43] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:43] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:45] "GET /studentSubmit/ HTTP/1.1" 200 15847
+[09/Jun/2013 00:32:45] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:45] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:47] "GET /studentSubmit/ HTTP/1.1" 200 15847
+[09/Jun/2013 00:32:47] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:32:47] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:33:08] "GET /studentSubmit/ HTTP/1.1" 200 15837
+[09/Jun/2013 00:33:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:33:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:34:11] "GET /studentSubmit/ HTTP/1.1" 200 15845
+[09/Jun/2013 00:34:12] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:34:12] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:36:38] "GET /studentSubmit/ HTTP/1.1" 200 15849
+[09/Jun/2013 00:36:39] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:36:39] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:36:47] "GET /studentSubmit/ HTTP/1.1" 200 15849
+[09/Jun/2013 00:36:47] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:36:47] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:37:02] "GET /studentSubmit/ HTTP/1.1" 200 15854
+[09/Jun/2013 00:37:02] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:37:02] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:37:08] "GET /studentSubmit/ HTTP/1.1" 200 15853
+[09/Jun/2013 00:37:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:37:08] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:37:36] "GET /studentSubmit/ HTTP/1.1" 200 15851
+[09/Jun/2013 00:37:36] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:37:36] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:46:08] "GET /admin HTTP/1.1" 301 0
+[09/Jun/2013 00:46:08] "GET /admin/ HTTP/1.1" 200 1865
+[09/Jun/2013 00:46:10] "POST /admin/ HTTP/1.1" 302 0
+[09/Jun/2013 00:46:10] "GET /admin/ HTTP/1.1" 200 8650
+[09/Jun/2013 00:46:14] "GET /admin/knowShareWeb/student/ HTTP/1.1" 200 5154
+[09/Jun/2013 00:46:14] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[09/Jun/2013 00:46:19] "GET /admin/knowShareWeb/student/1/ HTTP/1.1" 200 5478
+[09/Jun/2013 00:46:19] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[09/Jun/2013 00:46:23] "POST /admin/knowShareWeb/student/1/ HTTP/1.1" 302 0
+[09/Jun/2013 00:46:23] "GET /admin/knowShareWeb/student/ HTTP/1.1" 200 5307
+[09/Jun/2013 00:46:23] "GET /admin/jsi18n/ HTTP/1.1" 200 5169
+[09/Jun/2013 00:46:27] "GET /studentSubmit/ HTTP/1.1" 200 15122
+[09/Jun/2013 00:46:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:46:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:46:28] "GET /logout/ HTTP/1.1" 302 0
+[09/Jun/2013 00:46:28] "GET / HTTP/1.1" 200 10445
+[09/Jun/2013 00:46:34] "POST /login/ HTTP/1.1" 302 0
+[09/Jun/2013 00:46:34] "GET / HTTP/1.1" 200 11128
+[09/Jun/2013 00:46:37] "GET /teacher HTTP/1.1" 301 0
+[09/Jun/2013 00:46:37] "GET /teacher/ HTTP/1.1" 200 18703
+[09/Jun/2013 00:46:37] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:46:37] "GET /teacher/favicon.ico HTTP/1.1" 404 5876
+[09/Jun/2013 00:46:39] "GET /studentSubmit HTTP/1.1" 301 0
+[09/Jun/2013 00:46:39] "GET /studentSubmit/ HTTP/1.1" 200 15851
+[09/Jun/2013 00:46:39] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:46:39] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:47:27] "GET /studentSubmit/ HTTP/1.1" 200 15851
+[09/Jun/2013 00:47:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:47:28] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:49:09] "GET / HTTP/1.1" 200 11128
+[09/Jun/2013 00:49:09] "GET / HTTP/1.1" 200 11128
+[09/Jun/2013 00:49:11] "GET /studentSubmit/ HTTP/1.1" 200 15785
+[09/Jun/2013 00:49:11] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:49:11] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:49:40] "GET /studentSubmit/ HTTP/1.1" 200 15812
+[09/Jun/2013 00:49:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:49:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:50:05] "GET /studentSubmit/ HTTP/1.1" 200 15785
+[09/Jun/2013 00:50:05] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:50:05] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:54:38] "GET /studentSubmit/ HTTP/1.1" 200 15807
+[09/Jun/2013 00:54:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:54:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:54:43] "GET /studentSubmit/ HTTP/1.1" 200 15807
+[09/Jun/2013 00:54:43] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:54:43] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:57:11] "GET /studentSubmit/ HTTP/1.1" 200 15807
+[09/Jun/2013 00:57:11] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 00:57:11] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:00:09] "GET /studentSubmit/ HTTP/1.1" 200 15785
+[09/Jun/2013 01:00:09] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:00:09] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:00:52] "GET /studentSubmit/ HTTP/1.1" 200 15787
+[09/Jun/2013 01:00:52] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:00:52] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:01:36] "GET /studentSubmit/ HTTP/1.1" 200 15813
+[09/Jun/2013 01:01:36] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:01:36] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:04:54] "GET /studentSubmit/ HTTP/1.1" 200 15799
+[09/Jun/2013 01:04:54] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:04:54] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:05:38] "GET /studentSubmit/ HTTP/1.1" 200 15803
+[09/Jun/2013 01:05:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:05:38] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:07:33] "GET /studentSubmit/ HTTP/1.1" 200 15847
+[09/Jun/2013 01:07:33] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:07:33] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+Internal Server Error: /studentRegister/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 356, in student_register_page
+    grade = request.POST['gradeIdx'],
+  File "/Library/Python/2.7/site-packages/django/utils/datastructures.py", line 295, in __getitem__
+    raise MultiValueDictKeyError("Key %r not found in %r" % (key, self))
+MultiValueDictKeyError: "Key 'gradeIdx' not found in <QueryDict: {u'grade': [u'1'], u'csrfmiddlewaretoken': [u'fuZAEZoCsm285TsPQm5SmJcXC3psRfq5'], u'name': [u'\\ubc15\\uc8fc\\ud64d'], u'sex': [u'female']}>"
+[09/Jun/2013 01:07:38] "POST /studentRegister/ HTTP/1.1" 500 62040
+[09/Jun/2013 01:07:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:07:40] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:07:56] "GET /studentSubmit/ HTTP/1.1" 200 15847
+[09/Jun/2013 01:07:57] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:07:57] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+Internal Server Error: /studentRegister/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 356, in student_register_page
+    grade = request.POST['gradeIdx'],
+  File "/Library/Python/2.7/site-packages/django/utils/datastructures.py", line 295, in __getitem__
+    raise MultiValueDictKeyError("Key %r not found in %r" % (key, self))
+MultiValueDictKeyError: "Key 'gradeIdx' not found in <QueryDict: {u'grade': [u'4'], u'csrfmiddlewaretoken': [u'fuZAEZoCsm285TsPQm5SmJcXC3psRfq5'], u'name': [u'\\ubc15\\uc8fc\\ud64d'], u'sex': [u'female']}>"
+[09/Jun/2013 01:07:59] "POST /studentRegister/ HTTP/1.1" 500 62040
+[09/Jun/2013 01:08:00] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:08:00] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:11:05] "GET /studentSubmit/ HTTP/1.1" 200 15847
+[09/Jun/2013 01:11:05] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:11:05] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 08, 2013 - 01:54:53
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+[False, False, False, False]
+[False, False, False, False]
+[False, False, False, False]
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[09/Jun/2013 01:21:11] "GET /studentSubmit/ HTTP/1.1" 200 15901
+[09/Jun/2013 01:21:11] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+[09/Jun/2013 01:21:14] "POST /studentRegister/ HTTP/1.1" 302 0
+[09/Jun/2013 01:21:14] "GET /studentSubmit HTTP/1.1" 301 0
+[09/Jun/2013 01:21:14] "GET /studentSubmit/ HTTP/1.1" 200 15901
+[09/Jun/2013 01:21:14] "GET /studentSubmit/favicon.ico HTTP/1.1" 404 5894
+Validating models...
+
+0 errors found
+June 09, 2013 - 01:16:57
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+1
+HELLO

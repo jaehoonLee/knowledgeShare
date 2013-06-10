@@ -12,9 +12,8 @@
 <h3>나의 프로필</h3>
 <div id="basicProfile" class="profile"> 
 <h4 style="float:left">기본정보</h5>
-<button class="btn">정보 변경</button>
-<button class="btn">삭제</button>
-<p></p>
+</br>
+</br>
 <p>
   ID : {{user.username}} </br>
   E-mail : {{user.email}} </br>
@@ -30,15 +29,14 @@
   {% else %}
   {% endif %}
 </p>
-</div>
-
-{% if isTeacher %}
-</br>
-<div id="TeacherProfile" class="profile"> 
-<h4 style="float:left">선생님 프로필</h4> 
 <button class="btn">정보 변경</button>
 <button class="btn">삭제</button>
-<p></p>
+</div>
+
+{% if isTeacherBool %}
+</br>
+<div id="TeacherProfile" class="profile"> 
+<h4>선생님 프로필</h4> 
 <p>
   이름 : {{user.teacher.name}} </br>
   나이 : {{user.teacher.age}}  </br>
@@ -73,10 +71,12 @@
   1 - 3 수업 </br>
   {% endif %}
 </p>
+<button class="btn">정보 변경</button>
+<button class="btn">삭제</button>
 </div>
 {% endif %}
 
-{% if isStudent %}
+{% if isStudentBool %}
 </br>
 <div id="StudentProfile" class="profile">
 <h4>학생 프로필 리스트</h4>
