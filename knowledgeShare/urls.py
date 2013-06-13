@@ -22,6 +22,9 @@ urlpatterns = patterns('',
     url(r'^myProfile/$', my_profile_page),
     url(r'^submitList/$', submit_list_page),
     url(r'^receiveList/$', receive_list_page),
+    url(r'^tempLecture/$', temp_lecture_page),
+    url(r'^tempJoin/$', temp_lecture_join),
+
 
     # url(r'^knowledgeShare/', include('knowledgeShare.foo.urls')),
 
@@ -46,10 +49,8 @@ urlpatterns = patterns('',
     # Request
     url(r'^teacherRequest/$', teacher_request_page),
     url(r'^studentRequest/$', student_request_page),
-
     url(r'^teacherRequestPermission/$', teacher_request_permission),
     url(r'^studentRequestPermission/$', student_request_permission),
-
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico', permanent=False)),
 
     # BigBlue

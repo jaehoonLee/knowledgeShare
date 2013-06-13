@@ -473,7 +473,21 @@ def student_request_permission(request):
         studentRequest.save()
         return HttpResponseRedirect('/receiveList')
 
-        
-        
-    
 
+
+#TEMP
+def temp_lecture_page(request):
+    if request.method == 'POST' :
+        if request.POST["lectureState"] == "off" : 
+            temp_create_meeting(request)
+            return render_to_response('tempLecture.html', RequestContext(request, addPerm(request, {'opened' : True})))
+        elif request.POST["lectureState"] == "wantOff" :
+            return temp_end_meeting(request)
+        else : 
+            return temp_join_meeting(request.user.username, request.user.username)
+        
+    else : 
+        return render_to_response('tempLecture.html', RequestContext(request, permission(request)))
+
+def temp_lecture_join(request):
+    return temp_join_meeting(request.GET["name"], request.GET["meetingID"])

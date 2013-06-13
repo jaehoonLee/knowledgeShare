@@ -82,10 +82,43 @@ def isLectureRunning(meetingIDs):
     return runnings
 
 
-
 def safe_str(obj):
     """ return the byte string representation of obj """
     try:
         return str(obj)
     except UnicodeEncodeError:
         return unicode(obj).encode('UTF-8')
+
+#TEMP
+def temp_create_meeting(request):
+    name = request.user.username
+    meetingID = request.user.username
+    parameters = {'name': safe_str(name),
+                  'meetingID' : safe_str(meetingID),
+                  'attendeePW' : safe_str(1),
+                  'moderatorPW' : safe_str(1),
+                  }
+
+    parameters = urllib.urlencode(parameters)
+
+    resp = requests.get(getBBBURL('create', parameters))
+
+def temp_join_meeting(name, meetingID):
+    query = 'fullName=' + name + '&meetingID=' + meetingID + '&password=1'
+    parameters = {'meetingID' : safe_str(meetingID),
+                  'fullName' : safe_str(name),
+                  'password' : safe_str(1),
+                  }
+
+    parameters = urllib.urlencode(parameters)
+    return HttpResponseRedirect(getBBBURL('join', parameters))
+
+def temp_end_meeting(request):
+    meetingID = request.user.username
+    parameters = {'meetingID' : safe_str(meetingID),
+                  'password' : safe_str(1),
+                 }
+    parameters = urllib.urlencode(parameters)
+    #return HttpResponseRedirect(getBBBURL('end', parameters))
+    resp = requests.get(getBBBURL('end', parameters))
+    return HttpResponseRedirect('/tempLecture/')

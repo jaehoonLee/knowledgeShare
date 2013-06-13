@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}홈{% endblock %}
+{% block css %}
+{% endblock %}
+{% block javascript %}
+function stopMeetingRoom()
+{
+$(".lectureState").val("wantOff")
+document.TempLectureForm.submit();
+}
+{% endblock %}        
+{% block mainnav %}
+{% endblock %}
+{% block content %}
+<form method="POST" name="TempLectureForm" action="/tempLecture/" > {% csrf_token %}
+{% if opened %}
+<input type="hidden" class="lectureState" name="lectureState" value="on">
+<button class="btn btn-primary">화상방 입장</button>
+<button type="button" class="btn btn-danger" onClick="javascript:stopMeetingRoom()">화상방 끄기</button>
+<div style="margin-top:10px;" class="alert alert-success">
+http://studygate.co.kr/tempJoin?name=JH&meetingID={{user.username}}
+</div>
+<p>
+위 URL을 공유하시면 친구들도 강의실에 입장하실 수 있습니다.</br>
+회의 또는 세미나 등에 자유롭게 활용 가능하십니다.
+</p>
+<p>
+강의실 입장시 이름을 변경하시려면 name=JH를 name=[원하시는이름] 으로 변경하시면 됩니다.
+</p>
+{% else %}
+<input type="hidden" name="lectureState" value="off">
+<button class="btn btn-info">화상방 만들기</button>
+{% endif %}
+</form>
+{% endblock %}    
