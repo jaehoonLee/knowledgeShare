@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>관리자 페이지</title>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="{{STATIC_URL}}bootstrap/js/bootstrap.min.js"></script>
+  <script src="http://www.google.com/jsapi"></script>
+  <link href="{{STATIC_URL}}bootstrap/css/bootstrap.studygate.css" rel="stylesheet" media="screen">
+  <link rel="SHORTCUT ICON" href="/favicon.ico">
+  <style type="text/css">
+    body,table/*,input,textarea,select,button*/{font-family:'NanumGothic'; font-weight:bold;}
+  </style>
+</head>
+<body>
+<div class="container">
+<h2 style="margin-left:0px;"class="span3">관리자 페이지</h2> 
+<h4 style="margin-top:10px;">오늘 방문자 수 : 102명  </br>
+누적 방문자 수 : 1000명 </h4>
+<h3>회원 수 : </h3>
+{% for user in User %}
+{{user.username}}</br>
+{% endfor %}
+<h3>오늘 화상 강의실 오픈 측정</h3>
+<table class="table">
+  <thead class="head">
+    <tr class="body">
+      <td>오픈시간</td>
+      <td>종료시간</td>
+      <td>생성자</td>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<h3>학생->선생님 신청 목록</h3>
+<h3>선생님->학생 신청 목록</h3>
+</div>
+</body>
+</html>
+
+

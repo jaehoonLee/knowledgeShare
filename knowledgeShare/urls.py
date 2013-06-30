@@ -33,6 +33,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^knowShareAdmin/', admin_page),
     
     # Account
     url(r'^register/$', register_page),

@@ -18845,3 +18845,301 @@ Quit the server with CONTROL-C.
 [13/Jun/2013 02:08:40] "POST /tempLecture/ HTTP/1.1" 200 11732
 [13/Jun/2013 02:08:41] "POST /tempLecture/ HTTP/1.1" 302 0
 [13/Jun/2013 02:08:41] "GET /tempLecture/ HTTP/1.1" 200 11118
+Validating models...
+
+0 errors found
+June 13, 2013 - 01:59:01
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[13/Jun/2013 02:30:54] "GET / HTTP/1.1" 200 12006
+[13/Jun/2013 02:30:57] "GET /admin HTTP/1.1" 301 0
+[13/Jun/2013 02:30:57] "GET /admin/ HTTP/1.1" 200 1865
+[13/Jun/2013 02:31:06] "GET /knowShareAdmin HTTP/1.1" 301 0
+Internal Server Error: /knowShareAdmin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 133, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view knowShareWeb.views.admin_page didn't return an HttpResponse object.
+[13/Jun/2013 02:31:06] "GET /knowShareAdmin/ HTTP/1.1" 500 49666
+Validating models...
+
+0 errors found
+June 13, 2013 - 02:29:55
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[13/Jun/2013 02:31:34] "GET /knowShareAdmin/ HTTP/1.1" 200 10418
+[13/Jun/2013 02:33:26] "GET /knowShareAdmin/ HTTP/1.1" 200 444
+[13/Jun/2013 02:33:50] "GET /knowShareAdmin/ HTTP/1.1" 200 450
+[13/Jun/2013 02:34:55] "GET /knowShareAdmin/ HTTP/1.1" 200 581
+[13/Jun/2013 02:35:32] "GET /knowShareAdmin/ HTTP/1.1" 200 612
+[13/Jun/2013 02:36:12] "GET /knowShareAdmin/ HTTP/1.1" 200 653
+[13/Jun/2013 02:38:11] "GET /knowShareAdmin/ HTTP/1.1" 200 699
+[13/Jun/2013 02:38:48] "GET /knowShareAdmin/ HTTP/1.1" 200 724
+[13/Jun/2013 02:38:58] "GET /knowShareAdmin/ HTTP/1.1" 200 724
+[13/Jun/2013 02:39:15] "GET /knowShareAdmin/ HTTP/1.1" 200 723
+[13/Jun/2013 02:39:22] "GET /knowShareAdmin/ HTTP/1.1" 200 723
+[13/Jun/2013 02:39:33] "GET /knowShareAdmin/ HTTP/1.1" 200 731
+[13/Jun/2013 07:08:02] "GET /knowShareAdmin/ HTTP/1.1" 200 731
+[13/Jun/2013 07:08:30] "GET /knowShareAdmin/ HTTP/1.1" 200 752
+Validating models...
+
+0 errors found
+June 13, 2013 - 02:31:28
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+Internal Server Error: /knowShareAdmin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 250, in admin_page
+    return render_to_response('admin.html', RequestContext(request, {"count" : Users.objects.all().length}))
+NameError: global name 'Users' is not defined
+[13/Jun/2013 07:09:22] "GET /knowShareAdmin/ HTTP/1.1" 500 55908
+Validating models...
+
+0 errors found
+June 13, 2013 - 07:09:22
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+Internal Server Error: /knowShareAdmin/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py", line 250, in admin_page
+    return render_to_response('admin.html', RequestContext(request, {"count" : User.objects.all().length}))
+AttributeError: 'QuerySet' object has no attribute 'length'
+[13/Jun/2013 07:09:31] "GET /knowShareAdmin/ HTTP/1.1" 500 56004
+Validating models...
+
+0 errors found
+June 13, 2013 - 07:09:30
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[13/Jun/2013 07:09:45] "GET /knowShareAdmin/ HTTP/1.1" 200 752
+Validating models...
+
+0 errors found
+June 13, 2013 - 07:09:40
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[13/Jun/2013 07:11:19] "GET / HTTP/1.1" 200 12006
+[13/Jun/2013 07:11:20] "GET /student HTTP/1.1" 301 0
+[13/Jun/2013 07:11:20] "GET /student/ HTTP/1.1" 200 16100
+[13/Jun/2013 07:11:22] "GET /student/ HTTP/1.1" 200 16100
+[13/Jun/2013 07:11:24] "GET /logout/ HTTP/1.1" 302 0
+[13/Jun/2013 07:11:24] "GET / HTTP/1.1" 200 11143
+[13/Jun/2013 07:11:26] "POST /login/ HTTP/1.1" 302 0
+[13/Jun/2013 07:11:26] "GET / HTTP/1.1" 200 11658
+[13/Jun/2013 07:11:30] "GET /lecture HTTP/1.1" 301 0
+[13/Jun/2013 07:11:30] "GET /lecture/ HTTP/1.1" 200 10877
+[13/Jun/2013 07:11:32] "GET / HTTP/1.1" 200 11658
+[13/Jun/2013 07:11:39] "GET /tempLecture/ HTTP/1.1" 200 10770
+[13/Jun/2013 07:11:42] "GET /tempLecture/ HTTP/1.1" 200 10770
+[13/Jun/2013 07:11:42] "GET /tempLecture/ HTTP/1.1" 200 10770
+[13/Jun/2013 07:11:45] "GET /myProfile HTTP/1.1" 301 0
+[13/Jun/2013 07:11:45] "GET /myProfile/ HTTP/1.1" 200 10732
+[13/Jun/2013 07:11:53] "GET /studentSubmit/ HTTP/1.1" 200 13616
+[13/Jun/2013 07:12:01] "POST /studentRegister/ HTTP/1.1" 302 0
+[13/Jun/2013 07:12:01] "GET /studentSubmit HTTP/1.1" 301 0
+[13/Jun/2013 07:12:01] "GET /studentSubmit/ HTTP/1.1" 200 16337
+[13/Jun/2013 07:12:25] "GET /admin HTTP/1.1" 301 0
+[13/Jun/2013 07:12:25] "GET /admin/ HTTP/1.1" 200 6158
+[13/Jun/2013 07:12:30] "GET /knowShareAdmin HTTP/1.1" 301 0
+[13/Jun/2013 07:12:30] "GET /knowShareAdmin/ HTTP/1.1" 200 782
+[13/Jun/2013 07:12:40] "GET /knowShareAdmin/ HTTP/1.1" 200 766
+[13/Jun/2013 07:12:49] "GET /knowShareAdmin/ HTTP/1.1" 200 776
+[13/Jun/2013 07:13:09] "GET /knowShareAdmin/ HTTP/1.1" 200 776
+Validating models...
+
+0 errors found
+June 13, 2013 - 07:10:00
+Django version 1.5.1, using settings 'knowledgeShare.settings'
+Development server is running at http://0.0.0.0:9000/
+Quit the server with CONTROL-C.
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[13/Jun/2013 07:14:43] "GET /knowShareAdmin/ HTTP/1.1" 200 818
+[13/Jun/2013 07:14:55] "GET /knowShareAdmin/ HTTP/1.1" 200 832
+[13/Jun/2013 07:15:08] "GET /knowShareAdmin/ HTTP/1.1" 200 832
+[13/Jun/2013 07:15:18] "GET /knowShareAdmin/ HTTP/1.1" 200 832
+[13/Jun/2013 07:15:20] "GET /knowShareAdmin/ HTTP/1.1" 200 832
+[13/Jun/2013 07:15:47] "GET /knowShareAdmin/ HTTP/1.1" 200 822
+[13/Jun/2013 07:15:58] "GET /knowShareAdmin/ HTTP/1.1" 200 808
+[13/Jun/2013 07:16:18] "GET /knowShareAdmin/ HTTP/1.1" 200 798
+[13/Jun/2013 07:16:26] "GET /knowShareAdmin/ HTTP/1.1" 200 804
+[13/Jun/2013 07:16:28] "GET /knowShareAdmin/ HTTP/1.1" 200 804
+[13/Jun/2013 07:16:32] "GET /knowShareAdmin/ HTTP/1.1" 200 809
+[13/Jun/2013 07:16:38] "GET /knowShareAdmin/ HTTP/1.1" 200 814
+[13/Jun/2013 07:16:54] "GET /knowShareAdmin/ HTTP/1.1" 200 825
+[13/Jun/2013 07:17:08] "GET /knowShareAdmin/ HTTP/1.1" 200 850
+[13/Jun/2013 07:17:22] "GET /knowShareAdmin/ HTTP/1.1" 200 840
+[13/Jun/2013 07:30:49] "GET /knowShareAdmin/ HTTP/1.1" 200 840
+[13/Jun/2013 07:31:27] "GET /knowShareAdmin/ HTTP/1.1" 200 881
+[13/Jun/2013 07:31:57] "GET /knowShareAdmin/ HTTP/1.1" 200 883
+[13/Jun/2013 07:32:03] "GET /knowShareAdmin/ HTTP/1.1" 200 883
+[13/Jun/2013 07:32:14] "GET /knowShareAdmin/ HTTP/1.1" 200 884
+[13/Jun/2013 07:32:33] "GET /knowShareAdmin/ HTTP/1.1" 200 889
+[13/Jun/2013 07:32:50] "GET /knowShareAdmin/ HTTP/1.1" 200 889
+[13/Jun/2013 07:33:02] "GET /knowShareAdmin/ HTTP/1.1" 200 883
+[13/Jun/2013 07:33:11] "GET /knowShareAdmin/ HTTP/1.1" 200 886
+[13/Jun/2013 07:35:18] "GET /knowShareAdmin/ HTTP/1.1" 200 936
+[13/Jun/2013 07:35:20] "GET /knowShareAdmin/ HTTP/1.1" 200 936
+[13/Jun/2013 07:35:28] "GET / HTTP/1.1" 200 11658
+[13/Jun/2013 07:37:23] "GET /knowShareAdmin/ HTTP/1.1" 200 1000
+[13/Jun/2013 07:38:48] "GET /knowShareAdmin/ HTTP/1.1" 200 1066
+[13/Jun/2013 07:39:21] "GET /knowShareAdmin/ HTTP/1.1" 200 1149
+[13/Jun/2013 07:39:35] "GET /knowShareAdmin/ HTTP/1.1" 200 1149
+[13/Jun/2013 07:39:42] "GET /knowShareAdmin/ HTTP/1.1" 200 1121
+[13/Jun/2013 07:40:02] "GET /knowShareAdmin/ HTTP/1.1" 200 1121
+[13/Jun/2013 07:40:16] "GET /knowShareAdmin/ HTTP/1.1" 200 1134
+[13/Jun/2013 07:40:46] "GET /knowShareAdmin/ HTTP/1.1" 200 1130
+[13/Jun/2013 08:19:31] "GET /knowShareAdmin/ HTTP/1.1" 200 1130
+[13/Jun/2013 08:54:25] "GET /knowShareAdmin/ HTTP/1.1" 200 1130
+[13/Jun/2013 21:13:02] "GET /knowShareAdmin/ HTTP/1.1" 200 1130
+[13/Jun/2013 21:25:30] "GET /knowShareAdmin/ HTTP/1.1" 200 1130
+[13/Jun/2013 22:08:38] "GET /knowShareAdmin/ HTTP/1.1" 200 1130
+[15/Jun/2013 02:39:17] "GET /knowShareAdmin/ HTTP/1.1" 200 1130
+[15/Jun/2013 02:39:17] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[15/Jun/2013 02:39:17] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 200 105912
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[23/Jun/2013 06:13:50] "GET / HTTP/1.1" 200 11143
+[23/Jun/2013 06:13:50] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28538
+[23/Jun/2013 06:13:50] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 200 105912
+[23/Jun/2013 06:13:50] "GET /static/img/logo.png HTTP/1.1" 200 27785
+[23/Jun/2013 06:13:50] "GET /static/img/favicon.ico HTTP/1.1" 200 5148
+[23/Jun/2013 06:13:55] "GET /knowShareAdmin HTTP/1.1" 301 0
+[23/Jun/2013 06:13:55] "GET /knowShareAdmin/ HTTP/1.1" 200 1130
+[23/Jun/2013 06:14:10] "GET /teacher HTTP/1.1" 301 0
+[23/Jun/2013 06:14:10] "GET /teacher/ HTTP/1.1" 200 17214
+/Users/leejaehoon/Documents/Development/knowledgeShare/knowShareWeb/views.py:14: DeprecationWarning: the sets module is deprecated
+  from sets import Set
+
+[30/Jun/2013 00:34:05] "GET / HTTP/1.1" 200 11143
+[30/Jun/2013 00:34:05] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28538
+[30/Jun/2013 00:34:05] "GET /static/bootstrap/css/bootstrap.studygate.css HTTP/1.1" 200 105912
+[30/Jun/2013 00:34:05] "GET /static/img/logo.png HTTP/1.1" 200 27785
+[30/Jun/2013 00:34:52] "GET / HTTP/1.1" 200 11028
+[30/Jun/2013 00:35:10] "GET / HTTP/1.1" 200 11142
+[30/Jun/2013 00:36:02] "GET / HTTP/1.1" 200 11142
+[30/Jun/2013 00:37:01] "GET / HTTP/1.1" 200 11172
+[30/Jun/2013 00:37:30] "GET / HTTP/1.1" 200 11180
+[30/Jun/2013 00:38:06] "GET / HTTP/1.1" 200 11210
+[30/Jun/2013 00:38:27] "GET / HTTP/1.1" 200 11189
+[30/Jun/2013 00:39:22] "GET / HTTP/1.1" 200 11183
+[30/Jun/2013 00:39:28] "GET / HTTP/1.1" 200 11183
+[30/Jun/2013 00:40:54] "GET / HTTP/1.1" 200 11234
+[30/Jun/2013 00:41:19] "GET / HTTP/1.1" 200 11235
+[30/Jun/2013 00:41:25] "GET / HTTP/1.1" 200 11235
+[30/Jun/2013 00:41:36] "GET / HTTP/1.1" 200 11239
+[30/Jun/2013 00:41:51] "GET / HTTP/1.1" 200 11246
+[30/Jun/2013 00:43:19] "GET / HTTP/1.1" 200 11363
+[30/Jun/2013 00:43:36] "GET / HTTP/1.1" 200 11364
+[30/Jun/2013 00:43:58] "GET / HTTP/1.1" 200 11369
+[30/Jun/2013 00:44:17] "GET / HTTP/1.1" 200 11368
+[30/Jun/2013 00:44:37] "GET / HTTP/1.1" 200 11375
+[30/Jun/2013 00:44:55] "GET / HTTP/1.1" 200 11375
+[30/Jun/2013 00:46:17] "GET / HTTP/1.1" 200 11393
+[30/Jun/2013 00:46:39] "GET / HTTP/1.1" 200 11416
+[30/Jun/2013 00:46:53] "GET / HTTP/1.1" 200 11418
+[30/Jun/2013 00:47:30] "GET / HTTP/1.1" 200 11427
+[30/Jun/2013 00:47:53] "GET / HTTP/1.1" 200 11427
+[30/Jun/2013 00:48:05] "GET / HTTP/1.1" 200 11452
+[30/Jun/2013 00:50:40] "GET / HTTP/1.1" 200 11447
+[30/Jun/2013 00:50:40] "GET / HTTP/1.1" 200 11447
+[30/Jun/2013 00:50:57] "GET / HTTP/1.1" 200 11465
+[30/Jun/2013 00:51:39] "GET / HTTP/1.1" 200 11471
+[30/Jun/2013 00:52:23] "GET / HTTP/1.1" 200 11467
+[30/Jun/2013 00:52:23] "GET /static/img/navlogo.png HTTP/1.1" 200 11434
+[30/Jun/2013 00:53:26] "GET / HTTP/1.1" 200 11512
+[30/Jun/2013 00:53:26] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 00:54:16] "GET / HTTP/1.1" 200 11527
+[30/Jun/2013 00:54:16] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 00:54:21] "GET / HTTP/1.1" 200 11527
+[30/Jun/2013 00:54:32] "GET / HTTP/1.1" 200 11527
+[30/Jun/2013 00:54:37] "GET / HTTP/1.1" 200 11527
+[30/Jun/2013 00:55:48] "GET / HTTP/1.1" 200 11527
+[30/Jun/2013 00:55:49] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 00:57:10] "GET / HTTP/1.1" 200 11503
+[30/Jun/2013 00:57:10] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 00:57:21] "GET / HTTP/1.1" 200 11513
+[30/Jun/2013 00:57:30] "GET / HTTP/1.1" 200 11523
+[30/Jun/2013 00:57:42] "GET / HTTP/1.1" 200 11510
+[30/Jun/2013 00:57:50] "GET / HTTP/1.1" 200 11509
+[30/Jun/2013 00:58:41] "GET / HTTP/1.1" 200 11515
+[30/Jun/2013 00:58:41] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 00:58:49] "GET / HTTP/1.1" 200 11516
+[30/Jun/2013 00:59:03] "GET / HTTP/1.1" 200 11511
+[30/Jun/2013 00:59:56] "GET / HTTP/1.1" 200 11532
+[30/Jun/2013 00:59:56] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 01:00:03] "GET / HTTP/1.1" 200 11528
+[30/Jun/2013 01:00:47] "GET / HTTP/1.1" 200 11554
+[30/Jun/2013 01:01:45] "GET / HTTP/1.1" 200 11574
+[30/Jun/2013 01:01:45] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 01:01:51] "GET / HTTP/1.1" 200 11554
+[30/Jun/2013 01:03:00] "GET / HTTP/1.1" 200 11578
+[30/Jun/2013 01:03:13] "GET / HTTP/1.1" 200 11576
+[30/Jun/2013 01:03:13] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 01:03:19] "GET / HTTP/1.1" 200 11556
+[30/Jun/2013 01:03:32] "GET / HTTP/1.1" 200 11573
+[30/Jun/2013 01:04:36] "GET / HTTP/1.1" 200 11511
+[30/Jun/2013 01:05:05] "GET / HTTP/1.1" 200 11493
+[30/Jun/2013 01:05:05] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 01:05:27] "GET / HTTP/1.1" 200 11493
+[30/Jun/2013 01:06:03] "GET / HTTP/1.1" 200 11519
+[30/Jun/2013 01:06:15] "GET / HTTP/1.1" 200 11544
+[30/Jun/2013 01:06:36] "GET / HTTP/1.1" 200 11559
+[30/Jun/2013 01:06:49] "GET / HTTP/1.1" 200 11558
+[30/Jun/2013 01:06:49] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 01:07:22] "GET / HTTP/1.1" 200 11580
+[30/Jun/2013 01:08:27] "GET / HTTP/1.1" 200 11597
+[30/Jun/2013 01:08:48] "GET / HTTP/1.1" 200 11567
+[30/Jun/2013 01:08:48] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 01:09:03] "GET / HTTP/1.1" 200 11513
+[30/Jun/2013 01:09:34] "GET / HTTP/1.1" 200 11568
+[30/Jun/2013 01:09:42] "GET / HTTP/1.1" 200 11588
+[30/Jun/2013 01:09:48] "GET / HTTP/1.1" 200 11588
+[30/Jun/2013 01:09:51] "GET / HTTP/1.1" 200 11560
+[30/Jun/2013 01:10:46] "GET / HTTP/1.1" 200 11596
+[30/Jun/2013 01:11:17] "GET / HTTP/1.1" 200 11584
+[30/Jun/2013 01:11:17] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 01:12:09] "GET / HTTP/1.1" 200 11595
+[30/Jun/2013 01:12:21] "GET / HTTP/1.1" 200 11606
+[30/Jun/2013 01:12:45] "GET / HTTP/1.1" 200 11626
+[30/Jun/2013 01:14:12] "GET / HTTP/1.1" 200 11615
+[30/Jun/2013 01:14:12] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 01:15:02] "GET / HTTP/1.1" 200 11627
+[30/Jun/2013 01:15:23] "GET / HTTP/1.1" 200 11637
+[30/Jun/2013 01:15:35] "GET / HTTP/1.1" 200 11638
+[30/Jun/2013 01:16:03] "GET / HTTP/1.1" 200 11637
+[30/Jun/2013 01:16:23] "GET / HTTP/1.1" 200 11626
+[30/Jun/2013 01:17:10] "GET / HTTP/1.1" 200 11626
+[30/Jun/2013 01:17:10] "GET /static/img/navlogo.png HTTP/1.1" 304 0
+[30/Jun/2013 01:17:40] "GET / HTTP/1.1" 200 11659
+[30/Jun/2013 01:18:16] "GET / HTTP/1.1" 200 11657

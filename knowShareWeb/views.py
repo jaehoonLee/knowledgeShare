@@ -246,6 +246,9 @@ def receive_list_page(request):
     
     return render_to_response('receiveList.html', RequestContext(request, addPerm(request, {'studentRequestsToMe' : studentRequestsToMe, 'students' : students})))
 
+def admin_page(request):
+    return render_to_response('admin.html', RequestContext(request, {"User" : User.objects.all()}))
+
 
 #Account Setting
 @csrf_exempt

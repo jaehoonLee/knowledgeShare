@@ -54,6 +54,12 @@
 	max-width : 413px;
 	}
 	
+	.navlogo
+	{
+	margin-top : 10px;
+	float:left;
+	}
+
 	.footer
 	{
 	text-align :center;
@@ -66,6 +72,35 @@
 	.footer-label
 	{
 	color : #FFFFFF;
+	}
+	
+	.navbar
+	{
+	margin : 0px;
+	background-color : #FFFFFF;
+	height: 95px;
+	}
+
+	.navbar-menu
+	{
+	height : 95px;
+	}
+
+	.navbar-menu a
+	{
+	height:80%;
+	}
+
+	.navbar-menu a div
+	{
+	margin-top : 30px;
+	}
+	
+	.navbar-border
+	{
+	width : 100%;
+	height: 3px;
+	background-color : #BFBFBF;
 	}
 
 	body,table/*,input,textarea,select,button*/{font-family:'NanumGothic'; font-weight:bold;}
@@ -192,7 +227,7 @@
 			{
 				cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
 				break;
-			}
+				    }
 		}
 	    }
             return cookieValue;
@@ -211,26 +246,22 @@
     </script>
 </head>
 <body>
-  <div style="background-color:#66c39b;">
-	<div class="logo">
-	  <img src="{{STATIC_URL}}img/logo.png"/>
-	</div>
-  </div>
   <div class="masthead">
     <div class="navbar">
-      <div class="navbar-inner">
+      <div>
             <div class="container">
-              <ul class="nav" style="width:700px;">
-		<li id="Home" class="dropdown">
-		  <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">StudyGate</a>
+	      <img class="navlogo" src="{{STATIC_URL}}img/navlogo.png"/>
+              <ul class="nav" style="width:650px;">
+		<li id="Home" class="navbar-menu dropdown">
+		  <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><div>StudyGate</div></a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/">소개</a></li>
 		    <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="/howto">서비스 이용 방법</a></li>-->
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/contact">고객센터</a></li>
 		  </ul>
 		</li>
-		<li id="LectureSubmit" class="dropdown">
-		  <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">수업신청</a>
+		<li id="LectureSubmit" class="navbar-menu dropdown">
+		  <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><div>수업신청</div></a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
 		    {% if user.username %}
 		    {% if isStudent %}
@@ -246,8 +277,8 @@
 		    {% endif %} 
 		  </ul>
 		</li>
-		<li id="Lecture" class="dropdown">
-		  <a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">강의실</a>
+		<li id="Lecture" class="navbar-menu dropdown">
+		  <a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><div>강의실</div></a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/lecture">나의 강의실</a></li>
 		    {% if isTeacher %}
@@ -257,7 +288,7 @@
 		  </ul>
 		</li>
 		{% if user.username %}
-		<li id="MyPage" class="dropdown">
+		<li id="MyPage" class="navbar-menu dropdown">
 		  <a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">마이 페이지</a>
 		  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
 		    <li role="presentation"><a role="menuitem" tabindex="-1" href="/myProfile">나의 프로필</a></li>
@@ -273,17 +304,22 @@
               </ul>
               <ul class="nav pull-right">
 		{% if user.username %}
-		<li id="LogoutNavBtn"><a href="/logout/">로그아웃</a></li>
+		<li id="LogoutNavBtn" class="navbar-menu"><a href="/logout/"><div>로그아웃</div></a></li>
 		{% else %}
 <!--                <li id="SignUpNavBtn"><a href="javascript:SignUp();" data-toggle="modal">회원가입</a></li>-->
-                <li id="LoginNavBtn"><a href="javascript:Login();" data-toggle="modal">로그인</a></li>
+                <li id="LoginNavBtn" class="navbar-menu"><a href="javascript:Login();" data-toggle="modal"><div>로그인</div></a></li>
 		{% endif %}
               </ul>
              </div>
           </div>
     </div><!-- /.navbar -->
   </div>
-
+  <div class="navbar-border"></div>
+<!--  <div style="background-color:#66c39b;">
+	<div class="logo">
+	  <img src="{{STATIC_URL}}img/logo.png"/>
+	</div>
+  </div>-->
       
 
     <div class="container">
